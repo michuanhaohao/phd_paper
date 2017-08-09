@@ -1,1 +1,1 @@
-phd thesis propasal
+phd thesis proposal
