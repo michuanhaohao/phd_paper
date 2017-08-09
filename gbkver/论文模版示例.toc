@@ -1,0 +1,107 @@
+\let \CTEX@spaceChar \relax 
+\contentsline {chapter}{勘\CTEX@spaceChar \CTEX@spaceChar 误\CTEX@spaceChar \CTEX@spaceChar 表}{I}{chapter*.1}
+\contentsline {chapter}{致\CTEX@spaceChar \CTEX@spaceChar 谢}{II}{chapter*.2}
+\contentsline {chapter}{序\CTEX@spaceChar \CTEX@spaceChar 言}{III}{chapter*.3}
+\contentsline {chapter}{摘\CTEX@spaceChar \CTEX@spaceChar 要}{VI}{chapter*.4}
+\contentsline {chapter}{Abstract}{VII}{chapter*.5}
+\contentsline {chapter}{插\CTEX@spaceChar \CTEX@spaceChar 图}{VIII}{chapter*.6}
+\contentsline {chapter}{表\CTEX@spaceChar \CTEX@spaceChar 格}{IX}{chapter*.7}
+\contentsline {chapter}{缩写、符号清单、术语表}{X}{chapter*.8}
+\cftpagenumbersoff {chapter}
+\contentsline {chapter}{目\CTEX@spaceChar \CTEX@spaceChar 次}{XI}{chapter*.9}
+\cftpagenumberson {chapter}
+\contentsline {chapter}{\numberline {1\ignorespaces \hspace {0.3em}}简介}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}为什么}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}模版简介}{3}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}\LaTeX {}{}简介}{3}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}模版内容}{4}{subsection.1.2.2}
+\contentsline {chapter}{\numberline {2\ignorespaces \hspace {0.3em}}软件环境及设置}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Microsoft Windows系统}{6}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}32位系统}{6}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}64位系统}{7}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}linux系统}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}Mac系统}{7}{section.2.3}
+\contentsline {section}{\numberline {2.4}本模版所需要的扩展包}{8}{section.2.4}
+\contentsline {section}{\numberline {2.5}测试运行}{8}{section.2.5}
+\contentsline {chapter}{\numberline {3\ignorespaces \hspace {0.3em}}使用该模版}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}模版选项}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}论文封面题名信息}{13}{section.3.2}
+\contentsline {section}{\numberline {3.3}实战：生成自己的论文第一页}{14}{section.3.3}
+\contentsline {section}{\numberline {3.4}完成题名页信息}{16}{section.3.4}
+\contentsline {section}{\numberline {3.5}正文部分各章节的书写}{18}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}勘误页}{20}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}致谢}{21}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}序言}{21}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}摘要}{22}{subsection.3.5.4}
+\contentsline {subsection}{\numberline {3.5.5}英文摘要}{22}{subsection.3.5.5}
+\contentsline {subsection}{\numberline {3.5.6}图片目录}{22}{subsection.3.5.6}
+\contentsline {subsection}{\numberline {3.5.7}表格目录}{22}{subsection.3.5.7}
+\contentsline {subsection}{\numberline {3.5.8}缩写、符号清单、术语表}{22}{subsection.3.5.8}
+\contentsline {subsection}{\numberline {3.5.9}目录}{23}{subsection.3.5.9}
+\contentsline {subsection}{\numberline {3.5.10}正文章节内容}{23}{subsection.3.5.10}
+\contentsline {subsection}{\numberline {3.5.11}参考文献}{25}{subsection.3.5.11}
+\contentsline {subsection}{\numberline {3.5.12}附录}{26}{subsection.3.5.12}
+\contentsline {subsection}{\numberline {3.5.13}索引}{26}{subsection.3.5.13}
+\contentsline {subsection}{\numberline {3.5.14}个人简历}{27}{subsection.3.5.14}
+\contentsline {subsection}{\numberline {3.5.15}发表文章目录}{27}{subsection.3.5.15}
+\contentsline {section}{\numberline {3.6}插入图片}{27}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}插入图片的应用进阶}{31}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}子图的使用}{32}{subsection.3.6.2}
+\contentsline {section}{\numberline {3.7}插入表格}{33}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}普通表格的插入}{33}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}把表格换个样式}{34}{subsection.3.7.2}
+\contentsline {subsection}{\numberline {3.7.3}有单元格合并的表格}{35}{subsection.3.7.3}
+\contentsline {subsection}{\numberline {3.7.4}其它高级表格格式及扩展包简介}{36}{subsection.3.7.4}
+\contentsline {section}{\numberline {3.8}公式及其编号}{36}{section.3.8}
+\contentsline {section}{\numberline {3.9}索引}{37}{section.3.9}
+\contentsline {section}{\numberline {3.10}参考文献}{37}{section.3.10}
+\contentsline {section}{\numberline {3.11}脚注}{38}{section.3.11}
+\contentsline {section}{\numberline {3.12}重点字符，醒目标示}{38}{section.3.12}
+\contentsline {chapter}{\numberline {4\ignorespaces \hspace {0.3em}}一些使用技巧}{40}{chapter.4}
+\contentsline {chapter}{\numberline {5\ignorespaces \hspace {0.3em}}参考文献格式处理}{41}{chapter.5}
+\contentsline {section}{\numberline {5.1}一般处理方案}{41}{section.5.1}
+\contentsline {section}{\numberline {5.2}专业处理方案}{42}{section.5.2}
+\contentsline {section}{\numberline {5.3}参考资料}{42}{section.5.3}
+\contentsline {section}{\numberline {5.4}\LaTeX {}参考文献组织思路}{43}{section.5.4}
+\contentsline {section}{\numberline {5.5}如何让BibTeX按你的想法干活}{43}{section.5.5}
+\contentsline {section}{\numberline {5.6}关键所在：*.bst文件}{43}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}bst文件的结构}{44}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}BibTeX编程的规则}{45}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.3}bst文件的调试技巧}{58}{subsection.5.6.3}
+\contentsline {section}{\numberline {5.7}*.mbs与*.dbj文件}{59}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}一般的bst文件的生成过程}{59}{subsection.5.7.1}
+\contentsline {subsection}{\numberline {5.7.2}有所不同的注释方式}{60}{subsection.5.7.2}
+\contentsline {subsection}{\numberline {5.7.3}集大成的*.mbs文件}{61}{subsection.5.7.3}
+\contentsline {subsection}{\numberline {5.7.4}*.dbj选项文件}{63}{subsection.5.7.4}
+\contentsline {chapter}{\numberline {6\ignorespaces \hspace {0.3em}}其他一些反馈的问题}{64}{chapter.6}
+\contentsline {section}{\numberline {6.1}关于使用author year 参考文献引用方式的问题}{64}{section.6.1}
+\contentsline {section}{\numberline {6.2}关于chapter居中格式的问题}{65}{section.6.2}
+\contentsline {section}{\numberline {6.3}关于章级目录有时居中有时不居中的解决方案}{65}{section.6.3}
+\contentsline {section}{\numberline {6.4}关于标题两行还写不下的问题}{66}{section.6.4}
+\contentsline {section}{\numberline {6.5}目录层次与子目录分层缩进}{67}{section.6.5}
+\contentsline {section}{\numberline {6.6}关于分章参考文献的用法}{67}{section.6.6}
+\contentsline {section}{\numberline {6.7}第X章格式的修改}{68}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}后续修订说明}{68}{subsection.6.7.1}
+\contentsline {section}{\numberline {6.8}多个参考文献文中标格式}{69}{section.6.8}
+\contentsline {section}{\numberline {6.9}关于每一章标题头上的空白部分}{69}{section.6.9}
+\contentsline {section}{\numberline {6.10}GBK与UTF版本的问题}{70}{section.6.10}
+\contentsline {section}{\numberline {6.11}2016年新版CTeX的问题}{70}{section.6.11}
+\contentsline {section}{\numberline {6.12}非正文部分不带页眉的方法}{70}{section.6.12}
+\contentsline {section}{\numberline {6.13}第三方的参考文献模板}{72}{section.6.13}
+\contentsline {chapter}{\numberline {7\ignorespaces \hspace {0.3em}}beamer的使用}{73}{chapter.7}
+\contentsline {section}{\numberline {7.1}模版工具包}{73}{section.7.1}
+\contentsline {section}{\numberline {7.2}标题及作者等}{73}{section.7.2}
+\contentsline {section}{\numberline {7.3}正文部分}{74}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}题目页}{74}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}目录页}{74}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}正文页}{74}{subsection.7.3.3}
+\contentsline {subsection}{\numberline {7.3.4}block环境}{75}{subsection.7.3.4}
+\contentsline {subsection}{\numberline {7.3.5}插入图片}{75}{subsection.7.3.5}
+\contentsline {subsection}{\numberline {7.3.6}插入表格}{76}{subsection.7.3.6}
+\contentsline {section}{\numberline {7.4}动态效果}{76}{section.7.4}
+\contentsline {chapter}{参考文献}{77}{chapter*.24}
+\contentsline {chapter}{附录A}{78}{appendix*.25}
+\contentsline {chapter}{附录B}{79}{appendix*.26}
+\contentsline {chapter}{索\CTEX@spaceChar \CTEX@spaceChar 引}{80}{section*.27}
+\contentsline {chapter}{作者简历}{81}{appendix*.28}
+\contentsline {chapter}{发表文章目录}{82}{appendix*.29}

@@ -1,0 +1,102 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem{LaTeXshzh}
+{CTeX论坛}.
+\newblock 一份不太简短的{\LaTeXe}介绍[EB/OL].
+\newblock 中国:中文{\TeX{}学会}, 2007.
+\newblock http://mirrors.ustc.edu.cn/CTAN/tex-archive/info/lshort.
+
+\bibitem{texbook}
+Knuth~Donald Ervin, Bibby~Duane Robert.
+\newblock The TeXbook[M].
+\newblock United States of America:Addison-Wesley Publishing Company, 1996.
+
+\bibitem{NewCCT:2006}
+张林波.
+\newblock 关于新版{CCT}的说明[EB/OL].
+\newblock 中国:中国科学院数学与系统科学研究院, 2006.
+\newblock ftp://ftp.cc.ac.cn/pub/cct/README.pdf.
+
+\bibitem{epslatex}
+王磊.
+\newblock {\LaTeXe}插图指南[EB/OL].
+\newblock 2000.
+\newblock http://mirrors.ustc.edu.cn/CTAN/info/epslatex/english /epslatex.pdf.
+
+\bibitem{Table:Lapo}
+Lapo~Filippo Mori.
+\newblock Table in {\LaTeXe}: Packages and methods[J].
+\newblock The Prac{\TeX} Journal, 2007.
+\newblock (1):1--38.
+
+\bibitem{WangZL}
+王东举.
+\newblock {\LaTeX}{ZJU}学位论文模版[技术型].
+
+\bibitem{WangStd}
+ZJUEE.
+\newblock {\LaTeXe}使用标准说明[S].
+\newblock 杭州:鼠尾出版社, 2010.
+
+\bibitem{ZLB:1997}
+张林波.
+\newblock {CCT DOS}版参考手册[EB/OL].
+\newblock 北京:中科院计算数学与科学工程计算研究所, 1997.
+\newblock http://www.url.com.
+
+\bibitem{LUOZ:2007}
+罗振, 田丰, 孙小平, 孙恩岩.
+\newblock 基于{LATEX}的学位论文模板的设计与实现[J].
+\newblock 沈阳航空工业学院学报, 2007.
+\newblock 24(3):45--48.
+
+\bibitem{wang:2008}
+王东举.
+\newblock 我的测试论文题目[D].
+\newblock 杭州:浙江大学, 2008.
+
+\bibitem{wangmt:2008}
+王东举.
+\newblock 我的测试硕士论文题目[D].
+\newblock 杭州:浙江大学, 2008.
+
+\bibitem{natbibdoc}
+Patrick~W. Daly.
+\newblock Natural sciences citations and references[EB].
+\newblock 2009.
+\newblock doc/texlive-latex-base-doc/latex/natbib.pdf.
+
+\bibitem{merlin}
+Patrick~W. Daly.
+\newblock A master bibliographic style file[EB].
+\newblock 20011.
+\newblock doc/latex/custom-bib/merlin.pdf.
+
+\bibitem{makebst}
+Patrick~W. Daly.
+\newblock Customizing bibliographic style files[EB].
+\newblock 2003.
+\newblock doc/latex/custom-bib/makebst.pdf.
+
+\bibitem{btxhak}
+Oren Patashnik.
+\newblock Designing bibtexing style[EB].
+\newblock 1988.
+\newblock doc/texlive-base/bibtex/base/btxhak.pdf.
+
+\bibitem{btxdoc}
+Oren Patashnik.
+\newblock Bibtexing[EB].
+\newblock 1988.
+\newblock doc/texlive-base/bibtex/base/btxdoc.pdf.
+
+\bibitem{bibgb}
+全国信息与文献标准化技术委员会.
+\newblock GB/T7714-2005 文后参考文献著录规则[S].
+\newblock 北京:中国国家标准化管理委员会, 2005.
+
+\end{thebibliography}
