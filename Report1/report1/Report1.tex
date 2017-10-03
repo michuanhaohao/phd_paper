@@ -1,0 +1,112 @@
+\documentclass[oneside]{ZJUthesis}
+
+% 该文档中首字符为“%”的均为注释行，不会在论文中出现
+
+% 由于fontsepc包有更新，可能造成在编译过程中的问题
+% 如果使用ZJUthesis有问题，可尝试使用ZJUthesisv2
+% 如果仍有问题，可换回ZJUthesis，尝试将下面的一行拷至本文档\documentclass之前
+% \expandafter\def\csname CTEX@spaceChar\endcsname{\hspace{1em}}
+
+% 论文默认为双面模式，需单面模式请将第一行换为如下所示：
+% \documentclass[oneside]{ZJUthesis}
+
+% 取消目录中链接的颜色，方便打印
+% 如需颜色，请将“false”改为“true”
+\hypersetup{colorlinks=false}
+
+%\usepackage[sectionbib]{chapterbib}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 正文字体设定
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fangsong
+
+
+% 学号
+%\PersonalID{11532034}
+
+\title{卷积神经网络}
+
+%英文题目
+\Etitle{Convolutional neural networks}
+
+
+% 作者
+\author{罗浩}
+
+\degree{博士}
+
+% 导师
+\supervisor{姜伟}
+
+% 合作导师，如果有的话，去掉注释，
+%\cpsupervisor{某 \quad某某}
+
+% 专业名称
+\major{控制科学与工程}
+
+%\cpsupervisor{11532034}
+
+% 研究方向
+\researchdm{11532034}
+
+% 所属学院
+\institute {控制学院}
+
+\submitdate{2016年1月}
+
+% 生成封面
+\makeCoverPage
+
+% 生成中文题名页
+%\maketitle
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 论文部分开始
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ZJUfrontmatter
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 摘要
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{./Chapters/abstractC}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 目录页
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ZJUcontents
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 正文内容部分开始
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ZJUmainmatter
+
+\include{./Chapters/chap1}
+
+\include{./Chapters/chap2}
+
+%\include{./Chapters/chap3}
+%
+%\include{./Chapters/chap4}
+%
+%\include{./Chapters/chap5}
+%
+%\include{./Chapters/chap6}
+%
+%\include{./Chapters/chap7}
+
+\ZJUbackmatter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 参考文献
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ZJUthesisbib{thesisbib}
+
+\end{document}

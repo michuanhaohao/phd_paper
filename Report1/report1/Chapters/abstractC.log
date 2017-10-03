@@ -1,0 +1,35 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2015.12.20)  14 SEP 2017 23:12
+entering extended mode
+**F:/文档/Phd/2017/phd_paper/Report1/report1/Chapters/abstractC.tex
+(F:/文档/Phd/2017/phd_paper/Report1/report1/Chapters/abstractC.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+
+! LaTeX Error: Environment abstract undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{abstract}
+                    
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.1 \begin{abstract}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+ 
+Here is how much of TeX's memory you used:
+ 9 strings out of 495355
+ 406 string characters out of 3183881
+ 44842 words of memory out of 3000000
+ 3277 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 5i,0n,4p,95b,16s stack positions out of 5000i,500n,10000p,200000b,50000s
+No pages of output.
