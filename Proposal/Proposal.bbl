@@ -1,0 +1,196 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem{zheng2015scalable}
+Liang Zheng, Liyue Shen, Lu~Tian, Shengjin Wang, Jingdong Wang, Qi~Tian.
+\newblock Scalable person re-identification: A benchmark[C]//Computer Vision,
+  IEEE International Conference.
+\newblock 2015.
+
+\bibitem{zheng2016mars}
+Springer.
+\newblock MARS: A Video Benchmark for Large-Scale Person Re-identification[J],
+  2016, 2016.
+
+\bibitem{Li2014DeepReID}
+Wei Li, Rui Zhao, Tong Xiao, Xiaogang Wang.
+\newblock Deepreid: Deep filter pairing neural network for person
+  re-identification[J].
+\newblock 2014:152--159.
+
+\bibitem{xiao2016end}
+Tong Xiao, Shuang Li, Bochao Wang, Liang Lin, Xiaogang Wang.
+\newblock End-to-end deep learning for person search[J].
+\newblock arXiv preprint arXiv:1604.01850, 2016.
+
+\bibitem{ristani2016MTMC}
+Ergys Ristani, Francesco Solera, Roger Zou, Rita Cucchiara, Carlo Tomasi.
+\newblock Performance measures and a data set for multi-target, multi-camera
+  tracking[C]//European Conference on Computer Vision workshop on Benchmarking
+  Multi-Target Tracking.
+\newblock 2016.
+
+\bibitem{Gray2007Evaluating}
+Doug Gray, Shane Brennan, Hai Tao.
+\newblock Evaluating appearance models for recognition, reacquisition, and
+  tracking[J].
+\newblock 2007.
+
+\bibitem{Hirzer2011Person}
+Martin Hirzer, Csaba Beleznai, Peter~M. Roth, Horst Bischof.
+\newblock Person re-identification by descriptive and discriminative
+  classification[C]//Scandinavian Conference on Image Analysis.
+\newblock 2011:91--102.
+
+\bibitem{geng2016deep}
+Mengyue Geng, Yaowei Wang, Tao Xiang, Yonghong Tian.
+\newblock Deep transfer learning for person re-identification[J].
+\newblock arXiv preprint arXiv:1611.05244, 2016.
+
+\bibitem{lin2017improving}
+Yutian Lin, Liang Zheng, Zhedong Zheng, Yu~Wu, Yi~Yang.
+\newblock Improving person re-identification by attribute and identity
+  learning[J].
+\newblock arXiv preprint arXiv:1703.07220, 2017.
+
+\bibitem{zheng2016person}
+Liang Zheng, Yi~Yang, Alexander~G Hauptmann.
+\newblock Person re-identification: Past, present and future[J].
+\newblock arXiv preprint arXiv:1610.02984, 2016.
+
+\bibitem{matsukawa2016person}
+Tetsu Matsukawa, Einoshin Suzuki.
+\newblock Person re-identification using cnn features learned from combination
+  of attributes[C]//Pattern Recognition (ICPR), 2016 23rd International
+  Conference on.
+\newblock IEEE, 2016:2428--2433.
+
+\bibitem{Krizhevsky2012ImageNet}
+Alex Krizhevsky, Ilya Sutskever, Geoffrey~E. Hinton.
+\newblock Imagenet classification with deep convolutional neural
+  networks[C]//International Conference on Neural Information Processing
+  Systems.
+\newblock 2012:1097--1105.
+
+\bibitem{varior2016gated}
+Rahul~Rama Varior, Mrinal Haloi, Gang Wang.
+\newblock Gated siamese convolutional neural network architecture for human
+  re-identification[C]//European Conference on Computer Vision.
+\newblock Springer, 2016:791--808.
+
+\bibitem{schroff2015facenet}
+Florian Schroff, Dmitry Kalenichenko, James Philbin.
+\newblock Facenet: A unified embedding for face recognition and
+  clustering[C]//Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition.
+\newblock 2015:815--823.
+
+\bibitem{liu2017end}
+Hao Liu, Jiashi Feng, Meibin Qi, Jianguo Jiang, Shuicheng Yan.
+\newblock End-to-end comparative attention networks for person
+  re-identification[J].
+\newblock IEEE Transactions on Image Processing, 2017.
+
+\bibitem{cheng2016person}
+De~Cheng, Yihong Gong, Sanping Zhou, Jinjun Wang, Nanning Zheng.
+\newblock Person re-identification by multi-channel parts-based cnn with
+  improved triplet loss function[C]//Proceedings of the IEEE Conference on
+  Computer Vision and Pattern Recognition.
+\newblock 2016:1335--1344.
+
+\bibitem{chen2017beyond}
+Weihua Chen, Xiaotang Chen, Jianguo Zhang, Kaiqi Huang.
+\newblock Beyond triplet loss: a deep quadruplet network for person
+  re-identification[J].
+\newblock arXiv preprint arXiv:1704.01719, 2017.
+
+\bibitem{Liu2016Deep}
+Hongye Liu, Yonghong Tian, Yaowei Wang, Lu~Pang, Tiejun Huang.
+\newblock Deep relative distance learning: Tell the difference between similar
+  vehicles[C]//Computer Vision and Pattern Recognition.
+\newblock 2016:2167--2175.
+
+\bibitem{hermans2017defense}
+Alexander Hermans, Lucas Beyer, Bastian Leibe.
+\newblock In defense of the triplet loss for person re-identification[J].
+\newblock arXiv preprint arXiv:1703.07737, 2017.
+
+\bibitem{xiao2016cross}
+Qiqi Xiao, Kelei Cao, Haonan Chen, Fangyue Peng, Chi Zhang.
+\newblock Cross domain knowledge transfer for person re-identification[J].
+\newblock arXiv preprint arXiv:1611.06026, 2016.
+
+\bibitem{varior2016siamese}
+Rahul~Rama Varior, Bing Shuai, Jiwen Lu, Dong Xu, Gang Wang.
+\newblock A siamese long short-term memory architecture for human
+  re-identification[C]//European Conference on Computer Vision.
+\newblock Springer, 2016:135--153.
+
+\bibitem{zheng2017pose}
+Liang Zheng, Yujia Huang, Huchuan Lu, Yi~Yang.
+\newblock Pose invariant embedding for deep person re-identification[J].
+\newblock arXiv preprint arXiv:1701.07732, 2017.
+
+\bibitem{zhao2017spindle}
+Haiyu Zhao, Maoqing Tian, Shuyang Sun, Jing Shao, Junjie Yan, Shuai Yi,
+  Xiaogang Wang, Xiaoou Tang.
+\newblock
+\newblock Spindle net: Person re-identification with human body region guided
+  feature decomposition and fusion[C].
+\newblock CVPR, 2017.
+
+\bibitem{wei2017glad}
+Longhui Wei, Shiliang Zhang, Hantao Yao, Wen Gao, Qi~Tian.
+\newblock Glad: Global-local-alignment descriptor for pedestrian retrieval[J].
+\newblock arXiv preprint arXiv:1709.04329, 2017.
+
+\bibitem{wang2016person}
+Taiqing Wang, Shaogang Gong, Xiatian Zhu, Shengjin Wang.
+\newblock Person re-identification by discriminative selection in video
+  ranking[J].
+\newblock IEEE transactions on pattern analysis and machine intelligence, 2016.
+\newblock 38(12):2501--2514.
+
+\bibitem{zhang2017image}
+Dongyu Zhang, Wenxi Wu, Hui Cheng, Ruimao Zhang, Zhenjiang Dong, Zhaoquan Cai.
+\newblock Image-to-video person re-identification with temporally memorized
+  similarity learning[J].
+\newblock IEEE Transactions on Circuits and Systems for Video Technology, 2017.
+
+\bibitem{you2016top}
+Jinjie You, Ancong Wu, Xiang Li, Wei-Shi Zheng.
+\newblock Top-push video-based person re-identification[C]//Proceedings of the
+  IEEE Conference on Computer Vision and Pattern Recognition.
+\newblock 2016:1345--1353.
+
+\bibitem{ma2017person}
+Xiaolong Ma, Xiatian Zhu, Shaogang Gong, Xudong Xie, Jianming Hu, Kin-Man Lam,
+  Yisheng Zhong.
+\newblock Person re-identification by unsupervised video matching[J].
+\newblock Pattern Recognition, 2017.
+\newblock 65:197--210.
+
+\bibitem{mclaughlin2016recurrent}
+Niall McLaughlin, Jesus Martinez~del Rincon, Paul Miller.
+\newblock Recurrent convolutional network for video-based person
+  re-identification[C]//Proceedings of the IEEE Conference on Computer Vision
+  and Pattern Recognition.
+\newblock 2016:1325--1334.
+
+\bibitem{zhao2017person}
+Rui Zhao, Wanli Oyang, Xiaogang Wang.
+\newblock Person re-identification by saliency learning[J].
+\newblock IEEE transactions on pattern analysis and machine intelligence, 2017.
+\newblock 39(2):356--370.
+
+\bibitem{liu2017video}
+Hao Liu, Zequn Jie, Karlekar Jayashree, Meibin Qi, Jianguo Jiang, Shuicheng
+  Yan, Jiashi Feng.
+\newblock Video-based person re-identification with accumulative motion
+  context[J].
+\newblock arXiv preprint arXiv:1701.00193, 2017.
+
+\end{thebibliography}

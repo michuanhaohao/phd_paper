@@ -1,0 +1,214 @@
+%CUHK-SYSU
+@article{xiao2016end,
+  title={End-to-end deep learning for person search},
+  author={Xiao, Tong and Li, Shuang and Wang, Bochao and Lin, Liang and Wang, Xiaogang},
+  journal={arXiv preprint arXiv:1604.01850},
+  year={2016}
+}
+
+
+% Deep re-id, CUHK03 dataset
+@article{Li2014DeepReID,
+  title={DeepReID: Deep Filter Pairing Neural Network for Person Re-identification},
+  author={Li, Wei and Zhao, Rui and Xiao, Tong and Wang, Xiaogang},
+  pages={152-159},
+  year={2014},
+}
+
+% Market-1501 dataset
+@inproceedings{zheng2015scalable,
+  title={Scalable Person Re-identification: A Benchmark},
+  author={Zheng, Liang and Shen, Liyue and Tian, Lu and Wang, Shengjin and Wang, Jingdong and Tian, Qi},
+  booktitle={Computer Vision, IEEE International Conference},
+  year={2015}
+}
+
+%MARS dataset
+@proceedings{zheng2016mars,
+  title={MARS: A Video Benchmark for Large-Scale Person Re-identification},
+  author={Zheng, Liang and Bie, Zhi and Sun, Yifan and Wang, Jingdong and Su, Chi and Wang, Shengjin and Tian, Qi},
+  booktitle={European Conference on Computer Vision},
+  year={2016},
+  organization={Springer}
+}
+
+%DukeMTMC-ReID
+@inproceedings{ristani2016MTMC,
+  title =        {Performance Measures and a Data Set for Multi-Target, Multi-Camera Tracking},
+  author =       {Ristani, Ergys and Solera, Francesco and Zou, Roger and Cucchiara, Rita and Tomasi, Carlo},
+  booktitle =    {European Conference on Computer Vision workshop on Benchmarking Multi-Target Tracking},
+  year =         {2016}
+}
+
+%VIPeR
+@article{Gray2007Evaluating,
+  title={Evaluating appearance models for recognition, reacquisition, and tracking},
+  author={Gray, Doug and Brennan, Shane and Tao, Hai},
+  year={2007},
+}
+
+%PRID
+@inproceedings{Hirzer2011Person,
+  title={Person re-identification by descriptive and discriminative classification},
+  author={Hirzer, Martin and Beleznai, Csaba and Roth, Peter M. and Bischof, Horst},
+  booktitle={Scandinavian Conference on Image Analysis},
+  pages={91-102},
+  year={2011},
+}
+
+%BP
+@inproceedings{Hecht2002Theory,
+  title={Theory of the backpropagation neural network},
+  author={Hecht-Nielsen, Robert},
+  booktitle={International Joint Conference on Neural Networks},
+  pages={593-605 vol.1},
+  year={2002},
+}
+
+%CNN
+@inproceedings{Krizhevsky2012ImageNet,
+  title={ImageNet classification with deep convolutional neural networks},
+  author={Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E.},
+  booktitle={International Conference on Neural Information Processing Systems},
+  pages={1097-1105},
+  year={2012},
+}
+%representation learning
+@article{geng2016deep,
+  title={Deep transfer learning for person re-identification},
+  author={Geng, Mengyue and Wang, Yaowei and Xiang, Tao and Tian, Yonghong},
+  journal={arXiv preprint arXiv:1611.05244},
+  year={2016}
+}
+
+%Attributes&id
+@article{lin2017improving,
+  title={Improving person re-identification by attribute and identity learning},
+  author={Lin, Yutian and Zheng, Liang and Zheng, Zhedong and Wu, Yu and Yang, Yi},
+  journal={arXiv preprint arXiv:1703.07220},
+  year={2017}
+}
+
+@article{zheng2016person,
+  title={Person re-identification: Past, present and future},
+  author={Zheng, Liang and Yang, Yi and Hauptmann, Alexander G},
+  journal={arXiv preprint arXiv:1610.02984},
+  year={2016}
+}
+
+%attributes and classification
+@inproceedings{matsukawa2016person,
+  title={Person re-identification using CNN features learned from combination of attributes},
+  author={Matsukawa, Tetsu and Suzuki, Einoshin},
+  booktitle={Pattern Recognition (ICPR), 2016 23rd International Conference on},
+  pages={2428--2433},
+  year={2016},
+  organization={IEEE}
+}
+
+
+%Quadruplet Loss
+@article{chen2017beyond,
+  title={Beyond triplet loss: a deep quadruplet network for person re-identification},
+  author={Chen, Weihua and Chen, Xiaotang and Zhang, Jianguo and Huang, Kaiqi},
+  journal={arXiv preprint arXiv:1704.01719},
+  year={2017}
+}
+
+%pairwise loss
+@inproceedings{varior2016gated,
+  title={Gated siamese convolutional neural network architecture for human re-identification},
+  author={Varior, Rahul Rama and Haloi, Mrinal and Wang, Gang},
+  booktitle={European Conference on Computer Vision},
+  pages={791--808},
+  year={2016},
+  organization={Springer}
+}
+
+%Triplet Loss
+@inproceedings{schroff2015facenet,
+  title={Facenet: A unified embedding for face recognition and clustering},
+  author={Schroff, Florian and Kalenichenko, Dmitry and Philbin, James},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={815--823},
+  year={2015}
+}
+
+%triplet loss
+@article{liu2017end,
+  title={End-to-end comparative attention networks for person re-identification},
+  author={Liu, Hao and Feng, Jiashi and Qi, Meibin and Jiang, Jianguo and Yan, Shuicheng},
+  journal={IEEE Transactions on Image Processing},
+  year={2017},
+  publisher={IEEE}
+}
+
+% improved triplet loss
+@inproceedings{cheng2016person,
+  title={Person re-identification by multi-channel parts-based cnn with improved triplet loss function},
+  author={Cheng, De and Gong, Yihong and Zhou, Sanping and Wang, Jinjun and Zheng, Nanning},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={1335--1344},
+  year={2016}
+}
+
+
+%hard batch
+@article{hermans2017defense,
+  title={In Defense of the Triplet Loss for Person Re-Identification},
+  author={Hermans, Alexander and Beyer, Lucas and Leibe, Bastian},
+  journal={arXiv preprint arXiv:1703.07737},
+  year={2017}
+}
+
+%triplet img & vehicle reid
+@inproceedings{Liu2016Deep,
+  title={Deep Relative Distance Learning: Tell the Difference between Similar Vehicles},
+  author={Liu, Hongye and Tian, Yonghong and Wang, Yaowei and Pang, Lu and Huang, Tiejun},
+  booktitle={Computer Vision and Pattern Recognition},
+  pages={2167-2175},
+  year={2016},
+}
+
+%%%%%% local feature
+%Spindle net
+@inproceedings{zhao2017spindle,
+  title={Spindle net: Person re-identification with human body region guided feature decomposition and fusion},
+  author={Zhao, Haiyu and Tian, Maoqing and Sun, Shuyang and Shao, Jing and Yan, Junjie and Yi, Shuai and Wang, Xiaogang and Tang, Xiaoou},
+  year={2017},
+  organization={CVPR}
+}
+
+% siamese LSTM
+@inproceedings{varior2016siamese,
+  title={A siamese long short-term memory architecture for human re-identification},
+  author={Varior, Rahul Rama and Shuai, Bing and Lu, Jiwen and Xu, Dong and Wang, Gang},
+  booktitle={European Conference on Computer Vision},
+  pages={135--153},
+  year={2016},
+  organization={Springer}
+}
+
+%Cross
+@article{xiao2016cross,
+  title={Cross Domain Knowledge Transfer for Person Re-identification},
+  author={Xiao, Qiqi and Cao, Kelei and Chen, Haonan and Peng, Fangyue and Zhang, Chi},
+  journal={arXiv preprint arXiv:1611.06026},
+  year={2016}
+}
+
+%GLAD
+@article{wei2017glad,
+  title={GLAD: Global-Local-Alignment Descriptor for Pedestrian Retrieval},
+  author={Wei, Longhui and Zhang, Shiliang and Yao, Hantao and Gao, Wen and Tian, Qi},
+  journal={arXiv preprint arXiv:1709.04329},
+  year={2017}
+}
+
+% pose invariant embedding
+@article{zheng2017pose,
+  title={Pose invariant embedding for deep person re-identification},
+  author={Zheng, Liang and Huang, Yujia and Lu, Huchuan and Yang, Yi},
+  journal={arXiv preprint arXiv:1701.07732},
+  year={2017}
+}
