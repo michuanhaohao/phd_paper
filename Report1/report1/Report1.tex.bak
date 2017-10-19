@@ -91,9 +91,9 @@
 
 \include{./Chapters/chap1}
 
-%\include{./Chapters/chap2}
-%
-%\include{./Chapters/chap3}
+\include{./Chapters/chap2}
+
+\include{./Chapters/chap3}
 %
 %\include{./Chapters/chap4}
 %

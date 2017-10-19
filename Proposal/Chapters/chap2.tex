@@ -1,4 +1,4 @@
-\chapter{¹úÄÚÍâÑÐ¾¿ÏÖ×´}
+\chapter{ÑÐ¾¿ÏÖ×´ÓëÎÄÏ××ÛÊö}
 
 ±¾ÕÂ½ÚÖ÷Òª½éÉÜ±¾¿ÎÌâÏà¹ØµÄÑÐ¾¿ÏÖ×´£¬°üÀ¨ÐÐÈËÖØÊ¶±ð(Person re-identification, person ReID)ºÍ¿çÉãÏñÍ·¶àÄ¿±ê¸ú×Ù(Multi-target multi-camera tracking, MTMC tracking)Á½¸ö²¿·Ö¡£
 ÔÚ±¾ÕÂ½Ú½«»á·Ö±ð½éÉÜÕâÁ½¸ö×Ó¿ÎÌâÏà¹ØµÄÊý¾Ý¼¯ºÍÏÖÓÐËã·¨¡£
@@ -129,7 +129,7 @@ mAPÊÇÁíÍâÒ»ÖÖÖØÒªµÄÆÀ¼ÛÖ¸±ê¡£
 CMCÇúÏßÍ¨³£Ö»¹ØÐÄ¼ìË÷¿âÖÐ×î¿¿Ç°µÄÕýÑù±¾ÅÅÐò£¬¶ømAPÓÉgalleryÖÐËùÓÐÕýÑù±¾µÄÅÅÐò½á¹û¾ö¶¨£¬ËùÒÔÍ¨³£ÄÜ¹»¸ü¼ÓÂ³°îµØ·´Ó³Ä£ÐÍµÄÐÔÄÜ¡£
 ¼ÆËãmAPÐèÒªÒÔÏÂÈý²½£º
 
-£¨1£©Precision£º¶ÔÓÚqueryÖÐµÄÄ³Ò»ÕÅprobeÍ¼Æ¬£¬·µ»ØÁËgalleryµÄÒ»ÏµÁÐÅÅÐò½á¹û£¬¿¼ÂÇÇ°$n$¸ö²éÑ¯½á¹û£¬$P(n)$=Ç°$n$¸ö½á¹ûÖÐÓëprobeÍ¼Æ¬ÊÇÏàÍ¬ÐÐÈËµÄÊýÄ¿/$n$£»
+£¨1£©Precision£º¶ÔÓÚqueryÖÐµÄÄ³Ò»ÕÅprobeÍ¼Æ¬£¬·µ»ØÁËgalleryµÄÒ»ÏµÁÐÅÅÐò½á¹û£¬¿¼ÂÇÇ°$n$ ¸ö²éÑ¯½á¹û£¬$P(n)$=Ç°$n$¸ö½á¹ûÖÐÓëprobeÍ¼Æ¬ÊÇÏàÍ¬ÐÐÈËµÄÊýÄ¿/$n$£»
 
 £¨2£©Average Precision£º¶ÔÓÚqueryµÄµÚ$K$¸öprobeÍ¼Æ¬£¬¼ÇÂ¼ÅÅÐò½á¹ûÖÐËùÓÐM¸öÕýÑù±¾ÅÅÐò½á¹ûµÄ¼¯ºÏ$\{i_1,i_2,...,i_M\}$£¬¼ÆËãËüÃÇµÄÆ½¾ùPrecision£¬¼´$AP_K = \sum P(i)/M$£¬ÆäÖÐ$i \in \{i_1,i_2,...,i_M\}$£»
 
@@ -236,7 +236,7 @@ CMCÇúÏßÍ¨³£Ö»¹ØÐÄ¼ìË÷¿âÖÐ×î¿¿Ç°µÄÕýÑù±¾ÅÅÐò£¬¶ømAPÓÉgalleryÖÐËùÓÐÕýÑù±¾µÄÅÅÐò½á¹
 Ôò£¬ËÄÔª×éËðÊ§±íÊ¾Îª£º
 
 \begin{equation}\label{Quadruplet}
-  L_t = (d_{a,p}-d_{a,n1}+\alpha)_+ + (d_{a,p}-d_{n1,n2}+\beta)_+
+  L_q = (d_{a,p}-d_{a,n1}+\alpha)_+ + (d_{a,p}-d_{n1,n2}+\beta)_+
 \end{equation}
 ÆäÖÐ$\alpha$ºÍ$\beta$ÊÇÊÖ¶¯ÉèÖÃµÄÕý³£Êý£¬Í¨³£ÉèÖÃ$\beta$Ð¡ÓÚ$\alpha$£¬Ç°Ò»Ïî³ÆÎªÇ¿ÍÆ¶¯£¬ºóÒ»Ïî³ÆÎªÈõÍÆ¶¯¡£
 Ïà±ÈÓÚÈýÔª×éËðÊ§Ö»¿¼ÂÇÕý¸ºÑù±¾¼äµÄÏà¶Ô¾àÀë£¬ËÄÔª×éÌí¼ÓµÄµÚ¶þÏî²»¹²ÏíID£¬ËùÒÔ¿¼ÂÇµÄÊÇÕý¸ºÑù±¾¼äµÄ¾ø¶Ô¾àÀë¡£

@@ -8,6 +8,9 @@
 \contentsline {section}{\numberline {1.2}神经网络的瓶颈}{3}{section.1.2}
 \contentsline {chapter}{\numberline {2\ignorespaces \hspace {0.3em}}卷积神经网络}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}局部连接}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}参数共享}{5}{section.2.2}
-\contentsline {section}{\numberline {2.3}池化采样}{5}{section.2.3}
-\contentsline {chapter}{参考文献}{7}{chapter*.4}
+\contentsline {section}{\numberline {2.2}参数共享}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}池化采样}{7}{section.2.3}
+\contentsline {chapter}{\numberline {3\ignorespaces \hspace {0.3em}}卷积神经网络进行图像识别}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}卷积神经网络的优点}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}卷积神经网络识别图像实例}{9}{section.3.2}
+\contentsline {chapter}{参考文献}{11}{chapter*.7}

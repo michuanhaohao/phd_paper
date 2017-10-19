@@ -193,4 +193,39 @@ Hao Liu, Zequn Jie, Karlekar Jayashree, Meibin Qi, Jianguo Jiang, Shuicheng
   context[J].
 \newblock arXiv preprint arXiv:1701.00193, 2017.
 
+\bibitem{he2016deep}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.
+\newblock Deep residual learning for image recognition[C]//Proceedings of the
+  IEEE conference on computer vision and pattern recognition.
+\newblock 2016:770--778.
+
+\bibitem{zhang2017shufflenet}
+Xiangyu Zhang, Xinyu Zhou, Mengxiao Lin, Jian Sun.
+\newblock Shufflenet: An extremely efficient convolutional neural network for
+  mobile devices[J].
+\newblock arXiv preprint arXiv:1707.01083, 2017.
+
+\bibitem{szegedy2015going}
+Christian Szegedy, Wei Liu, Yangqing Jia, Pierre Sermanet, Scott Reed, Dragomir
+  Anguelov, Dumitru Erhan, Vincent Vanhoucke, Andrew Rabinovich.
+\newblock Going deeper with convolutions[C]//Proceedings of the IEEE conference
+  on computer vision and pattern recognition.
+\newblock 2015:1--9.
+
+\bibitem{chollet2016xception}
+Fran{\c{c}}ois Chollet.
+\newblock Xception: Deep learning with depthwise separable convolutions[J].
+\newblock arXiv preprint arXiv:1610.02357, 2016.
+
+\bibitem{zhang2017deep}
+Ying Zhang, Tao Xiang, Timothy~M Hospedales, Huchuan Lu.
+\newblock Deep mutual learning[J].
+\newblock arXiv preprint arXiv:1706.00384, 2017.
+
+\bibitem{chen2017darkrank}
+Yuntao Chen, Naiyan Wang, Zhaoxiang Zhang.
+\newblock Darkrank: Accelerating deep metric learning via cross sample
+  similarities transfer[J].
+\newblock arXiv preprint arXiv:1707.01220, 2017.
+
 \end{thebibliography}

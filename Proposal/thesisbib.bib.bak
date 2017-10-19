@@ -212,3 +212,86 @@
   journal={arXiv preprint arXiv:1701.07732},
   year={2017}
 }
+
+% video reid
+@article{wang2016person,
+  title={Person re-identification by discriminative selection in video ranking},
+  author={Wang, Taiqing and Gong, Shaogang and Zhu, Xiatian and Wang, Shengjin},
+  journal={IEEE transactions on pattern analysis and machine intelligence},
+  volume={38},
+  number={12},
+  pages={2501--2514},
+  year={2016},
+  publisher={IEEE}
+}
+
+@article{zhang2017image,
+  title={Image-to-Video Person Re-Identification with Temporally Memorized Similarity Learning},
+  author={Zhang, Dongyu and Wu, Wenxi and Cheng, Hui and Zhang, Ruimao and Dong, Zhenjiang and Cai, Zhaoquan},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology},
+  year={2017},
+  publisher={IEEE}
+}
+
+@inproceedings{you2016top,
+  title={Top-push video-based person re-identification},
+  author={You, Jinjie and Wu, Ancong and Li, Xiang and Zheng, Wei-Shi},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={1345--1353},
+  year={2016}
+}
+
+@article{ma2017person,
+  title={Person re-identification by unsupervised video matching},
+  author={Ma, Xiaolong and Zhu, Xiatian and Gong, Shaogang and Xie, Xudong and Hu, Jianming and Lam, Kin-Man and Zhong, Yisheng},
+  journal={Pattern Recognition},
+  volume={65},
+  pages={197--210},
+  year={2017},
+  publisher={Elsevier}
+}
+
+@inproceedings{mclaughlin2016recurrent,
+  title={Recurrent convolutional network for video-based person re-identification},
+  author={McLaughlin, Niall and Martinez del Rincon, Jesus and Miller, Paul},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={1325--1334},
+  year={2016}
+}
+
+@article{zhao2017person,
+  title={Person re-identification by saliency learning},
+  author={Zhao, Rui and Oyang, Wanli and Wang, Xiaogang},
+  journal={IEEE transactions on pattern analysis and machine intelligence},
+  volume={39},
+  number={2},
+  pages={356--370},
+  year={2017},
+  publisher={IEEE}
+}
+
+@article{liu2017video,
+  title={Video-based Person Re-identification with Accumulative Motion Context},
+  author={Liu, Hao and Jie, Zequn and Jayashree, Karlekar and Qi, Meibin and Jiang, Jianguo and Yan, Shuicheng and Feng, Jiashi},
+  journal={arXiv preprint arXiv:1701.00193},
+  year={2017}
+}
+
+% Resnet
+@inproceedings{he2016deep,
+  title={Deep residual learning for image recognition},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={770--778},
+  year={2016}
+}
+
+
+%GoogleNet
+@inproceedings{szegedy2015going,
+  title={Going deeper with convolutions},
+  author={Szegedy, Christian and Liu, Wei and Jia, Yangqing and Sermanet, Pierre and Reed, Scott and Anguelov, Dragomir and Erhan, Dumitru and Vanhoucke, Vincent and Rabinovich, Andrew},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={1--9},
+  year={2015}
+}

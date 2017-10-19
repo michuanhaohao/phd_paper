@@ -1,7 +1,20 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
+
+\bibitem{Hecht2002Theory}
+Robert Hecht-Nielsen.
+\newblock Theory of the backpropagation neural network[C]//International Joint
+  Conference on Neural Networks.
+\newblock 2002:593--605 vol.1.
+
+\bibitem{Krizhevsky2012ImageNet}
+Alex Krizhevsky, Ilya Sutskever, Geoffrey~E. Hinton.
+\newblock Imagenet classification with deep convolutional neural
+  networks[C]//International Conference on Neural Information Processing
+  Systems.
+\newblock 2012:1097--1105.
 
 \end{thebibliography}
