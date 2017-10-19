@@ -1,7 +1,7 @@
 \BOOKMARK [0][-]{chapter*.1}{摘 \040要}{}% 1
 \BOOKMARK [0][-]{chapter*.2}{目 \040次}{}% 2
 \BOOKMARK [0][-]{chapter.1}{1研究意义与背景}{}% 3
-\BOOKMARK [0][-]{chapter.2}{2国内外研究现状}{}% 4
+\BOOKMARK [0][-]{chapter.2}{2研究现状与文献综述}{}% 4
 \BOOKMARK [1][-]{section.2.1}{2.1 行人重识别}{chapter.2}% 5
 \BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 相关数据集}{section.2.1}% 6
 \BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 准确度评估准则}{section.2.1}% 7
@@ -18,7 +18,7 @@
 \BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 最短路径距离}{section.4.1}% 18
 \BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 基于度量学习的互学习方法}{section.4.1}% 19
 \BOOKMARK [2][-]{subsection.4.1.4}{4.1.4 行人重识别的人类准确度评估}{section.4.1}% 20
-\BOOKMARK [2][-]{subsection.4.1.5}{4.1.5 与其他方法结果对比}{section.4.1}% 21
+\BOOKMARK [2][-]{subsection.4.1.5}{4.1.5 与现有方法结果对比}{section.4.1}% 21
 \BOOKMARK [1][-]{section.4.2}{4.2 成果作品}{chapter.4}% 22
 \BOOKMARK [1][-]{section.4.3}{4.3 研究现状}{chapter.4}% 23
-\BOOKMARK [0][-]{chapter*.27}{参考文献}{}% 24
+\BOOKMARK [0][-]{chapter*.29}{参考文献}{}% 24

@@ -1,0 +1,155 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdftex 2017.10.19)  19 OCT 2017 20:51
+entering extended mode
+**F:/doc/phd/2017/phd_paper/Proposal/thesisbib.bib
+(F:/doc/phd/2017/phd_paper/Proposal/thesisbib.bib
+Overfull \hbox (15.77353pt too wide) in paragraph at lines 11--17
+[]\tenrm @articleLi2014DeepReID, ti-tle=DeepReID: Deep Fil-ter Pair-ing Neu-ral
+ Net-work for Per-son Re-identification,|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm a
+.\tenrm r
+.\tenrm t
+.etc.
+
+
+Overfull \hbox (5.55038pt too wide) in paragraph at lines 19--25
+[]\tenrm @inproceedingszheng2015scalable, ti-tle=Scalable Per-son Re-identifica
+tion: A Bench-mark, au-thor=Zheng,|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm i
+.\tenrm n
+.\tenrm p
+.etc.
+
+
+Overfull \hbox (2.32808pt too wide) in paragraph at lines 27--34
+[]\tenrm @proceedingszheng2016mars, ti-tle=MARS: A Video Bench-mark for Large-S
+cale Per-son Re-identification,|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm p
+.\tenrm r
+.\tenrm o
+.etc.
+
+
+Overfull \hbox (15.07933pt too wide) in paragraph at lines 60--67
+\tenrm Nielsen, Robert, book-ti-tle=International Joint Con-fer-ence on Neu-ral
+ Net-works, pages=593-605 vol.1, year=2002,|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\tenrm N
+.\tenrm i
+.\tenrm e
+.\tenrm l
+.\tenrm s
+.etc.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--67
+
+
+\hbox(0.0+0.0)x469.75499
+.\glue(\rightskip) 0.0
+
+
+Overfull \hbox (6.52367pt too wide) in paragraph at lines 111--117
+[]\tenrm @articlechen2017beyond, ti-tle=Beyond triplet loss: a deep quadru-plet
+ net-work for per-son re-identification,|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm a
+.\tenrm r
+.\tenrm t
+.etc.
+
+[1{D:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]
+Overfull \hbox (9.16255pt too wide) in paragraph at lines 193--199
+[]\tenrm @articlexiao2016cross, ti-tle=Cross Do-main Knowl-edge Trans-fer for P
+er-son Re-identification, au-thor=Xiao,|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm a
+.\tenrm r
+.\tenrm t
+.etc.
+
+
+Overfull \hbox (1.24612pt too wide) in paragraph at lines 209--215
+\tenrm Liang and Huang, Yu-jia and Lu, Huchuan and Yang, Yi, jour-nal=arXiv pre
+print arXiv:1701.07732, year=2017|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\tenrm L
+.\tenrm i
+.\tenrm a
+.\tenrm n
+.\tenrm g
+.etc.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--215
+
+
+\hbox(0.0+0.0)x469.75499
+.\glue(\rightskip) 0.0
+
+[2]
+Overfull \hbox (13.55156pt too wide) in paragraph at lines 318--324
+[]\tenrm @articlezhang2017deep, ti-tle=Deep Mu-tual Learn-ing, au-thor=Zhang, Y
+ing and Xi-ang, Tao and Hospedales,|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm a
+.\tenrm r
+.\tenrm t
+.etc.
+
+
+Overfull \hbox (6.80154pt too wide) in paragraph at lines 370--387
+[]\tenrm @inproceedingsxiao2016learning, ti-tle=Learning deep fea-ture rep-re-s
+en-ta-tions with do-main guided dropout|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm i
+.\tenrm n
+.\tenrm p
+.etc.
+
+
+Overfull \hbox (0.74593pt too wide) in paragraph at lines 399--406
+[]\tenrm @inproceedingszhang2016learning, ti-tle=Learning a dis-crim-i-na-tive 
+null space for per-son re-identification,|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm i
+.\tenrm n
+.\tenrm p
+.etc.
+
+)
+*
+! Emergency stop.
+<*> ...c/phd/2017/phd_paper/Proposal/thesisbib.bib
+                                                  
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -1,0 +1,474 @@
+\chapter{现有成果与研究计划}
+
+\section{现有成果}
+
+本章节介绍了现在已经取得的一些科研成果，并且根据已有的成果初步制定了一下未来的研究计划。
+
+\subsection{边界样本挖掘损失}
+
+边界样本挖掘损失(Margin sample mining loss, MSML)是一种引入难样本采样思想的度量学习方法。
+度量学习的目标是学习一个函数$g(x): \mathbb{R}^F \rightarrow \mathbb{R}^D$，使得$\mathbb{R}^F$ 空间上语义相似度反映在$\mathbb{R}^D$空间的距离上。
+通常我们需要定义一个距离度量函数$D(x,y): \mathbb{R}^D \times \mathbb{R}^D \rightarrow \mathbb{R}$来表示嵌入空间(Embedding space)的距离，而这个距离也用来重识别行人图片。
+
+在国内外研究现状里面介绍的三元组损失、四元组损失和TriHard损失都是典型度量学习方法。
+给定一个三元组$\{a,p,n\}$，三元组损失表示为：
+\begin{equation}\label{Triplet}
+  L_t = (d_{a,p}-d_{a,n}+\alpha)_+
+\end{equation}
+三元组损失只考虑了正负样本对之间的相对距离。
+为了引入正负样本对之间的绝对距离，四元组损失加入一张负样本组成了四元组$\{a,p,n_1,n_2\}$，而四元组损失也定义为：
+\begin{equation}\label{Quadruplet}
+  L_q = (d_{a,p}-d_{a,n1}+\alpha)_+ + (d_{a,p}-d_{n1,n2}+\beta)_+
+\end{equation}
+假如我们忽视参数$\alpha$和$\beta$的影响，我们可以用一种更加通用的形式表示四元组损失:
+\begin{equation}\label{Quadruplet1}
+  L_{q^\prime} = (d_{a,p}-d_{m,n}+\alpha)_+
+\end{equation}
+其中$m$和$n$是一对负样本对，$m$和$a$既可以是一对正样本对也可以是一对负样本对。
+但是直接使用\eqref{Quadruplet1}并不能取得很好的结果，因为随着数据量的上升，可能四元组组合数量急剧上升。
+绝大部分样本对都是比较简单的，这限制了模型的性能。
+为了解决这个问题，我们采用了TriHard损失\cite{hermans2017defense}使用的难样本采样思想。
+TriHard损失是在一个batch里面计算三元组损失。
+对于batch中的每一张图片$a$，我们可以挑选一个最难的正样本和一个最难的负样本和$a$组成一个三元组。
+我们定义和$a$为相同ID的图片集为$A$，剩下不同ID的图片图片集为$B$，则TriHard损失表示为：
+\begin{equation}\label{TriHard}
+  L_{th} = \frac{1}{P \times K}\sum_{a \in batch}(\max_{p \in A} d_{a,p}-\min_{n \in B} d_{a,n}+\alpha)_+
+\end{equation}
+而TriHard损失同样只考虑了正负样本对之间的相对距离，而没有考虑它们之间的绝对距离。
+于是我们把这种难样本采样的思想引入到\eqref{Quadruplet1}，可以得到：
+\begin{equation}\label{TriHard}
+  L_{msml} = (\max_{a,p} d_{a,p}-\min_{m,n} d_{m,n}+\alpha)_+
+\end{equation}
+其中$a,p,m,n$均是batch中的图片，$a,p$是batch中最不像的正样本对，$m,n$是batch中最像的负样本对，$a,m$皆可以是正样本对也可以是负样本对。
+概括而言TriHard损失是针对batch中的每一张图片都挑选了一个三元组，而MSML损失只挑选出最难的一个正样本对和最难的一个负样本对计算损失。
+所以MSML是比TriHard更难的一种难样本采样，此外$\max_{a,p} d_{a,p}$可以看作是正样本对距离的上界，$\min_{m,n} d_{m,n}$可以看作是负样本对的下界。
+MSML是为了把正负样本对的边界给推开，因此命名为边界样本挖掘损失。
+MSML只用了两对样本对计算损失，看上去浪费了很多训练数据。
+但是这两对样本对是根据整个batch的结果挑选出来了，所以batch中的其他图片也间接影响了最终的损失。
+并且随着训练周期的增加，几乎所有的数据都会参与损失的计算。
+总的概括，MSML是同时兼顾相对距离和绝对距离并引入了难样本采样思想的度量学习方法。
+\begin{figure}[htb]
+\centering
+\subfigure[相对距离]{
+    \label{fig:exlossexampla}
+    \includegraphics[width=.4\linewidth]{./Pictures/exloss1.png}}
+\subfigure[绝对距离]{
+    \label{fig:exlossexamplb}
+    \includegraphics[width=.4\linewidth]{./Pictures/exloss2.png}}
+\caption{MSML的两种情况}
+\label{fig:exloss}
+\end{figure}
+
+为了对比MSML和传统度量学习方法的结果，我们在Market1501、MARS、CUHK-SYSU和CUHK03公开数据集上进行了对比实验。
+为了减少实验数量，我们用所有的数据训练一个模型，并在几个数据集上分别进行测试。
+其中CUHK03只测评了CMC，而剩下的数据集同时测评了CMC和mAP。
+为了证明算法有效性，我们利用了不同的base model多次进行实验，包括Resnet50\cite{he2016deep}、ShuffleNet\cite{zhang2017shufflenet}、Inception-v2\cite{szegedy2015going}、Resnet50-Xception 等主流网络。
+Resnet50-X是指用Xception单元\cite{chollet2016xception}替代了Resnet50中所有的$3 \times 3$卷积层，而一个Xception单元包括一个$3 \times 3$的深度分离卷积层(Depthwise separable/Channel-wise convolutional layer)和一个$1\times1$的卷积层。
+实验结果如表\ref{Table_MSML}所示，我们结合了度量学习损失和分类损失。
+Cls代表分类损失，Tri代表三元组损失，Quad代表四元组损失，TriHard代表TriHard损失。
+黑色粗体标注了最好结果，可以看出绝大多数的黑色粗体都出现在MSML的实验中。
+当然从实验结果也可以看出，不同的度量学习方法可能适用于不同的数据集，例如三元组损失在CUHK-SYSU上表现很好。
+具体实验结果可在表中查阅。
+\begin{table*}[tb]\footnotesize
+  \centering
+  	\caption{\label{Table_MSML}MSML和其他度量学习方法的结果对比}
+  \begin{tabular}{c|c|ccc|ccc|ccc|ccc}
+    \hline
+     				& 			& \multicolumn{3}{c|}{Market1501}	& \multicolumn{3}{c|}{MARS}	& \multicolumn{3}{c|}{CUHK-SYSU}	& \multicolumn{3}{c}{CUHK03}	\\
+    Base model		& Methods 	& mAP 	& r = 1	& r = 5		& mAP 	& r = 1	&r = 5	& mAP 	& r = 1	&r = 5		& r=1 	&r=5		& r = 10	\\
+    \hline
+    \hline
+      				& Cls 		& 38.4	&64.7	&83.1		&43.6 	&61.9	&78.3	& 76.7	&80.0	&90.7		& 54.3	&74.3	&80.0	\\
+     				& Tri 		& 60.3	&79.6	&93.1		& 59.2	&74.0	&87.0	& \textbf{88.6}	&\textbf{90.2}	&\textbf{96.6}		& 78.7 	&94.8	&97.9	\\
+    ShuffleNet		& Quad	 	& 57.9	&77.9	&91.9		& 58.1	&73.3	&86.8	& 87.2	&89.2	&96.5		& 78.6	&94.5	&97.3	\\
+    				& TriHard	& 65.2	&82.3	&93.6		& 69.7	&81.0	&91.7	& 84.6	&86.5	&95.1		& 81.3   	&95.4 	&97.8  	\\
+    				& MSML	 	&\textbf{69.7}& \textbf{85.3}& \textbf{94.4}	& \textbf{72.0}& \textbf{82.6} & \textbf{93.5}& 87.9	& 90.0	&96.3	& \textbf{85.7}	&\textbf{97.2}	&\textbf{98.8}	\\
+   \hline
+     				& Cls 		& 41.3	&65.8	&83.5		& 43.3	&59.3	&75.2	& 70.7	&75.0	&88.1		& 51.2	&72.6	&81.8	\\
+     				& Tri 		& 54.8	&75.9	&89.6		& 62.1	&76.1	&89.6	& 82.6	&85.1	&94.1		& 73.0	&92.0	&96.0	\\
+    Resnet50		& Quad	 	& 61.1	&80.0	&91.8		& 62.1	&74.9	&88.9	&  85.6	& 87.8	& 95.7& 79.1	&95.3	&97.9	\\
+    				& TriHard	& 68.0	&83.8	&93.1	&71.3&82.5&92.1& 82.4	&85.1	&94.7		&  79.5	&95.0	& 98.0	\\
+    				& MSML	 	&\textbf{69.6}& \textbf{85.2}& \textbf{93.7}	& \textbf{72.0}& \textbf{83.0} & \textbf{92.6}& \textbf{87.2}	& \textbf{89.3}	&\textbf{96.4}	& \textbf{84.0}	&\textbf{96.7}	&\textbf{98.2}	\\
+   \hline
+        			& Cls 		& 40.7	&66.3	&84.1		& 45.0	&62.6	&77.9	& 74.2	&78.2	&89.7		& 50.5	&68.8	&77.4	\\
+    		 		& Tri	 	& 57.9	&78.3	&91.8		& 55.5	&70.7	&85.2	& 87.7	&89.7	&96.6		& 76.9	&93.7	&97.2	\\
+    Inception-v2 	& Quad	 	& 66.2	&83.9	&93.6		& 65.3	&77.8	&89.9	& 88.3	&90.2	&96.6		& 81.9	&96.1	&98.3	\\
+    			    & TriHard	& 73.2	&86.8	&\textbf{95.4}	& 74.3	&84.1	&93.5	& 83.5	&86.1	&95.2		& 85.5	&97.2	&98.7	\\    		 		
+    				& MSML	 	& \textbf{73.4}&\textbf{87.7}&95.2	& \textbf{74.6}&\textbf{84.2}&\textbf{95.1}& \textbf{88.4}&\textbf{90.4}&\textbf{96.8}	& \textbf{86.3}	&\textbf{97.5}&\textbf{98.7}\\
+   \hline
+        			& Cls 		& 46.5	&70.8	&87.0		& 48.0	&63.8 	&80.2 	& 74.2	&78.2	&89.7		& 57.2	&77.7	&85.6	\\
+    		 		& Tri	 	& 69.2	&86.2	&94.7		& 68.2	&79.5	&91.7	& \textbf{89.6}	&\textbf{91.4}&97.0		& 82.0	&96.3	&98.4	\\
+    Resnet50-X 		& Quad	 	& 64.8	&83.3	&93.8		& 63.6	&77.7	&89.4	& 87.3	&89.6	&96.2		& 80.7	&94.9	&97.9	\\
+    			    & TriHard	& 71.6	&86.9	&94.7		& 69.9	&82.5	&92.4	& 86.4 	&88.8	&96.3		& 82.8	&96.1	&98.1	\\    		 		
+    				& MSML	 	&\textbf{76.7}&\textbf{88.9}&\textbf{95.6}& \textbf{72.0}&\textbf{83.4}&\textbf{93.3}& \textbf{89.6}&90.9&\textbf{97.4}	& \textbf{87.5}	&\textbf{97.7}&\textbf{98.9}\\
+%  \hline
+%        				& Cls 		& 43.5	&69.3	&86.2		& 45.0	&61.8	&78.0	& 78.6	&82.7	&92.4		& 58.4	&77.6	&85.0	\\
+%    		 		& Tri			& 58.5	&79.1	&92.0		& 54.1	&69.5	&85.7	& 89.0	&90.9	&96.8		& 76.3	&93.4	&97.3	\\
+%    WaterfallNet 		& Quad	 	& 64.5	&82.8	&93.4		& 64.8	&76.7	&90.5	& 90.6	&92.4	&97.5		& 82.0	&95.3	&98.3	\\
+%         		  	& TriHard	 	& 69.9	&86.2	&94.5		&72.5	&83.2	&93.0	& 87.2	&89.1	&96.5		& 85.1	&96.7	&98.5	\\
+%    				& MSML	 	&\textbf{75.0}&\color{red}{\textbf{89.0}}&\color{red}{\textbf{96.0}}	&\color{red}{\textbf{75.9}}	&\color{red}{\textbf{85.3}}&\color{red}{\textbf{94.5}}
+%				& \color{red}{\textbf{91.1}}	&\color{red}{\textbf{92.7}}	&\color{red}{\textbf{97.8}} & \color{red}{\textbf{88.5}}&\color{red}{\textbf{98.0}}&\color{red}{\textbf{99.1}}	\\
+  \hline
+  \end{tabular}
+\end{table*}
+
+为了进一步分析MSML考虑正负样本对绝对距离带来的性能优势，我们挑选几组正负样本对并计算了它们之间的距离。
+最后的结果显示在图\ref{fig:dis}中，其中蓝色的框表示正样本对，红色的框表示负样本对。
+框下面的黑色数字表示两幅图片在特征空间中欧式距离。
+如图\ref{fig:trihard}，TriHard损失由于不考虑正负样本对之间的绝对距离，所以理论上存在正样本对的距离大于负样本对的情况，实际的结果也验证了这一点。
+而MSML考虑了绝对距离，并且MSML的目的是为了推开正样本对和负样本对的边界，如图\ref{fig:msml}所示，正样本对和负样本对在特征空间拥有非常清晰的分界线。
+而MSML这种分界面清晰的特性对于一些应用是非常重要的，例如跨神摄像头的多目标跟踪问题等。
+\begin{figure}[htb]
+\centering
+\subfigure[TriHard]{
+    \label{fig:trihard}
+    \includegraphics[width=.4\linewidth]{./Pictures/Trihard.png}}
+\subfigure[MSML]{
+    \label{fig:msml}
+    \includegraphics[width=.4\linewidth]{./Pictures/MSML.png}}
+\caption{TriHard损失和MSML正负样本对距离分布示意图}
+\label{fig:dis}
+\end{figure}
+\subsection{最短路径距离}
+
+最短路径距离(Shortest path distance, SP distance)是一种适用于自动对齐模型(Auto-alignment model, AAM)的距离度量方法。
+
+在大多数应用中，这个距离度量选择最简单的欧式距离，但是欧式距离不考虑局部空间信息。
+如果只考虑全局信息，姿态、角度等变化会严重影响识别准确度。
+为了弥补欧式距离忽略局部空间信息的缺点，很多方法选择手动提取局部特征。
+基于局部特征的方法已经在前面章节介绍过了，所以这里不再赘述。
+在笔者所知的范围内，目前所有的局部特征对齐方法都需要一个额外的骨架关键点或者姿态估计的模型。
+而训练一个可以达到实用程度的模型需要收集足够多的训练数据，这个代价是非常大的。
+
+为了解决以上问题，本文提出基于SP距离的自动对齐模型(Auto-Alignment Model, AAM)在不需要额外信息的情况下来自动对齐局部特征。
+对于每一张图片我们使用CNN来提取最后一层的特征图(Feature map)，传统方法通常使用全局平均池化(Global average pooling, GAP)来得到全局特征。
+使用GAP就使得最后得到的特征失去了全部的空间信息，为此我们选择水平平均池化(Horizontal average pooling, HAP)。
+HAP先将特征图在垂直方向分成相等的若干份，然后在每一行上取平均值来作为当前切片的特征值。
+经过HAP，我们可以得到一个$H \times C$的特征，其中$H$表示特征图被分割成$H$均分，$C$表示特征图的通道数。
+之所以选择垂直方向的切分是因为这更符合我们对人体认知的感官直觉。
+据我们所知，人体结构是非常固定的，从上到下分别是头、胸脯、腰、大腿、小腿等等。
+在监控图片中，通常不存在水平翻转的图片。
+也就是说，如果按照从上往下看的顺序头部是最先出现的部位。
+在真实的场景下，因为遮挡和相机视角的变化，其中一张图片的头部也许不能对齐另外一张图片的头部。
+此外，模型提取的行人边框也有可能不准确。
+所以，我们提出利用最短路径理论来自动对齐两张图片中相同的行人部位。
+
+给定两张图片的局部特征$F = \{f_1, \cdots, f_H\}$ and $G = \{g_1, \cdots, g_H\}$，首先我们计算每个元素欧式距离，然后用以下公式归一化到$[0,1)$：
+\begin{equation}
+d_{i,j} = \frac{e^{||f_i-g_j||_2}-1}{e^{||f_i-g_j||_2}+1} \quad i,j \in [1,2,3...,H]
+\label{PM}
+\end{equation}
+其中$d_{i,j}$表示图片1第$i$部分和图片2第$j$部分的归一化后的距离，之后我们便可以得到一个$H \times H$的距离矩阵$D$。
+考虑到人体结构是一个连续不变结构，即各部分的相关顺序是不变的，所以我们从上到下比较各部分的相似度。
+两张图片的SP距离可以定义为矩阵从$(1,1)$到$(H,H)$的最短路径，这个可以通过动态规划来求解：
+\begin{equation}\label{ShortestPath}
+S_{i,j}=\begin{cases}
+d_{i,j} & i=1,  j=1 \\
+S_{i-1,j}+d_{i,j} & i \ne 1,j=1 \\
+S_{i,j-1}+d_{i,j} & i=1,j \ne 1 \\
+min(S_{i-1,j},S_{i,j-1})+d_{i,j} & i \ne 1, j \ne 1
+\end{cases}
+\end{equation}
+其中$S_{i,j}$表示当前从$(1,1)$到$(i,j)$的最短路径，而$S_{H,H}$是两张图片的最终最短路径距离。
+由于并不存在复杂的计算子，所以该方法的反向传播可以通过大部分框架都自带的自动求导实现。
+\begin{figure}[htb]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=0.7\paperwidth]{./Pictures/sp.png}
+  \caption{基于SP距离的AAM模型算法示例}\label{sp}
+\end{figure}
+
+为了更加直观的解释最短路径距离，我们给出了一个示例。
+如图\ref{sp}所示，其中黑色实线连接了左右两幅图像中最相似的两部分。
+在本论文中我们采用残差网络(Resnet)\cite{he2016deep}作为基础模型(Base model)，所以最后的feature map的尺寸为$7 \times 7$，因此图片被分割成了7部分。
+图片中的数字表示区域ID，右边的黑色箭头是最后求解出来的最短路径。
+首先，我们连接$f_1$和$g_1$，因为它们是路径的开端。
+之后我们比较$d_{1,2}$和$d_{2,1}$发现$d_{2,1}>d_{1,2}$，所以我们认为图片A的第1区域和图片B的第2区域更加相似。
+所以我们连接图片A的第1区域和图片B的第2区域，在右边的图片反映为从$(1,1)$走到$(1,2)$。
+之后我们比较$d_{2,2}$和$d_{1,3}$，因为$d_{2,2}>d_{1,3}$，所以连接图片A的第1区域和图片B的第3区域，在右边的图片反映为从$(1,2)$走到$(1,3)$。
+按照这种规律寻找下去，最终的最短路径如图\ref{sp}右半所示。
+
+我们的SP距离可以应用于各种度量学习损失，在本论文中我们使用前文介绍的TriHard损失\cite{hermans2017defense}。
+对于每一个训练batch包含$N = P \times K$张图片，即$P$个ID的行人，每个行人随机挑选$K$ 张不同的图片。
+给定$I_1$和$I_2$两张图片，我们定义$S_{local}(I_1,I_2)$为它们的SP距离，定义$D_{global}(I_1,I_2)$为它们的全局L2距离。
+如图\ref{AAM}，我们结合了L2 TriHard损失和SP TriHard损失，最终损失函数$L_t$为：
+\begin{equation}\label{trplosshard}
+\begin{aligned}
+L_{t} = \frac{1}{N}\sum_{a \in batch}  \Bigg[ \Big (  S_{local}(a,p) - S_{local}&(a,n)+ \alpha \Big)_{+} + \Big ( D_{global}(a,p) -D_{global}(a,n)+ \beta \Big)_{+} \Bigg]\\
+&p = \arg \max_{p \in A} D_{global}(a,p) \\
+&n = \arg \min_{n \in B} D_{global}(a,n) \\
+ \end{aligned}
+\end{equation}
+
+值得说明的是，我们选择用L2距离来进行难样本采样(Hard sample mining, HSM)，HSM的结果用于同时计算L2 TriHard损失和SP TriHard损失。
+最终采用的网络结构示意图如图\ref{AAM}所示，网络每个训练batch会输入$N$张图片。
+每张图片经过CNN的几个卷积层得到feature maps，feature maps之后分为两个分支。
+其中一个分支和传统的方法一样经过GAP得到全局L2特征，并计算得到一个$N \times N$的L2距离矩阵，该矩阵用于进行HSM。
+另外一个分支用HAP得到局部特征并采用一个卷积层CONV降低特征的通道数，最终得到的feature maps用于计算SP距离矩阵。
+最终的损失函数融合了两个分支的损失，共享HSM结果是为了保证两个分支计算损失时用的是相同的采样图片。
+之所以选择L2距离来进行HSM主要基于两点考虑。
+一个是SP距离计算比L2距离计算耗时，在实现上可以只计算HSM样本的SP距离（虽然本文实现上并非如此）。
+另一个是我们发现利用SP进行HSM并没有显著地带来性能提升。
+\begin{figure}[htb]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=0.75\paperwidth]{./Pictures/AAM.png}
+  \caption{基于TriHard损失的AAM网络结构示意图}\label{AAM}
+\end{figure}
+
+在本论文中，我们采用Resnet50和Resnet50-Xception(Resnet50-X)分别进行了对别实验。
+对于同一个base model，我们采用传统的L2距离和本文提出的结合L2和SP距离的AAM模型进行了对比。
+我们采用了Market1501、MARS、CUHK-SYSU和CUHK03四个公开数据集来训练一个模型，并分别在这四个数据集上进行了测试。
+除了CUHK03数据集只计算了CMC以外，另外三个数据集都评测了CMC和mAP。
+结果表明，AAM模型能够显著地提高行人重识别的准确度，Resnet50和Resnet50-X都得到了类似的结果，具体数值可以看表\ref{Table_sp}。
+\renewcommand{\multirowsetup}{\centering}
+\begin{table*}[htb]\footnotesize
+  \centering
+  	\caption{\label{Table_sp}SP距离和L2距离度量结果对比}
+  \begin{tabular}{c|c|ccc|ccc|ccc|ccc}
+    \hline
+     				& 			& \multicolumn{3}{c|}{Market1501}			& \multicolumn{3}{c|}{MARS}	& \multicolumn{3}{c|}{CUHK-SYSU}	& \multicolumn{3}{c}{CUHK03}	\\
+    Base model		& Methods 	& mAP 	& r = 1	& r = 5				& mAP 	& r = 1	&r = 5	& mAP 	& r = 1	&r = 5		& r=1 	&r=5		& r = 10	\\
+    \hline
+    \hline
+     \multirow{2}{1.8cm}{Resnet50}	& TriHard+L2	 & 71.2	&86.5	&94.2	&72.1	&83.2	&92.5	& 86.0	&88.4	&95.7		&  82.7	&95.7	& 98.1	\\     							
+    				& TriHard+SP	&\textbf{79.0}& \textbf{91.3}& \textbf{95.8}	&\textbf{78.8}& \textbf{86.7} & \textbf{94.7}& \textbf{91.0}	& \textbf{93.1}	&\textbf{97.4}	& \textbf{88.8}	&\textbf{97.4}	&\textbf{98.6}	\\
+   \hline
+    \multirow{2}{1.8cm}{Resnet50-X}  	& TriHard+L2	 & 71.6	&86.9	&94.7	& 69.9	&82.5	&92.4	& 86.4 	&88.8	&96.3		& 82.8	&96.1	&98.1	\\      							
+    				& TriHard+SP	&\textbf{79.4}& \textbf{91.0}& \textbf{96.3}	&\textbf{78.3}& \textbf{86.1} & \textbf{95.0}& \textbf{91.5}	& \textbf{93.4}	&\textbf{97.6}	& \textbf{88.2}	&\textbf{97.0}	&\textbf{98.5}	\\  \hline
+  \end{tabular}
+\end{table*}
+
+\subsection{基于度量学习的互学习方法}
+
+本小节介绍了一种基于度量学习的互学习方法(Mutual learning)。
+深度互学习(Deep mutual learning, DML)是论文\cite{zhang2017deep}首次提出，是指利用两个或者多个网络同时训练互相学习，来提升单个网络的性能。
+该论文利用KL散度(Kullback-Leibler divergence)衡量两个分类器的性能差异。
+如图\ref{dml},假设$p_1$和$p_2$是两个分类器的预测，定义$p_1$到$p_2$的KL距离为：
+\begin{equation}\label{KL}
+  D_{KL}(p_2||p_1) = \sum^N_{i=1} \sum^M_{m=1}p^m_2(x_i) \log{ \frac{p^m_2(x_i)}{p^m_1(x_i)}}
+\end{equation}
+DML目标是为了使两个分类器的预测性能足够接近，即KL距离足够小，于是在两个分类器的损失函数上加上各自的KL距离。
+最终两个分类器的损失函数写作：
+\begin{equation}\label{dml}
+\begin{aligned}
+  L_{\theta_1} & = L_{C_1} + D_{KL}(p_2||p_1) \\
+  L_{\theta_2} & = L_{C_2} + D_{KL}(p_1||p_2)
+ \end{aligned}
+\end{equation}
+其中$L_{C_1}$和$L_{C_2}$分别是两个网络的分类损失。
+\begin{figure}[htb]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=0.65\paperwidth]{./Pictures/DML.png}
+  \caption{基于分类损失的深度互学习结构}\label{dml}
+\end{figure}
+
+DML是一个通用的基于分类损失的互学习模型。
+在行人ReID领域，DarkRank\cite{chen2017darkrank}首次采样这种思想。
+DarkRank的核心思想是，首先训练一个性能非常好的大网络，这个网络成为Teacher网络。
+之后用这个Teacher网络和一个小网络一起进行互学习，这个小网络称为Student网络。
+通过这种互学习方法，Student网络能够从Teacher网络身上学习到知识，最终达到和Teacher网络差不多的性能。
+于是，小网络Student网络可以达到它自学无法达到的性能。
+但是由于KL散度只适合衡量两个分类器的性能差异，所以不适合应用到度量学习相关的方法中。
+然而在行人重识别以及人脸识别等目前主流应用中，度量学习是比表征学习更加有效的方法。
+因此，我们提出一种基于度量学习的互学习方法(Mutual learning based on metric learning)。
+
+首先，给定一个包含$N$张图片的batch，每个网络都提取它们的特征，之后我们可以计算任意两张图片之间的距离并得到一个$N \times N$的batch距离矩阵(batch distance matrix, BDM)。
+假设我们有网络$\theta_1$和$\theta_2$，它们的BDM分别是$M^{\theta_1}$和$M^{\theta_2}$，则损失函数可以简单地定义为:
+\begin{equation}\label{LM1}
+L_{M_1} = \frac{1}{N^2}\sum_i^N \sum_j^N (M^{\theta_1}_{ij}-M^{\theta_2}_{ij})^2
+\end{equation}
+之后我们可以计算$L_{M_1}$关于$M^{\theta_1}_{ij}$的一阶偏导：
+\begin{equation}\label{LM11}
+\frac{\partial L_{M_1} }{\partial M^{\theta_1}_{ij}} = \frac{2}{N^2}(M^{\theta_1}_{ij}-M^{\theta_2}_{ij})
+\end{equation}
+考虑到一些优化算法用到了二阶偏导，于是我们计算它的二阶偏导：
+\begin{equation}\label{LM12}
+\frac{\partial^2 L_{M_1} }{\partial M^{\theta_1}_{ij}\partial M^{\theta_2}_{ij}} = -\frac{2}{N^2}
+\end{equation}
+从中可以看出，在二阶偏导上网络$\theta_1$和网络$\theta_2$是不正交的。
+收到论文\cite{zhang2017deep}，我们希望两个网络更新参数的时候竟可能是独立的。
+于是我们将公示\ref{LM1}简单地扩展为：
+\begin{equation}\label{LM2}
+L_{M_2} = \frac{1}{N^2}\sum_i^N \sum_j^N \Big( [ZG(M^{\theta_1}_{ij})-M^{\theta_2}_{ij}]^2 + [M^{\theta_1}_{ij}-ZG(M^{\theta_2}_{ij})]^2 \Big)
+\end{equation}
+其中$ZG(\cdot)$代表零梯度函数(Zero gradient function)。
+当计算梯度时，零梯度函数把变量当常数对待。
+类似的我们计算一阶偏导和二阶偏导：
+\begin{equation}\label{LM21}
+\frac{\partial L_{M_2} }{\partial M^{\theta_1}_{ij}} = \frac{2}{N^2}(M^{\theta_1}_{ij}-ZG(M^{\theta_2}_{ij}))=\frac{\partial L_{M_1} }{\partial M^{\theta_1}_{ij}}
+\end{equation}
+\begin{equation}\label{LM22}
+\frac{\partial^2 L_{M_2} }{\partial M^{\theta_1}_{ij}\partial M^{\theta_2}_{ij}} = 0
+\end{equation}
+一阶导数依然保持不变，但是二阶偏导等于0，也就是说在二阶偏导上两个网络是完全正交的。
+当我们优化$L_{M_2}$时，子网络们可以互相从对方学习知识。
+我们让两个网络独立地从对方学习知识比他们"一起作弊"要好。
+DarkRank是让一个Student网络从Teacher网络里学习知识，也就是说Student网络的性能上界就是Teacher网络在，这也要求Teacher网络需要有很好的性能。
+和DarkRank不同，我们的方法是让几个网络互相学习，并没有限制网络能够达到的性能上界，也不需要一个性能比较好的网络来带领其他网络。
+最终，我们的互学习方法结构如图\ref{mutual}所示，整个损失函数包括分类损失、基于SP的度量损失
+$L_{t}$、基于分类的互学习KL损失和本文提出的基于度量学习的互学习损失$L_{M_2}$。
+\begin{figure}[htb]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=0.65\paperwidth]{./Pictures/mutual.png}
+  \caption{基于度量学习的互学习方法结构示意图}\label{mutual}
+\end{figure}
+
+在本论文中，我们使用Market1501、MARS、CUHK-SYSU和CUHK03公开数据集进行了实验，实验采取Resnet50和Resnet50-X作为互学习的两个网络。
+为了证明有效性，我们使用L2距离和SP距离分别进行了对比实验，最终实验结果如表\ref{Table:mutual}所示。
+其中字符"/"代表没有使用互学习，分别单独训练的基准实验。
+KL为论文\cite{zhang2017deep}提出的基于分类损失的互学习方法，而ours是指本文提出的互学习方法。
+Ensemble是指我们连接了两个模型提取的特征来提升性能。
+对于L2和SP距离，实验表明我们的方法比只用KL损失的互学习方法和不用互学习方法要取得更好的结果。
+并且实验在另一个侧面进一步证明了SP距离比L2距离能够取得更好的结果。
+
+\renewcommand{\multirowsetup}{\centering}
+\begin{table*}[t]\footnotesize
+  \centering
+      \caption{\label{mutual}互学习实验结果对比}
+  \begin{tabular}{ c|c|ccc|ccc|ccc|ccc}
+\hline
+    						&	 		& \multicolumn{3}{c|}{Market1501}	& \multicolumn{3}{c|}{MARS}	& \multicolumn{3}{c|}{CUHK-SYSU}	& \multicolumn{3}{c}{CUHK03}	\\
+  Loss					&Base model		& mAP 	& r = 1	&r=5			& mAP 	& r = 1	&r=5		& mAP 	& r = 1	&r=5			& r = 1	&r = 5    &r = 10\\
+ 	\hline
+	\hline
+ \multirow{2}{1.8cm}{L2+/} 	&Resnet50	& 71.2	&86.5	&94.2		& 72.1	&83.2	&92.5	& 86.0	&88.4	&95.7		&  82.7	&95.7	& 98.1	\\
+   						&Resnet50-X	& 71.6	&86.9	&94.7		& 69.9	&82.5	&92.4	& 86.4 	&88.8	&96.3		& 82.8	&96.1	&98.1    	\\
+   \hline
+ \multirow{2}{1.8cm}{L2+KL} 	&Resnet50	& 77.3 	& 90.5	& 96.5		& 74.2 	& 84.9	& 94.8	& 89.6 	& 91.7	& 96.8		& 86.5 	& 96.7	& 98.4	\\
+   						&Resnet50-X	& 77.1 	& 90.6	& 96.4		& 74.4 	& 84.9	& 93.7	& 89.6 	& 92.1	& 96.8		& 86.8 	& 96.7	& 98.2    	\\
+   \hline
+ \multirow{2}{1.8cm}{L2+Ours}	&Resnet50	& 77.6 	& 90.9	&96.6		& 75.0	& 85.1	& 94.8	& 91.3 	& 93.4	& 98.5		& 87.5	&97.5 	&98.8\\
+ 	  					&Resnet50-X	& 78.3 	& 90.9	&96.6		& 75.8 	& 85.7	& 94.9	& 91.7 	& 93.7	& 97.7		& 88.2	&97.6 	&98.8\\
+ 	\hline
+	\hline
+ \multirow{2}{1.8cm}{SP+/} 	&Resnet50	&79.0	& 91.3	& 95.8		&78.8	& 86.7 	& 94.7	& 91.0	& 93.1	&97.4		& 88.8	&97.4	&98.6	\\
+   						&Resnet50-X	&79.4	& 91.0	& 96.3		&78.3	& 86.1	& 95.0	& 91.5	& 93.4	&97.6		& 88.2	&97.0	&98.5    	\\
+   \hline
+ \multirow{2}{1.8cm}{SP+KL} 	&Resnet50	& 79.3 	& 91.1	& 97.1		& 75.3 	& 84.1	& 93.6	& 92.1 	& 94.1	& 97.9		& 90.6 	& 98.4	& 99.2	\\
+   						&Resnet50-X	& 79.1 	& 91.0	& 96.3		& 76.3 	& 85.5	& 94.8	& 91.5 	& 93.3	& 97.5		& 88.4 	& 97.8	& 99.0    	\\
+   \hline
+ \multirow{3}{1.8cm}{SP+Ours}	&Resnet50	& 82.2 	& 92.4	&97.1		& 79.1	& 86.8	& 95.2	& 93.7 	& 95.3	& 98.5		& 91.9	&98.7 	&99.4\\
+ 	  					&Resnet50-X	& 82.3 	& 92.6	&97.2		& 78.5 	& 87.3	& 95.3	& 93.2 	& 94.6	& 98.4		& 91.1	&98.6 	&99.3\\
+						&Ensemble	& 83.9	& 93.3	&97.3		& 80.2	& 87.7 	& 95.6	& 93.7	& 95.2	& 98.5		& 92.5	&98.7	&99.4\\
+   \hline
+  \end{tabular}
+  \label{Table:mutual}
+\end{table*}
+
+\subsection{行人重识别的人类准确度评估}
+
+为了测试我们的行人重识别方法的性能，我们设计了一个人类准确度评估系统(Human performance evaluation system)来测评人类在行人重识别问题上的表现。
+该系统使用了前文介绍的Market1501、CUHK03和MARS数据集。
+
+首先，我们先用我们训练好的模型提取所有数据集测试集中的图像特征，之后计算query集中每一张图片和gallery集中每一张图片的欧拉距离。
+对于query中的每一张probe图片，我们挑选一张距离最近（最像/最简单）的正样本和九张距离最近（最像/最难的）的负样本。
+为了方便测试，我们开发了一个评估系统，系统截图如图\ref{hp}所示。
+待测者要从这10张图片中选择出哪张和probe图片是相同的ID。
+
+\begin{figure}[htb]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=0.75\paperwidth]{./Pictures/hp.png}
+  \caption{行人重识别的人类准确度评估界面}\label{hp}
+\end{figure}
+
+总共有10位志愿者参加了我们的测试，其中包括我们课题的研究人员、专业的标注全职员工和一般的普通市民。
+根据我们系统的设计原理，我们只能统计CMC曲而不能计算mAP准确度。
+最终为了我们统计10位测试者的在Market1501、CUHK03和MARS三个数据集上rank-1准确度，并且选择了其中成绩最好的结果作为人类准确度(Human performance)。
+结果如表所示\ref{Table:HP}，CUHK03因为gallery集数据量比较少，所以最后结果最高达到了95.7$\%$的rank-1准确度。
+在Market1501和MARS数据集上，人类分别取得了91.8$\%$和90.2$\%$的rank-1准确度。
+
+\subsection{与现有方法结果对比}
+在本小节我们将会对比我们的方法与一些现有方法的结果。
+此外，我们还进行了一场行人重识别的人机大战，对人类准确度和计算机的准确度。
+结果表明，我们的方法在所使用的Market1501、MARS、CUHK-SYSU以及CUHK03这四个数据集上，都大大超过了现有方法的准确度，并且首次超越了人类准确度。
+
+\begin{figure}
+  \begin{minipage}[t]{0.5\linewidth} % 如果一行放2个图，用0.5，如果3个图，用0.33
+    \centering
+    \caption{ Market1501结果对比 }
+      \begin{tabular}{c|cc}
+        	\hline
+    	Methods  							& mAP	& r=1			\\
+    	\hline
+    	\hline
+    	Temporal \cite{martinel2016temporal}	&22.3	&47.9	\\
+    	Learning \cite{zhang2016learning}		&35.7	&61.0	\\
+    	Gated \cite{varior2016gated}			&39.6	&65.9		\\
+    	Person \cite{chen2017person}			&45.5	&71.8		\\
+    	Re-ranking \cite{zhong2017re}			&63.6	&77.1	\\
+    	Pose \cite{zheng2017pose}			&56.0	&79.3		\\
+    	Scalable \cite{bai2017scalable}			&68.8	&82.2	\\
+    	Improving \cite{lin2017improving}		&64.7	&84.3	\\
+    	In \cite{hermans2017defense}			&69.1	&84.9		\\
+    	In (RK)\cite{hermans2017defense}		&\textbf{81.1}	&86.7	\\
+    	Spindle\cite{zhao2017spindle}			&-		&76.9	\\
+    	Deep\cite{zhang2017deep}$^*$		&68.8	&87.7	\\
+    	DarkRank\cite{chen2017darkrank}$^*$	&74.3	&\textbf{89.8}	\\
+    	\hline
+    	Human Performance 				& - 		& \color{blue}{\textbf{91.8}}\\
+       	\hline
+    	Our-single							& 82.3 	& 92.6	\\
+    	Our-single (RK)						&\color{green}{\textbf{91.2}}	&\color{green}{\textbf{94.0}}\\
+    	Our-ensemble 						&83.9	&93.3	\\
+    	Our-ensemble (RK)					&\color{red}\textbf{92.0}&\color{red}\textbf{94.7}\\
+      \hline
+      \end{tabular}
+      \label{market1501}
+  \end{minipage}%
+  \begin{minipage}[t]{0.5\linewidth}
+      \centering
+      \caption{ CUHK03结果对比 }
+      \begin{tabular}{c|ccc}
+        	\hline
+    	Methods  							& r=1	& r=5	&r=10		\\
+    	\hline
+    	\hline
+    	Person \cite{liao2015person} 			& 44.6	& -		&-\\
+    	Learning \cite{zhang2016learning}		& 62.6	&90.0 	&94.8 \\
+    	Gated \cite{varior2016gated} 			& 61.8	& -		&-\\
+    	A \cite{varior2016a} 					& 57.3  	& 80.1	&88.3\\
+    	Re-ranking \cite{zhong2017re}			& 64.0	& -		&-\\
+    	In \cite{hermans2017defense} 			& 75.5	&95.2	&99.2\\
+    	Joint \cite{xiao2017joint}				& 77.5	& -		&-\\
+    	Deep \cite{geng2016deep}$^*$			& 84.1	& -		&-\\
+    	Looking \cite{barbosa2017looking}$^*$	& 72.4	&95.2	&95.8\\
+    	Unlabeled \cite{zheng2017unlabeled}$^*$& 84.6 	& 97.6	&98.9\\
+    	A \cite{zheng2016discriminatively}$^*$	& 83.4	& 97.1	&98.7\\
+    	Spindle\cite{zhao2017spindle}			& 88.5	&97.8	&98.6\\
+    	DarkRank\cite{chen2017darkrank}$^*$	&\textbf{89.7}	&\textbf{98.4}	&\textbf{99.2}\\
+      	\hline
+    	Human Performance 				& \color{blue}{\textbf{95.7}}\\
+    	\hline
+    	Our-single							& 91.9	&98.7 	&99.4	\\
+    	Our-single (RK)						&\color{green}{\textbf{96.1}}	&\color{green}{\textbf{99.5}} &\color{green}{\textbf{99.6}}\\
+    	Our-ensemble 						&92.5	&98.7 	&99.4	\\
+    	Our-ensemble (RK)					&\color{red}\textbf{97.0}&\color{red}\textbf{99.6} &\color{red}\textbf{99.7}\\
+      \hline
+      \end{tabular}
+      \label{cuhk-sysu}
+  \end{minipage}
+\end{figure}   
+
+\section{成果作品}
+
+本文作者已经撰写学术论文三篇和发明专利两篇。
+其中学术论文有一篇一作期刊论文已经录用，一篇一作论文在投计算机视觉顶会CVPR2018，一篇二作论文arxiv已经挂出待投。
+发明专利其中一篇处于审核状态，一篇处于编修状态。
+
+\begin{enumerate}[(1)]
+\item H Luo, Z Luo, C Xu, W Jiang, et al. Optical plasma boundary reconstruction based on least square for EAST Tokamak[J]. Frontiers of Information Technology \& Electronic Engineering, In Press.
+
+\item H Luo, X Fan, C Zhang, et al. AAM: A Deep Learning Method for Person Re-Identification Outperforming Human Performance. Contribute to CVPR, 2018.
+
+\item Q. Xiao, H. Luo, and C. Zhang. Margin Sample Mining Loss: A Deep Learning Based Method for Person Re-identification. \emph{arXiv preprint arXiv:1710.00478}, 2017.
+
+\item 罗浩, 张弛. 一种联合五元组和分类损失的行人重识别方法。
+
+\item 罗浩, 张弛. 一种基于边界样本挖掘的行人重识别方法。
+\end{enumerate}
+
+\section{研究现状}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.3)  19 OCT 2017 20:16
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.3)  19 OCT 2017 21:14
 entering extended mode
 **F:/doc/phd/2017/phd_paper/Proposal/Proposal.tex
 (F:/doc/phd/2017/phd_paper/Proposal/Proposal.tex
@@ -756,9 +756,6 @@ LaTeX Warning: Label `TriHard' multiply defined.
 LaTeX Warning: Label `TriHard' multiply defined.
 
 
-LaTeX Warning: Label `dml' multiply defined.
-
-
 LaTeX Warning: Label `mutual' multiply defined.
 
 ))
@@ -1258,13 +1255,10 @@ File: ./Pictures/hp.png Graphic file (type png)
 Package pdftex.def Info: ./Pictures/hp.png used on input line 374.
 (pdftex.def)             Requested size: 448.1309pt x 128.30035pt.
 
-[26]
-Underfull \hbox (badness 1062) in paragraph at lines 409--409
-[]\OT1/ptm/m/n/9.03 (a) Cap-tion for
- []
+[26] [27 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/hp.png (PNG copy)>]
+[28]) [29
 
-[27 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/hp.png (PNG copy)>]) [28]
-(F:\doc\phd\2017\phd_paper\Proposal\Proposal.bbl [29
+] (F:\doc\phd\2017\phd_paper\Proposal\Proposal.bbl [30
 
 
 
@@ -1280,7 +1274,13 @@ Underfull \hbox (badness 7704) in paragraph at lines 164--168
 push video-based per-son re-
  []
 
-[30]) [31]
+[31]
+Underfull \hbox (badness 2181) in paragraph at lines 238--243
+[]\OT1/ptm/m/n/10.54 Li Zhang, Tao X-i-ang, Shao-gang Gong.  Learn-ing a dis-cr
+im-i-na-tive nul-l s-pace for per-son re-
+ []
+
+[32]) [33]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
  (F:\doc\phd\2017\phd_paper\Proposal\Proposal.aux
@@ -1292,20 +1292,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `Proposal.out' has not changed.
-(rerunfilecheck)             Checksum: EBE17EF67D46AC8651CA15623BB74DE4;1598.
+(rerunfilecheck)             Checksum: 82A32D8B02144D0217F162AE8EF5FD76;1598.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18499 strings out of 495354
- 296621 string characters out of 3183859
- 376720 words of memory out of 3000000
- 20987 multiletter control sequences out of 15000+200000
- 108794 words of font info for 329 fonts, out of 3000000 for 9000
+ 18584 strings out of 495354
+ 298371 string characters out of 3183859
+ 377037 words of memory out of 3000000
+ 21054 multiletter control sequences out of 15000+200000
+ 110379 words of font info for 331 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 43i,12n,47p,923b,1217s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,14n,47p,923b,1275s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/Windows/Fonts/simhei.ttf>
 <C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/sim
 hei.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/F
@@ -1346,13 +1346,14 @@ X/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/CTEX/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmr12.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6
 .pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/CTEX/MiKTeX/fo
 nts/type1/public/amsfonts/cm/cmsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmsy6.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/
-CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/CTEX/MiKTeX/font
-s/type1/urw/times/utmb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><
-D:/CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Proposal.pdf (34 pages, 5389158 bytes).
+onts/cm/cmsy6.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/
+CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/CTEX/MiKTeX/fonts/type
+1/public/amsfonts/symbols/msbm10.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/times/utmb
+8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/CTEX/MiKTeX/fonts/t
+ype1/urw/times/utmri8a.pfb>
+Output written on Proposal.pdf (36 pages, 5414942 bytes).
 PDF statistics:
- 931 PDF objects out of 1000 (max. 8388607)
- 162 named destinations out of 1000 (max. 500000)
+ 1000 PDF objects out of 1000 (max. 8388607)
+ 179 named destinations out of 1000 (max. 500000)
  313 words of extra memory for PDF output out of 10000 (max. 10000000)
 
