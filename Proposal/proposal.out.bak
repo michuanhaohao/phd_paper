@@ -11,14 +11,15 @@
 \BOOKMARK [2][-]{subsection.2.1.6}{2.1.6 基于视频序列的方法}{section.2.1}% 11
 \BOOKMARK [1][-]{section.2.2}{2.2 跨摄像头多目标跟踪}{chapter.2}% 12
 \BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 相关数据集}{section.2.2}% 13
-\BOOKMARK [0][-]{chapter.3}{3研究内容与技术路线}{}% 14
-\BOOKMARK [0][-]{chapter.4}{4现有成果与研究计划}{}% 15
-\BOOKMARK [1][-]{section.4.1}{4.1 现有成果}{chapter.4}% 16
-\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 边界样本挖掘损失}{section.4.1}% 17
-\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 最短路径距离}{section.4.1}% 18
-\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 基于度量学习的互学习方法}{section.4.1}% 19
-\BOOKMARK [2][-]{subsection.4.1.4}{4.1.4 行人重识别的人类准确度评估}{section.4.1}% 20
-\BOOKMARK [2][-]{subsection.4.1.5}{4.1.5 与现有方法结果对比}{section.4.1}% 21
-\BOOKMARK [1][-]{section.4.2}{4.2 成果作品}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.3}{4.3 研究现状}{chapter.4}% 23
-\BOOKMARK [0][-]{chapter*.29}{参考文献}{}% 24
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 准确度评估准则}{section.2.2}% 14
+\BOOKMARK [0][-]{chapter.3}{3研究内容与技术路线}{}% 15
+\BOOKMARK [0][-]{chapter.4}{4现有成果与研究计划}{}% 16
+\BOOKMARK [1][-]{section.4.1}{4.1 现有成果}{chapter.4}% 17
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 边界样本挖掘损失}{section.4.1}% 18
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 最短路径距离}{section.4.1}% 19
+\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 基于度量学习的互学习方法}{section.4.1}% 20
+\BOOKMARK [2][-]{subsection.4.1.4}{4.1.4 行人重识别的人类准确度评估}{section.4.1}% 21
+\BOOKMARK [2][-]{subsection.4.1.5}{4.1.5 与现有方法结果对比}{section.4.1}% 22
+\BOOKMARK [1][-]{section.4.2}{4.2 成果作品}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.3}{4.3 研究计划}{chapter.4}% 24
+\BOOKMARK [0][-]{chapter*.29}{参考文献}{}% 25

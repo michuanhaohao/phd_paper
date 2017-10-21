@@ -388,3 +388,78 @@ AMOC拥有空间信息网络(Spatial network, Spat Nets)和运动信息网络两个子网络。
 \section{跨摄像头多目标跟踪}
 
 \subsection{相关数据集}
+
+\begin{enumerate}[(1)]
+
+\item DukeMTMC
+
+\item MOT17
+
+\item MOT16
+
+\end{enumerate}
+
+\clearpage
+\subsection{准确度评估准则}
+
+跨摄像头多目标跟踪准确度的评价准则有很多，主要包括单摄像头的多目标跟踪和跨摄像头两部分，本小节将逐个介绍\cite{Ristani2016Performance,Keni2008Evaluating,Milan2013Challenges}。
+
+\begin{itemize}
+\item{TP}：真正(True Positive, TP)是指被模型预测为正的正样本，可以称为判断为正的正确率。
+\item{TN}：真负(True Negative, TN)是指被模型预测为负的负样本，可以称为判断为负的正确率。
+\item{FP}：假正(False Positive, FP)是指被模型预测为正的负样本，可以称为误报率。
+\item{FN}：假负(FALSE Negative, FN)是指被模型预测为负的正样本，可以称为漏报率。
+\item{Accuracy}：准确度是指被分类器判定正确的比重，公示表示为：
+\begin{equation}\label{Accuracy}
+  A = \frac{TP+TN}{TP+TN+FP+FN}
+\end{equation}
+\item{Precision}：精确度是指被分类器判定的正例中真正的正例样本的比重，公示表示为：
+\begin{equation}\label{Precision}
+  P = \frac{TP}{TP+FP}
+\end{equation}
+\item{Recall}：召回率是指被分类器正确判定的正例占总的正例的比重，公示表示为：
+\begin{equation}\label{Recall}
+  R = \frac{TP}{TP+FN}
+\end{equation}
+\item{MOTA}：多目标跟踪准确度(Multiple Object Tracking Accuracy, MOTA)是衡量单摄像头多目标跟踪准确度的一个指标，公示表示为：
+    \begin{equation}\label{MOTA}
+      MOTA = 1 - \frac{FN+FP+\mathit{\Phi}}{T}
+    \end{equation}
+    其中$FN$是指所有帧的假负数之和，即假设$fn_t$为第$t$帧的假负数，则$FN = \sum_t fn_t$，同理$FP = \sum_t fp_t$。
+    $T$是指所有帧真正目标数的总和，即假设第$t$帧有$g_t$个目标，则$T = \sum_t g_t$。
+    $\mathit{\Phi}$是指所有帧目标发生跳变数(Fragmentation)，$\phi_t$为第$t$帧的目标跳变数，则$\mathit{\Phi} = \sum_t \phi_t$。换而言之，这三项依次表示缺失率、误判率和误配率。
+\item{MOTP}：多目标跟踪精确度(Multiple Object Tracking Precision, MOTP)是衡量单摄像头多目标跟踪位置误差的一个指标，公式表示为：
+    \begin{equation}\label{MOTP}
+      MOTP = \frac{\sum_{i,t}d_t^i}{\sum_t c_t}
+    \end{equation}
+    其中$c_t$表示第$t$帧的匹配个数，对每对匹配计算匹配误差$d_t^i$，表示第$t$帧下目标$O_i$与其配对假设位置之间的距离。
+
+\item{MT}：多数跟踪数(Mostly tracked)是指跟踪部分大于80$\%$的跟踪轨迹数，数值越大越好。
+
+\item{ML}：多数丢失数(Mostly lost)是指丢失部分大于80$\%$的跟踪轨迹数，数值越小越好。
+
+\item{IDS}：ID转变数(ID switches)是指跟踪轨迹中行人ID瞬间转换的次数，通常能反应跟踪的稳定性，数值越小越好。
+
+\item{IDP}：识别精确度(Identification Precision)是指每个行人框中行人ID识别的精确度。公式为：
+    \begin{equation}\label{IDP}
+      IDP = \frac{IDTP}{IDTP+IDFP}
+    \end{equation}
+    其中$IDTP$和$IDFP$分别是真正ID数和假正ID数。
+
+\item{IDR}：识别回召率(Identification Recall)是指每个行人框中行人ID识别的回召率。公式为：
+    \begin{equation}\label{IDR}
+      IDP = \frac{IDTP}{IDTP+IDFN}
+    \end{equation}
+    其中$IDFN$是假负ID数。
+
+\item{IDF1}：识别F值(Identification F-Score)是指每个行人框中行人ID识别的F值。公式为：
+    \begin{equation}\label{IDR}
+      IDP = \frac{2IDTP}{2IDTP+IDFP+IDFN}
+    \end{equation}
+    
+\item{MCTA}：跨摄像头跟踪准确度(Multi-camera Tracking Accuracy)是衡量多个摄像头下跟踪的准确度，是目前少有的专门用来衡量多摄像头跟踪性能的评价指标。公式为：
+    \begin{equation}\label{MCTA}
+      MCTA = \underbrace{\frac{2PR}{P+R}}_{F1}\underbrace{(1-\frac{M^w}{T^w})}_{\text{within camera}}\underbrace{(1-\frac{M^h}{T^h})}_{\text{handover}}
+    \end{equation}
+    其中$P,R$为前文介绍的精准度和回召率，$M^w$是单相机内行人ID的错误匹配数，$T^w$是单相机内（标注）正确检测数，$M^h$是跨相机行人ID的错误匹配数，$T^h$是指跨相机（标注的）正确检测数（即某个目标从某个相机中消失而下次再出现在另外一个相机的情况）。MCTA的范围是$[0,1]$。
+\end{itemize}

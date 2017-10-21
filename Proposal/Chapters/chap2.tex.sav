@@ -1,4 +1,4 @@
-\chapter{¹úÄÚÍâÑÐ¾¿ÏÖ×´}
+\chapter{ÑÐ¾¿ÏÖ×´ÓëÎÄÏ××ÛÊö}
 
 ±¾ÕÂ½ÚÖ÷Òª½éÉÜ±¾¿ÎÌâÏà¹ØµÄÑÐ¾¿ÏÖ×´£¬°üÀ¨ÐÐÈËÖØÊ¶±ð(Person re-identification, person ReID)ºÍ¿çÉãÏñÍ·¶àÄ¿±ê¸ú×Ù(Multi-target multi-camera tracking, MTMC tracking)Á½¸ö²¿·Ö¡£
 ÔÚ±¾ÕÂ½Ú½«»á·Ö±ð½éÉÜÕâÁ½¸ö×Ó¿ÎÌâÏà¹ØµÄÊý¾Ý¼¯ºÍÏÖÓÐËã·¨¡£
@@ -111,7 +111,7 @@ CMCÇúÏßÖ÷ÒªÓÃÓÚ¼ÆËãrank-kµÄ»÷ÖÐ¸ÅÂÊ£¬ÔÚÐÐÈËÖØÊ¶±ð¡¢ÈËÁ³Ê¶±ðÁìÓòÊ¹ÓÃ½Ï¶à¡£
 ×îºórank-k×¼È·¶È$A(rank\text{-}k)$¿ÉÒÔ±íÊ¾Îª£º
 \begin{equation}
 \label{cmc}
-A(rank\text{-}k) = \frac{1}{\sum_{probe\in query}f_{CMC}(index_{probe},k)}
+A(rank\text{-}k) = \frac{\sum_{probe\in query}f_{CMC}(index_{probe},k)}{N_q}
 \end{equation}
 ÆäÖÐ£º
 \begin{equation}
@@ -129,7 +129,7 @@ mAPÊÇÁíÍâÒ»ÖÖÖØÒªµÄÆÀ¼ÛÖ¸±ê¡£
 CMCÇúÏßÍ¨³£Ö»¹ØÐÄ¼ìË÷¿âÖÐ×î¿¿Ç°µÄÕýÑù±¾ÅÅÐò£¬¶ømAPÓÉgalleryÖÐËùÓÐÕýÑù±¾µÄÅÅÐò½á¹û¾ö¶¨£¬ËùÒÔÍ¨³£ÄÜ¹»¸ü¼ÓÂ³°îµØ·´Ó³Ä£ÐÍµÄÐÔÄÜ¡£
 ¼ÆËãmAPÐèÒªÒÔÏÂÈý²½£º
 
-£¨1£©Precision£º¶ÔÓÚqueryÖÐµÄÄ³Ò»ÕÅprobeÍ¼Æ¬£¬·µ»ØÁËgalleryµÄÒ»ÏµÁÐÅÅÐò½á¹û£¬¿¼ÂÇÇ°$n$¸ö²éÑ¯½á¹û£¬$P(n)$=Ç°$n$¸ö½á¹ûÖÐÓëprobeÍ¼Æ¬ÊÇÏàÍ¬ÐÐÈËµÄÊýÄ¿/$n$£»
+£¨1£©Precision£º¶ÔÓÚqueryÖÐµÄÄ³Ò»ÕÅprobeÍ¼Æ¬£¬·µ»ØÁËgalleryµÄÒ»ÏµÁÐÅÅÐò½á¹û£¬¿¼ÂÇÇ°$n$ ¸ö²éÑ¯½á¹û£¬$P(n)$=Ç°$n$¸ö½á¹ûÖÐÓëprobeÍ¼Æ¬ÊÇÏàÍ¬ÐÐÈËµÄÊýÄ¿/$n$£»
 
 £¨2£©Average Precision£º¶ÔÓÚqueryµÄµÚ$K$¸öprobeÍ¼Æ¬£¬¼ÇÂ¼ÅÅÐò½á¹ûÖÐËùÓÐM¸öÕýÑù±¾ÅÅÐò½á¹ûµÄ¼¯ºÏ$\{i_1,i_2,...,i_M\}$£¬¼ÆËãËüÃÇµÄÆ½¾ùPrecision£¬¼´$AP_K = \sum P(i)/M$£¬ÆäÖÐ$i \in \{i_1,i_2,...,i_M\}$£»
 
@@ -231,12 +231,12 @@ CMCÇúÏßÍ¨³£Ö»¹ØÐÄ¼ìË÷¿âÖÐ×î¿¿Ç°µÄÕýÑù±¾ÅÅÐò£¬¶ømAPÓÉgalleryÖÐËùÓÐÕýÑù±¾µÄÅÅÐò½á¹
 
 ËÄÔª×éËðÊ§ÊÇÈýÔª×éËðÊ§µÄÁíÒ»¸ö¸Ä½ø°æ±¾¡£
 ¹ËÃûË¼Òå£¬ËÄÔª×é(Quadruplet)ÐèÒªËÄÕÅÊäÈëÍ¼Æ¬£¬ºÍÈýÔª×é²»Í¬µÄÊÇ¶àÁËÒ»ÕÅ¸ºÑù±¾Í¼Æ¬¡£
-¼´ËÄÕÅÍ¼Æ¬Îª¹Ì¶¨Í¼Æ¬(Anchor) $a$£¬ÕýÑù±¾Í¼Æ¬(Positive) $p$,¸ºÑù±¾Í¼Æ¬1(Negative1) $n1$ºÍ¸ºÑù±¾Í¼Æ¬2(Negative2) $n2$¡£
+¼´ËÄÕÅÍ¼Æ¬Îª¹Ì¶¨Í¼Æ¬(Anchor) $a$£¬ÕýÑù±¾Í¼Æ¬(Positive) $p$,¸ºÑù±¾Í¼Æ¬1(Negative1) $n1$ ºÍ¸ºÑù±¾Í¼Æ¬2(Negative2) $n2$¡£
 ÆäÖÐ$n1$ºÍ$n2$ÊÇÁ½ÕÅ²»Í¬ÐÐÈËIDµÄÍ¼Æ¬£¬Æä½á¹¹ÈçÍ¼\ref{quadruplet}ËùÊ¾¡£
 Ôò£¬ËÄÔª×éËðÊ§±íÊ¾Îª£º
 
 \begin{equation}\label{Quadruplet}
-  L_t = (d_{a,p}-d_{a,n1}+\alpha)_+ + (d_{a,p}-d_{n1,n2}+\beta)_+
+  L_q = (d_{a,p}-d_{a,n1}+\alpha)_+ + (d_{a,p}-d_{n1,n2}+\beta)_+
 \end{equation}
 ÆäÖÐ$\alpha$ºÍ$\beta$ÊÇÊÖ¶¯ÉèÖÃµÄÕý³£Êý£¬Í¨³£ÉèÖÃ$\beta$Ð¡ÓÚ$\alpha$£¬Ç°Ò»Ïî³ÆÎªÇ¿ÍÆ¶¯£¬ºóÒ»Ïî³ÆÎªÈõÍÆ¶¯¡£
 Ïà±ÈÓÚÈýÔª×éËðÊ§Ö»¿¼ÂÇÕý¸ºÑù±¾¼äµÄÏà¶Ô¾àÀë£¬ËÄÔª×éÌí¼ÓµÄµÚ¶þÏî²»¹²ÏíID£¬ËùÒÔ¿¼ÂÇµÄÊÇÕý¸ºÑù±¾¼äµÄ¾ø¶Ô¾àÀë¡£
@@ -257,18 +257,211 @@ CMCÇúÏßÍ¨³£Ö»¹ØÐÄ¼ìË÷¿âÖÐ×î¿¿Ç°µÄÕýÑù±¾ÅÅÐò£¬¶ømAPÓÉgalleryÖÐËùÓÐÕýÑù±¾µÄÅÅÐò½á¹
 ´óÁ¿ÂÛÎÄ·¢ÏÖÓÃ¸üÄÑµÄÑù±¾È¥ÑµÁ·ÍøÂçÄÜ¹»Ìá¸ßÍøÂçµÄ·º»¯ÄÜÁ¦£¬¶ø²ÉÑùÄÑÑù±¾¶ÔµÄ·½·¨ºÜ¶à¡£
 ÂÛÎÄ\cite{hermans2017defense}Ìá³öÁËÒ»ÖÖ»ùÓÚÑµÁ·ÅúÁ¿(Batch)µÄÔÚÏßÄÑÑù±¾²ÉÑù·½·¨¡ª¡ªTriHardËðÊ§¡£
 
-TriHardËðÊ§µÄºËÐÄË¼ÏëÊÇ£º¶ÔÓÚÃ¿Ò»¸öÑµÁ·batch£¬Ëæ»úÌôÑ¡$P$¸öIDµÄÐÐÈË£¬Ã¿¸öÐÐÈËËæ»úÌôÑ¡$K$ ÕÅ²»Í¬µÄÍ¼Æ¬£¬¼´Ò»¸öbatchº¬ÓÐ$P \times K$ÕÅÍ¼Æ¬¡£Ö®ºó¶ÔÓÚbatchÖÐµÄÃ¿Ò»ÕÅÍ¼Æ¬$a$£¬ÎÒÃÇ¿ÉÒÔÌôÑ¡Ò»¸ö×îÄÑµÄÕýÑù±¾ºÍÒ»¸ö×îÄÑµÄ¸ºÑù±¾ºÍ$a$×é³ÉÒ»¸öÈýÔª×é¡£Ê×ÏÈÎÒÃÇ¶¨ÒåºÍ$a$ÎªÏàÍ¬IDµÄÍ¼Æ¬¼¯Îª$A$£¬Ê£ÏÂ²»Í¬IDµÄÍ¼Æ¬Í¼Æ¬¼¯Îª$B$£¬ÔòTriHardËðÊ§±íÊ¾Îª£º
+TriHardËðÊ§µÄºËÐÄË¼ÏëÊÇ£º¶ÔÓÚÃ¿Ò»¸öÑµÁ·batch£¬Ëæ»úÌôÑ¡$P$¸öIDµÄÐÐÈË£¬Ã¿¸öÐÐÈËËæ»úÌôÑ¡$K$ ÕÅ²»Í¬µÄÍ¼Æ¬£¬¼´Ò»¸öbatchº¬ÓÐ$P \times K$ÕÅÍ¼Æ¬¡£
+Ö®ºó¶ÔÓÚbatchÖÐµÄÃ¿Ò»ÕÅÍ¼Æ¬$a$£¬ÎÒÃÇ¿ÉÒÔÌôÑ¡Ò»¸ö×îÄÑµÄÕýÑù±¾ºÍÒ»¸ö×îÄÑµÄ¸ºÑù±¾ºÍ$a$×é³ÉÒ»¸öÈýÔª×é¡£
+
+Ê×ÏÈÎÒÃÇ¶¨ÒåºÍ$a$ÎªÏàÍ¬IDµÄÍ¼Æ¬¼¯Îª$A$£¬Ê£ÏÂ²»Í¬IDµÄÍ¼Æ¬Í¼Æ¬¼¯Îª$B$£¬ÔòTriHardËðÊ§±íÊ¾Îª£º
 \begin{equation}\label{TriHard}
-  L_th = \frac{1}{P \times K}\sum_{a \in batch}(\max_{p \in A} d_{a,p}-\min_{n \in B} d_{a,n}+\alpha)_+
+  L_{th} = \frac{1}{P \times K}\sum_{a \in batch}(\max_{p \in A} d_{a,p}-\min_{n \in B} d_{a,n}+\alpha)_+
 \end{equation}
-TriHardËðÊ§»á¼ÆËã$a$ºÍbatchÖÐµÄÃ¿Ò»ÕÅÍ¼Æ¬ÔÚÌØÕ÷¿Õ¼äµÄÅ·Ê½¾àÀë
+ÆäÖÐ$\alpha$ÊÇÈËÎªÉè¶¨µÄãÐÖµ²ÎÊý¡£
+TriHardËðÊ§»á¼ÆËã$a$ºÍbatchÖÐµÄÃ¿Ò»ÕÅÍ¼Æ¬ÔÚÌØÕ÷¿Õ¼äµÄÅ·Ê½¾àÀë£¬È»ºóÑ¡³öÓë$a$ ¾àÀë×îÔ¶£¨×î²»Ïñ£©µÄÕýÑù±¾$p$ºÍ¾àÀë×î½ü£¨×îÏñ£©µÄ¸ºÑù±¾$n$À´¼ÆËãÈýÔª×éËðÊ§¡£
+Í¨³£TriHardËðÊ§Ð§¹û±È´«Í³µÄÈýÔª×éËðÊ§ÒªºÃ¡£
 
 \end{enumerate}
 
 \subsection{»ùÓÚ¾Ö²¿ÌØÕ÷µÄ·½·¨}
+´ÓÍøÂçµÄÑµÁ·ËðÊ§º¯ÊýÉÏ½øÐÐ·ÖÀà¿ÉÒÔ·Ö³É±íÕ÷Ñ§Ï°ºÍ¶ÈÁ¿Ñ§Ï°£¬Ïà¹Ø·½·¨Ç°ÎÄÒÑ¾­½éÉÜ¡£
+ÁíÒ»¸ö½Ç¶È£¬´Ó³éÈ¡Í¼ÏñÌØÕ÷½øÐÐ·ÖÀà£¬ÐÐÈËÖØÊ¶±ðµÄ·½·¨¿ÉÒÔ·ÖÎª»ùÓÚÈ«¾ÖÌØÕ÷(Global feature) ºÍ»ùÓÚ¾Ö²¿ÌØÕ÷(Local feature)µÄ·½·¨¡£
+È«¾ÖÌØÕ÷ÊÇÖ¸ÈÃÍøÂç¶ÔÕû·ùÍ¼ÏñÌáÈ¡Ò»¸öÌØÕ÷£¬Õâ¸öÌØÕ÷²»¿¼ÂÇÒ»Ð©¾Ö²¿ÐÅÏ¢¡£
+¶ø¾Ö²¿ÌØÕ÷ÊÇÖ¸ÈÃÊÖ¶¯»òÕß×Ô¶¯µØÈÃÍøÂçÈ¥¹Ø×¢¹Ø¼üµÄ¾Ö²¿ÇøÓò£¬È»ºóÌáÈ¡ÕâÐ©ÇøÓòµÄ¾Ö²¿ÌØÕ÷¡£
+³£ÓÃµÄÌáÈ¡¾Ö²¿ÌØÕ÷µÄË¼Â·Ö÷ÒªÓÐÍ¼ÏñÇÐ¿é¡¢ÀûÓÃ¹Ç¼Ü¹Ø¼üµã¶¨Î»ÒÔ¼°×ËÌ¬½ÃÕýµÈµÈ¡£
+
+Í¼Æ¬ÇÐ¿éÊÇÒ»ÖÖºÜ³£¼ûµÄÌáÈ¡¾Ö²¿ÌØÕ÷·½Ê½\cite{xiao2016cross,varior2016siamese}¡£
+ÈçÍ¼\ref{local1}ËùÊ¾£¬Í¼Æ¬±»´¹Ö±µÈ·ÖÎªÈô¸É·Ý£¬ÒòÎª´¹Ö±ÇÐ¸î¸ü·ûºÏÎÒÃÇ¶ÔÈËÌåÊ¶±ðµÄÖ±¹Û¸ÐÊÜ£¬ËùÒÔÐÐÈËÖØÊ¶±ðÁìÓòºÜÉÙÓÃµ½Ë®Æ½ÇÐ¸î¡£
+Ö®ºó£¬±»·Ö¸îºÃµÄÈô¸É¿éÍ¼Ïñ¿é°´ÕÕË³ÐòËÍµ½Ò»¸ö³¤¶ÌÊ±¼ÇÒäÍøÂç(Long short term memory network, LSTM)£¬×îºóµÄÌØÕ÷ÈÚºÏÁËËùÓÐÍ¼Ïñ¿éµÄ¾Ö²¿ÌØÕ÷¡£
+µ«ÊÇÕâÖÖÈ±µãÔÚÓÚ¶ÔÍ¼Ïñ¶ÔÆëµÄÒªÇó±È½Ï¸ß£¬Èç¹ûÁ½·ùÍ¼ÏñÃ»ÓÐÉÏÏÂ¶ÔÆë£¬ÄÇÃ´ºÜ¿ÉÄÜ³öÏÖÍ·ºÍÉÏÉí¶Ô±ÈµÄÏÖÏó£¬·´¶øÊ¹µÃÄ£ÐÍÅÐ¶Ï´íÎó¡£
+\begin{figure}[htb]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=0.7\paperwidth]{./Pictures/local1.png}
+  \caption{ÀûÓÃÍ¼Æ¬ÇÐ¿éÌáÈ¡¾Ö²¿ÌØÕ÷Ê¾Àý}\label{local1}
+\end{figure}
+
+ÎªÁË½â¾öÍ¼Ïñ²»¶ÔÆëÇé¿öÏÂÊÖ¶¯Í¼ÏñÇÐÆ¬Ê§Ð§µÄÎÊÌâ£¬Ò»Ð©ÂÛÎÄÀûÓÃÒ»Ð©ÏÈÑéÖªÊ¶ÏÈ½«ÐÐÈË½øÐÐ¶ÔÆë£¬ÕâÐ©ÏÈÑéÖªÊ¶Ö÷ÒªÊÇÔ¤ÑµÁ·µÄÈËÌå×ËÌ¬(Pose)ºÍ¹Ç¼Ü¹Ø¼üµã(Skeleton)Ä£ÐÍ¡£
+ÂÛÎÄ\cite{zheng2017pose}ÏÈÓÃ×ËÌ¬¹À¼ÆµÄÄ£ÐÍ¹À¼Æ³öÐÐÈËµÄ¹Ø¼üµã£¬È»ºóÓÃ·ÂÉä±ä»»Ê¹µÃÏàÍ¬µÄ¹Ø¼üµã¶ÔÆë¡£
+ÈçÍ¼\ref{pose}ËùÊ¾£¬Ò»¸öÐÐÈËÍ¨³£±»·ÖÎª14¸ö¹Ø¼üµã£¬Õâ14¸ö¹Ø¼üµã°ÑÈËÌå½á¹û·ÖÎªÈô¸É¸öÇøÓò¡£
+ÎªÁËÌáÈ¡²»Í¬³ß¶ÈÉÏµÄ¾Ö²¿ÌØÕ÷£¬×÷ÕßÉè¶¨ÁËÈý¸ö²»Í¬µÄPoseBox×éºÏ¡£
+Ö®ºóÕâÈý¸öPoseBox½ÃÕýºóµÄÍ¼Æ¬ºÍÔ­Ê¼Îª½ÃÕýµÄÍ¼Æ¬Ò»ÆðËÍµ½ÍøÂçÀïÈ¥ÌáÈ¡ÌØÕ÷£¬Õâ¸öÌØÕ÷°üº¬ÁËÈ«¾ÖÐÅÏ¢ºÍ¾Ö²¿ÐÅÏ¢¡£
+ÌØ±ðÌá³ö£¬Èç¹ûÕâ¸ö·ÂÉä±ä»»¿ÉÒÔÔÚ½øÈëÍøÂçÖ®Ç°µÄÔ¤´¦ÀíÖÐ½øÐÐ£¬Ò²¿ÉÒÔÔÚÊäÈëµ½ÍøÂçºó½øÐÐ¡£
+Èç¹ûÊÇºóÕßµÄ»°ÐèÒªÐèÒª¶Ô·ÂÉä±ä»»×öÒ»¸ö¸Ä½ø£¬ÒòÎª´«Í³µÄ·ÅÉä±ä»¯ÊÇ²»¿Éµ¼µÄ¡£
+ÎªÁËÊ¹µÃÍøÂç¿ÉÒÔÑµÁ·£¬ÐèÒªÒýÈë¿Éµ¼µÄ½üËÆ·ÅÉä±ä»¯£¬ÔÚ±¾ÎÄÖÐ²»×¸ÊöÏà¹ØÖªÊ¶¡£
+\begin{figure}[htb]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=0.5\paperwidth]{./Pictures/pose.png}
+  \caption{×ËÌ¬¶ÔÆëÊ¾ÒâÍ¼}\label{pose}
+\end{figure}
+
+CVPR2017µÄ¹¤×÷Spindle Net\cite{zhao2017spindle}Ò²ÀûÓÃÁË14¸öÈËÌå¹Ø¼üµãÀ´ÌáÈ¡¾Ö²¿ÌØÕ÷¡£
+ºÍÂÛÎÄ\cite{zheng2017pose}²»Í¬µÄÊÇ£¬Spindle Net²¢Ã»ÓÐÓÃ·ÂÉä±ä»»À´¶ÔÆë¾Ö²¿Í¼ÏñÇøÓò£¬¶øÊÇÖ±½ÓÀûÓÃÕâÐ©¹Ø¼üµãÀ´¿Ù³ö¸ÐÐËÈ¤ÇøÓò(Region of interest, ROI)¡£
+Spindle NetÍøÂçÈçÍ¼\ref{spindle}ËùÊ¾£¬Ê×ÏÈÍ¨¹ý¹Ç¼Ü¹Ø¼üµãÌáÈ¡µÄÍøÂçÌáÈ¡14¸öÈËÌå¹Ø¼üµã£¬Ö®ºóÀûÓÃÕâÐ©¹Ø¼üµãÌáÈ¡7¸öÈËÌå½á¹¹ROI¡£
+ÍøÂçÖÐËùÓÐÌáÈ¡ÌØÕ÷µÄCNN£¨³ÈÉ«±íÊ¾£©²ÎÊý¶¼ÊÇ¹²ÏíµÄ£¬Õâ¸öCNN·Ö³ÉÁËÏßÐÔµÄÈý¸ö×ÓÍøÂçFEN-C1¡¢FEN-C2¡¢FEN-C3¡£
+¶ÔÓÚÊäÈëµÄÒ»ÕÅÐÐÈËÍ¼Æ¬£¬ÓÐÒ»¸öÔ¤ÑµÁ·ºÃµÄ¹Ç¼Ü¹Ø¼üµãÌáÈ¡CNN£¨À¶É«±íÊ¾£©À´»ñµÃ14¸öÈËÌå¹Ø¼üµã£¬´Ó¶øµÃµ½7¸öROIÇøÓò£¬ÆäÖÐ°üÀ¨Èý¸ö´óÇøÓò£¨Í·¡¢ÉÏÉí¡¢ÏÂÉí£©ºÍËÄ¸öËÄÖ«Ð¡ÇøÓò¡£
+Õâ7¸öROIÇøÓòºÍÔ­Ê¼Í¼Æ¬½øÈëÍ¬Ò»¸öCNNÍøÂçÌáÈ¡ÌØÕ÷¡£
+Ô­Ê¼Í¼Æ¬¾­¹ýÍêÕûµÄCNNµÃµ½Ò»¸öÈ«¾ÖÌØÕ÷¡£
+Èý¸ö´óÇøÓò¾­¹ýFEN-C2ºÍFEN-C3×ÓÍøÂçµÃµ½Èý¸ö¾Ö²¿ÌØÕ÷¡£
+ËÄ¸öËÄÖ«ÇøÓò¾­¹ýFEN-C3×ÓÍøÂçµÃµ½ËÄ¸ö¾Ö²¿ÌØÕ÷¡£
+Ö®ºóÕâ8¸öÌØÕ÷°´ÕÕÍ¼Ê¾µÄ·½Ê½ÔÚ²»Í¬µÄ³ß¶È½øÐÐÁª½á£¬×îÖÕµÃµ½Ò»¸öÈÚºÏÈ«¾ÖÌØÕ÷ºÍ¶à¸ö³ß¶È¾Ö²¿ÌØÕ÷µÄÐÐÈËÖØÊ¶±ðÌØÕ÷¡£
+\begin{figure}[htb]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=0.8\paperwidth]{./Pictures/spindle.png}
+  \caption{Spindle Net½á¹¹Ê¾ÒâÍ¼}\label{spindle}
+\end{figure}
+
+ÂÛÎÄ\cite{wei2017glad}Ìá³öÁËÒ»ÖÖÈ«¾Ö-¾Ö²¿¶ÔÆëÌØÕ÷ÃèÊö×Ó(Global-Local-Alignment Descriptor, GLAD)£¬À´½â¾öÐÐÈË×ËÌ¬±ä»¯µÄÎÊÌâ¡£
+ÓëSpindle NetÀàËÆ£¬GLADÀûÓÃÌáÈ¡µÄÈËÌå¹Ø¼üµã°ÑÍ¼Æ¬·ÖÎªÍ·²¿¡¢ÉÏÉíºÍÏÂÉíÈý¸ö²¿·Ö¡£
+Ö®ºó½«ÕûÍ¼ºÍÈý¸ö¾Ö²¿Í¼Æ¬Ò»ÆðÊäÈëµ½Ò»¸ö²ÎÊý¹²ÏíCNNÍøÂçÖÐ£¬×îºóÌáÈ¡µÄÌØÕ÷ÈÚºÏÁËÈ«¾ÖºÍ¾Ö²¿µÄÌØÕ÷¡£
+ÎªÁËÊÊÓ¦²»Í¬·Ö±æÂÊ´óÐ¡µÄÍ¼Æ¬ÊäÈë£¬ÍøÂçÀûÓÃÈ«¾ÖÆ½¾ù³Ø»¯(Global average pooling, GAP)À´ÌáÈ¡¸÷×ÔµÄÌØÕ÷¡£
+ºÍSpindle NetÂÔÎ¢²»Í¬µÄÊÇËÄ¸öÊäÈëÍ¼Æ¬¸÷×Ô¼ÆËã¶ÔÓ¦µÄËðÊ§£¬¶ø²»ÊÇÈÚºÏÎªÒ»¸öÌØÕ÷¼ÆËãÒ»¸ö×ÜµÄËðÊ§¡£
+\begin{figure}[htb]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=0.65\paperwidth]{./Pictures/glad.png}
+  \caption{GLAD½á¹¹Ê¾ÒâÍ¼}\label{glad}
+\end{figure}
+
 
 \subsection{»ùÓÚÊÓÆµÐòÁÐµÄ·½·¨}
+
+ÒÔÉÏ½éÉÜµÄ·½·¨¶¼ÊÇ»ùÓÚµ¥Ö¡Í¼ÏñµÄ·½·¨£¬Í¨³£µ¥Ö¡Í¼ÏñµÄÐÅÏ¢ÊÇÓÐÏÞµÄ£¬Òò´ËÓÐºÜ¶à¹¤×÷¼¯ÖÐÔÚÀûÓÃÊÓÆµÐòÁÐÀ´½øÐÐÐÐÈËÖØÊ¶±ð·½·¨µÄÑÐ¾¿\cite{wang2016person, zhang2017image, you2016top, ma2017person, mclaughlin2016recurrent, zhao2017person, liu2017video}¡£»ùÓÚÊÓÆµÐòÁÐµÄ·½·¨×îÖ÷ÒªµÄ²»Í¬µã¾ÍÊÇÕâÀà·½·¨²»½ö¿¼ÂÇÁËÍ¼ÏñµÄÄÚÈÝÐÅÏ¢£¬»¹¿¼ÂÇÁËÖ¡ÓëÖ¡Ö®¼äµÄÔË¶¯ÐÅÏ¢µÈ¡£
+
+»ùÓÚµ¥Ö¡Í¼ÏñµÄ·½·¨Ö÷ÒªË¼ÏëÊÇÀûÓÃCNNÀ´ÌáÈ¡Í¼ÏñµÄ¿Õ¼äÌØÕ÷£¬¶ø»ùÓÚÊÓÆµÐòÁÐµÄ·½·¨Ö÷ÒªË¼ÏëÊÇÀûÓÃCNN À´ÌáÈ¡¿Õ¼äÌØÕ÷µÄÍ¬Ê±ÀûÓÃµÝ¹éÑ­»·ÍøÂç(Recurrent neural networks, RNN)À´ÌáÈ¡Ê±ÐòÌØÕ÷¡£
+Í¼\ref{video_reid}ÊÇ·Ç³£µäÐÍµÄË¼Â·£¬ÍøÂçÊäÈëÎªÍ¼ÏñÐòÁÐ¡£
+Ã¿ÕÅÍ¼Ïñ¶¼¾­¹ýÒ»¸ö¹²ÏíµÄCNNÌáÈ¡³öÍ¼Ïñ¿Õ¼äÄÚÈÝÌØÕ÷£¬Ö®ºóÕâÐ©ÌØÕ÷ÏòÁ¿±»ÊäÈëµ½Ò»¸öRNNÍøÂçÈ¥ÌáÈ¡×îÖÕµÄÌØÕ÷¡£
+×îÖÕµÄÌØÕ÷ÈÚºÏÁËµ¥Ö¡Í¼ÏñµÄÄÚÈÝÌØÕ÷ºÍÖ¡ÓëÖ¡Ö®¼äµÄÔË¶¯ÌØÕ÷¡£
+¶øÕâ¸öÌØÕ÷ÓÃÓÚ´úÌæÇ°Ãæµ¥Ö¡·½·¨µÄÍ¼ÏñÌØÕ÷À´ÑµÁ·ÍøÂç¡£
+
+
+\begin{figure}[htb]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=0.5\paperwidth]{./Pictures/video_reid.png}
+  \caption{»ùÓÚÊÓÆµÐòÁÐµÄÐÐÈËÖØÊ¶±ðÍøÂç½á¹¹Ê¾ÒâÍ¼}\label{video_reid}
+\end{figure}
+
+ÊÓÆµÐòÁÐÀàµÄ´ú±í·½·¨Ö®Ò»ÊÇÀÛ¼ÆÔË¶¯±³¾°ÍøÂç(Accumulative motion context network, AMOC)\cite{liu2017video}¡£
+AMOCÊäÈëµÄ°üÀ¨Ô­Ê¼µÄÍ¼ÏñÐòÁÐºÍÌáÈ¡µÄ¹âÁ÷ÐòÁÐ¡£
+Í¨³£ÌáÈ¡¹âÁ÷ÐÅÏ¢ÐèÒªÓÃµ½´«Í³µÄ¹âÁ÷ÌáÈ¡Ëã·¨£¬µ«ÊÇÕâÐ©Ëã·¨¼ÆËãºÄÊ±£¬²¢ÇÒÎÞ·¨ÓëÉî¶ÈÑ§Ï°ÍøÂç¼æÈÝ¡£
+ÎªÁËÄÜ¹»µÃµ½Ò»¸ö×Ô¶¯ÌáÈ¡¹âÁ÷µÄÍøÂç£¬×÷ÕßÊ×ÏÈÑµÁ·ÁËÒ»¸öÔË¶¯ÐÅÏ¢ÍøÂç(Motion network, Moti Nets)¡£
+Õâ¸öÔË¶¯ÍøÂçÊäÈëÎªÔ­Ê¼µÄÍ¼ÏñÐòÁÐ£¬±êÇ©Îª´«Í³·½·¨ÌáÈ¡µÄ¹âÁ÷ÐòÁÐ¡£
+ÈçÍ¼\ref{motion}ËùÊ¾£¬Ô­Ê¼µÄÍ¼ÏñÐòÁÐÏÔÊ¾ÔÚµÚÒ»ÅÅ£¬ÌáÈ¡µÄ¹âÁ÷ÐòÁÐÏÔÊ¾ÔÚµÚ¶þÅÅ¡£
+ÍøÂçÓÐÈý¸ö¹âÁ÷Ô¤²âµÄÊä³ö£¬·Ö±ðÎªPred1£¬Pred2£¬Pred3£¬ÕâÈý¸öÊä³öÄÜ¹»Ô¤²âÈý¸ö²»Í¬³ß¶ÈµÄ¹âÁ÷Í¼¡£
+×îºóÍøÂçÈÚºÏÁËÈý¸ö³ß¶ÈÉÏµÄ¹âÁ÷Ô¤²âÊä³öÀ´µÃµ½×îÖÕ¹âÁ÷Í¼£¬Ô¤²âµÄ¹âÁ÷ÐòÁÐÔÚµÚÈýÅÅÏÔÊ¾¡£
+Í¨¹ý×îÐ¡»¯Ô¤²â¹âÁ÷Í¼ºÍÌáÈ¡¹âÁ÷Í¼µÄÎó²î£¬ÍøÂçÄÜ¹»ÌáÈ¡³ö½Ï×¼È·µÄÔË¶¯ÌØÕ÷¡£
+
+\begin{figure}[htb]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=0.6\paperwidth]{./Pictures/video_flow.png}
+  \caption{ÔË¶¯ÍøÂç½á¹¹Ê¾ÒâÍ¼}\label{motion}
+\end{figure}
+
+AMOCµÄºËÐÄË¼ÏëÔÚÓÚÍøÂç³ýÁËÒªÌáÈ¡ÐòÁÐÍ¼ÏñµÄÌØÕ÷£¬»¹ÒªÌáÈ¡ÔË¶¯¹âÁ÷µÄÔË¶¯ÌØÕ÷£¬ÆäÍøÂç½á¹¹Í¼ÈçÍ¼\ref{AMOC}ËùÊ¾¡£
+AMOCÓµÓÐ¿Õ¼äÐÅÏ¢ÍøÂç(Spatial network, Spat Nets)ºÍÔË¶¯ÐÅÏ¢ÍøÂçÁ½¸ö×ÓÍøÂç¡£
+Í¼ÏñÐòÁÐµÄÃ¿Ò»Ö¡Í¼Ïñ¶¼±»ÊäÈëµ½Spat NetsÀ´ÌáÈ¡Í¼ÏñµÄÈ«¾ÖÄÚÈÝÌØÕ÷¡£
+¶øÏàÁÚµÄÁ½Ö¡½«»áËÍµ½Moti NetsÀ´ÌáÈ¡¹âÁ÷Í¼ÌØÕ÷¡£
+Ö®ºó¿Õ¼äÌØÕ÷ºÍ¹âÁ÷ÌØÕ÷ÈÚºÏºóÊäÈëµ½Ò»¸öRNNÀ´ÌáÈ¡Ê±ÐòÌØÕ÷¡£
+Í¨¹ýAMOCÍøÂç£¬Ã¿¸öÍ¼ÏñÐòÁÐ¶¼ÄÜ±»ÌáÈ¡³öÒ»¸öÈÚºÏÁËÄÚÈÝÐÅÏ¢¡¢ÔË¶¯ÐÅÏ¢µÄÌØÕ÷¡£
+ÍøÂç²ÉÓÃÁË·ÖÀàËðÊ§ºÍ¶Ô±ÈËðÊ§À´ÑµÁ·Ä£ÐÍ¡£
+ÈÚºÏÁËÔË¶¯ÐÅÏ¢µÄÐòÁÐÍ¼ÏñÌØÕ÷ÄÜ¹»Ìá¸ßÐÐÈËÖØÊ¶±ðµÄ×¼È·¶È¡£
+
+\begin{figure}[htb]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=0.6\paperwidth]{./Pictures/AMOC.png}
+  \caption{AMOC½á¹¹Ê¾ÒâÍ¼}\label{AMOC}
+\end{figure}
+
 
 \section{¿çÉãÏñÍ·¶àÄ¿±ê¸ú×Ù}
 
 \subsection{Ïà¹ØÊý¾Ý¼¯}
+
+\begin{enumerate}[(1)]
+
+\item DukeMTMC
+
+DukeMTMCÊý¾Ý¼¯ÊÇ×îÐÂµÄ¿çÉãÏñÍ·¶àÄ¿±ê¸ú×ÙÊý¾Ý¼¯
+
+\item MOT17
+
+\item MOT16
+
+\end{enumerate}
+
+\clearpage
+\subsection{×¼È·¶ÈÆÀ¹À×¼Ôò}
+
+¿çÉãÏñÍ·¶àÄ¿±ê¸ú×Ù×¼È·¶ÈµÄÆÀ¼Û×¼ÔòÓÐºÜ¶à£¬Ö÷Òª°üÀ¨µ¥ÉãÏñÍ·µÄ¶àÄ¿±ê¸ú×ÙºÍ¿çÉãÏñÍ·Á½²¿·Ö£¬±¾Ð¡½Ú½«Öð¸ö½éÉÜ\cite{Ristani2016Performance,Keni2008Evaluating,Milan2013Challenges}¡£
+
+\begin{itemize}
+\item{TP}£ºÕæÕý(True Positive, TP)ÊÇÖ¸±»Ä£ÐÍÔ¤²âÎªÕýµÄÕýÑù±¾£¬¿ÉÒÔ³ÆÎªÅÐ¶ÏÎªÕýµÄÕýÈ·ÂÊ¡£
+\item{TN}£ºÕæ¸º(True Negative, TN)ÊÇÖ¸±»Ä£ÐÍÔ¤²âÎª¸ºµÄ¸ºÑù±¾£¬¿ÉÒÔ³ÆÎªÅÐ¶ÏÎª¸ºµÄÕýÈ·ÂÊ¡£
+\item{FP}£º¼ÙÕý(False Positive, FP)ÊÇÖ¸±»Ä£ÐÍÔ¤²âÎªÕýµÄ¸ºÑù±¾£¬¿ÉÒÔ³ÆÎªÎó±¨ÂÊ¡£
+\item{FN}£º¼Ù¸º(FALSE Negative, FN)ÊÇÖ¸±»Ä£ÐÍÔ¤²âÎª¸ºµÄÕýÑù±¾£¬¿ÉÒÔ³ÆÎªÂ©±¨ÂÊ¡£
+\item{Accuracy}£º×¼È·¶ÈÊÇÖ¸±»·ÖÀàÆ÷ÅÐ¶¨ÕýÈ·µÄ±ÈÖØ£¬¹«Ê¾±íÊ¾Îª£º
+\begin{equation}\label{Accuracy}
+  A = \frac{TP+TN}{TP+TN+FP+FN}
+\end{equation}
+\item{Precision}£º¾«È·¶ÈÊÇÖ¸±»·ÖÀàÆ÷ÅÐ¶¨µÄÕýÀýÖÐÕæÕýµÄÕýÀýÑù±¾µÄ±ÈÖØ£¬¹«Ê¾±íÊ¾Îª£º
+\begin{equation}\label{Precision}
+  P = \frac{TP}{TP+FP}
+\end{equation}
+\item{Recall}£ºÕÙ»ØÂÊÊÇÖ¸±»·ÖÀàÆ÷ÕýÈ·ÅÐ¶¨µÄÕýÀýÕ¼×ÜµÄÕýÀýµÄ±ÈÖØ£¬¹«Ê¾±íÊ¾Îª£º
+\begin{equation}\label{Recall}
+  R = \frac{TP}{TP+FN}
+\end{equation}
+\item{MOTA}£º¶àÄ¿±ê¸ú×Ù×¼È·¶È(Multiple Object Tracking Accuracy, MOTA)ÊÇºâÁ¿µ¥ÉãÏñÍ·¶àÄ¿±ê¸ú×Ù×¼È·¶ÈµÄÒ»¸öÖ¸±ê£¬¹«Ê¾±íÊ¾Îª£º
+    \begin{equation}\label{MOTA}
+      MOTA = 1 - \frac{FN+FP+\mathit{\Phi}}{T}
+    \end{equation}
+    ÆäÖÐ$FN$ÊÇÖ¸ËùÓÐÖ¡µÄ¼Ù¸ºÊýÖ®ºÍ£¬¼´¼ÙÉè$fn_t$ÎªµÚ$t$Ö¡µÄ¼Ù¸ºÊý£¬Ôò$FN = \sum_t fn_t$£¬Í¬Àí$FP = \sum_t fp_t$¡£
+    $T$ÊÇÖ¸ËùÓÐÖ¡ÕæÕýÄ¿±êÊýµÄ×ÜºÍ£¬¼´¼ÙÉèµÚ$t$Ö¡ÓÐ$g_t$¸öÄ¿±ê£¬Ôò$T = \sum_t g_t$¡£
+    $\mathit{\Phi}$ÊÇÖ¸ËùÓÐÖ¡Ä¿±ê·¢ÉúÌø±äÊý(Fragmentation)£¬$\phi_t$ÎªµÚ$t$Ö¡µÄÄ¿±êÌø±äÊý£¬Ôò$\mathit{\Phi} = \sum_t \phi_t$¡£»»¶øÑÔÖ®£¬ÕâÈýÏîÒÀ´Î±íÊ¾È±Ê§ÂÊ¡¢ÎóÅÐÂÊºÍÎóÅäÂÊ¡£
+\item{MOTP}£º¶àÄ¿±ê¸ú×Ù¾«È·¶È(Multiple Object Tracking Precision, MOTP)ÊÇºâÁ¿µ¥ÉãÏñÍ·¶àÄ¿±ê¸ú×ÙÎ»ÖÃÎó²îµÄÒ»¸öÖ¸±ê£¬¹«Ê½±íÊ¾Îª£º
+    \begin{equation}\label{MOTP}
+      MOTP = \frac{\sum_{i,t}d_t^i}{\sum_t c_t}
+    \end{equation}
+    ÆäÖÐ$c_t$±íÊ¾µÚ$t$Ö¡µÄÆ¥Åä¸öÊý£¬¶ÔÃ¿¶ÔÆ¥Åä¼ÆËãÆ¥ÅäÎó²î$d_t^i$£¬±íÊ¾µÚ$t$Ö¡ÏÂÄ¿±ê$O_i$ÓëÆäÅä¶Ô¼ÙÉèÎ»ÖÃÖ®¼äµÄ¾àÀë¡£
+
+\item{MT}£º¶àÊý¸ú×ÙÊý(Mostly tracked)ÊÇÖ¸¸ú×Ù²¿·Ö´óÓÚ80$\%$µÄ¸ú×Ù¹ì¼£Êý£¬ÊýÖµÔ½´óÔ½ºÃ¡£
+
+\item{ML}£º¶àÊý¶ªÊ§Êý(Mostly lost)ÊÇÖ¸¶ªÊ§²¿·Ö´óÓÚ80$\%$µÄ¸ú×Ù¹ì¼£Êý£¬ÊýÖµÔ½Ð¡Ô½ºÃ¡£
+
+\item{IDS}£ºID×ª±äÊý(ID switches)ÊÇÖ¸¸ú×Ù¹ì¼£ÖÐÐÐÈËIDË²¼ä×ª»»µÄ´ÎÊý£¬Í¨³£ÄÜ·´Ó¦¸ú×ÙµÄÎÈ¶¨ÐÔ£¬ÊýÖµÔ½Ð¡Ô½ºÃ¡£
+
+\item{IDP}£ºÊ¶±ð¾«È·¶È(Identification Precision)ÊÇÖ¸Ã¿¸öÐÐÈË¿òÖÐÐÐÈËIDÊ¶±ðµÄ¾«È·¶È¡£¹«Ê½Îª£º
+    \begin{equation}\label{IDP}
+      IDP = \frac{IDTP}{IDTP+IDFP}
+    \end{equation}
+    ÆäÖÐ$IDTP$ºÍ$IDFP$·Ö±ðÊÇÕæÕýIDÊýºÍ¼ÙÕýIDÊý¡£
+
+\item{IDR}£ºÊ¶±ð»ØÕÙÂÊ(Identification Recall)ÊÇÖ¸Ã¿¸öÐÐÈË¿òÖÐÐÐÈËIDÊ¶±ðµÄ»ØÕÙÂÊ¡£¹«Ê½Îª£º
+    \begin{equation}\label{IDR}
+      IDP = \frac{IDTP}{IDTP+IDFN}
+    \end{equation}
+    ÆäÖÐ$IDFN$ÊÇ¼Ù¸ºIDÊý¡£
+
+\item{IDF1}£ºÊ¶±ðFÖµ(Identification F-Score)ÊÇÖ¸Ã¿¸öÐÐÈË¿òÖÐÐÐÈËIDÊ¶±ðµÄFÖµ¡£¹«Ê½Îª£º
+    \begin{equation}\label{IDR}
+      IDP = \frac{2IDTP}{2IDTP+IDFP+IDFN}
+    \end{equation}
+    
+\item{MCTA}£º¿çÉãÏñÍ·¸ú×Ù×¼È·¶È(Multi-camera Tracking Accuracy)ÊÇºâÁ¿¶à¸öÉãÏñÍ·ÏÂ¸ú×ÙµÄ×¼È·¶È£¬ÊÇÄ¿Ç°ÉÙÓÐµÄ×¨ÃÅÓÃÀ´ºâÁ¿¶àÉãÏñÍ·¸ú×ÙÐÔÄÜµÄÆÀ¼ÛÖ¸±ê¡£¹«Ê½Îª£º
+    \begin{equation}\label{MCTA}
+      MCTA = \underbrace{\frac{2PR}{P+R}}_{F1}\underbrace{(1-\frac{M^w}{T^w})}_{\text{within camera}}\underbrace{(1-\frac{M^h}{T^h})}_{\text{handover}}
+    \end{equation}
+    ÆäÖÐ$P,R$ÎªÇ°ÎÄ½éÉÜµÄ¾«×¼¶ÈºÍ»ØÕÙÂÊ£¬$M^w$ÊÇµ¥Ïà»úÄÚÐÐÈËIDµÄ´íÎóÆ¥ÅäÊý£¬$T^w$ÊÇµ¥Ïà»úÄÚ£¨±ê×¢£©ÕýÈ·¼ì²âÊý£¬$M^h$ÊÇ¿çÏà»úÐÐÈËIDµÄ´íÎóÆ¥ÅäÊý£¬$T^h$ÊÇÖ¸¿çÏà»ú£¨±ê×¢µÄ£©ÕýÈ·¼ì²âÊý£¨¼´Ä³¸öÄ¿±ê´ÓÄ³¸öÏà»úÖÐÏûÊ§¶øÏÂ´ÎÔÙ³öÏÖÔÚÁíÍâÒ»¸öÏà»úµÄÇé¿ö£©¡£MCTAµÄ·¶Î§ÊÇ$[0,1]$¡£
+\end{itemize}

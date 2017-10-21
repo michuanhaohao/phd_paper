@@ -193,6 +193,25 @@ Hao Liu, Zequn Jie, Karlekar Jayashree, Meibin Qi, Jianguo Jiang, Shuicheng
   context[J].
 \newblock arXiv preprint arXiv:1701.00193, 2017.
 
+\bibitem{Ristani2016Performance}
+Ergys Ristani, Francesco Solera, Roger Zou, Rita Cucchiara, Carlo Tomasi.
+\newblock Performance measures and a data set for multi-target, multi-camera
+  tracking[J].
+\newblock 2016:17--35.
+
+\bibitem{Keni2008Evaluating}
+B.~Keni, S.~Rainer.
+\newblock Evaluating multiple object tracking performance: the clear mot
+  metrics[J].
+\newblock Eurasip Journal on Image $\&$ Video Processing, 2008.
+\newblock 2008(1):246309.
+
+\bibitem{Milan2013Challenges}
+Anton Milan, Konrad Schindler, Stefan Roth.
+\newblock Challenges of ground truth evaluation of multi-target
+  tracking[C]//Computer Vision and Pattern Recognition Workshops.
+\newblock 2013:735--742.
+
 \bibitem{he2016deep}
 Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.
 \newblock Deep residual learning for image recognition[C]//Proceedings of the
@@ -228,6 +247,11 @@ Yuntao Chen, Naiyan Wang, Zhaoxiang Zhang.
   similarities transfer[J].
 \newblock arXiv preprint arXiv:1707.01220, 2017.
 
+\bibitem{zhong2017re}
+Zhun Zhong, Liang Zheng, Donglin Cao, Shaozi Li.
+\newblock Re-ranking person re-identification with k-reciprocal encoding[J].
+\newblock arXiv preprint arXiv:1701.08398, 2017.
+
 \bibitem{martinel2016temporal}
 Niki Martinel, Abir Das, Christian Micheloni, Amit~K Roy-Chowdhury.
 \newblock Temporal model adaptation for person re-identification[C]//European
@@ -246,11 +270,6 @@ Ying-Cong Chen, Xiatian Zhu, Wei-Shi Zheng, Jian-Huang Lai.
 \newblock Person re-identification by camera correlation aware feature
   augmentation[J].
 \newblock IEEE Transactions on Pattern Analysis and Machine Intelligence, 2017.
-
-\bibitem{zhong2017re}
-Zhun Zhong, Liang Zheng, Donglin Cao, Shaozi Li.
-\newblock Re-ranking person re-identification with k-reciprocal encoding[J].
-\newblock arXiv preprint arXiv:1701.08398, 2017.
 
 \bibitem{bai2017scalable}
 Song Bai, Xiang Bai, Qi~Tian.
