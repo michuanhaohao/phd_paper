@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.3)  20 OCT 2017 16:36
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.21)  22 OCT 2017 23:37
 entering extended mode
-**F:/doc/phd/2017/phd_paper/Proposal/Proposal.tex
-(F:/doc/phd/2017/phd_paper/Proposal/Proposal.tex
+**F:/文档/Phd/2017/phd_paper/Proposal/Proposal.tex
+(F:/文档/Phd/2017/phd_paper/Proposal/Proposal.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
-(F:\doc\phd\2017\phd_paper\Proposal\ZJUthesis.cls
+(F:\文档\Phd\2017\phd_paper\Proposal\ZJUthesis.cls
 Document Class: ZJUthesis 2013/01/25 v2.0 ZJUthesis document class
 (D:\CTEX\MiKTeX\tex\latex\ctex\ctexbook.cls
 Document Class: ctexbook 2011/03/11 v1.02c ctexbook document class
@@ -737,15 +737,15 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip117
 )
-(F:\doc\phd\2017\phd_paper\Proposal\Proposal.aux
-(F:\doc\phd\2017\phd_paper\Proposal\Chapters\abstractC.aux)
-(F:\doc\phd\2017\phd_paper\Proposal\Chapters\chap1.aux)
-(F:\doc\phd\2017\phd_paper\Proposal\Chapters\chap2.aux
+(F:\文档\Phd\2017\phd_paper\Proposal\Proposal.aux
+(F:\文档\Phd\2017\phd_paper\Proposal\Chapters\abstractC.aux)
+(F:\文档\Phd\2017\phd_paper\Proposal\Chapters\chap1.aux)
+(F:\文档\Phd\2017\phd_paper\Proposal\Chapters\chap2.aux
 
 LaTeX Warning: Label `IDR' multiply defined.
 
-) (F:\doc\phd\2017\phd_paper\Proposal\Chapters\chap3.aux)
-(F:\doc\phd\2017\phd_paper\Proposal\Chapters\chap4.aux
+) (F:\文档\Phd\2017\phd_paper\Proposal\Chapters\chap3.aux)
+(F:\文档\Phd\2017\phd_paper\Proposal\Chapters\chap4.aux
 
 LaTeX Warning: Label `Triplet' multiply defined.
 
@@ -864,7 +864,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
- (F:\doc\phd\2017\phd_paper\Proposal\ZJUthesis.cfg
+ (F:\文档\Phd\2017\phd_paper\Proposal\ZJUthesis.cfg
 File: ZJUthesis.cfg 2006/04/15 v1.0 ZJUthesis configuration file
 \c@algo=\count287
 \c@thm=\count288
@@ -922,8 +922,8 @@ LaTeX Info: Redefining \ref on input line 19.
 LaTeX Info: Redefining \pageref on input line 19.
 LaTeX Info: Redefining \nameref on input line 19.
 
-(F:\doc\phd\2017\phd_paper\Proposal\Proposal.out)
-(F:\doc\phd\2017\phd_paper\Proposal\Proposal.out)
+(F:\文档\Phd\2017\phd_paper\Proposal\Proposal.out)
+(F:\文档\Phd\2017\phd_paper\Proposal\Proposal.out)
 \@outlinefile=\write4
 
 (D:\CTEX\MiKTeX\tex\latex\cjk\standard.bdg
@@ -987,9 +987,9 @@ Overfull \hbox (26.8753pt too wide) detected at line 62
 [1
 
 
- <F:/doc/phd/2017/phd_paper/Proposal/CoverPagepic/ZJDX.pdf> <F:/doc/phd/2017/ph
-d_paper/Proposal/CoverPagepic/QSY.pdf>]
-(F:\doc\phd\2017\phd_paper\Proposal\Chapters\abstractC.tex
+ <F:/文档/Phd/2017/phd_paper/Proposal/CoverPagepic/ZJDX.pdf> <F:/文档/Phd/2
+017/phd_paper/Proposal/CoverPagepic/QSY.pdf>]
+(F:\文档\Phd\2017\phd_paper\Proposal\Chapters\abstractC.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 12.05pt
@@ -1024,19 +1024,19 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 12.05pt
 (hyperref)                replaced by space on input line 86.
 
-(F:\doc\phd\2017\phd_paper\Proposal\Proposal.toc)
+(F:\文档\Phd\2017\phd_paper\Proposal\Proposal.toc)
 \tf@toc=\write5
  [2
 
 
 ]
-(F:\doc\phd\2017\phd_paper\Proposal\Chapters\chap1.tex
+(F:\文档\Phd\2017\phd_paper\Proposal\Chapters\chap1.tex
 1\ignorespaces 
-) [1
+[1
 
 
 
-] (F:\doc\phd\2017\phd_paper\Proposal\Chapters\chap2.tex
+]) [2] (F:\文档\Phd\2017\phd_paper\Proposal\Chapters\chap2.tex
 2\ignorespaces 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.05> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
@@ -1046,12 +1046,12 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12.05> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
- [2
+ [3
 
 
 
-] [3]
-<./Pictures/dataset.jpg, id=247, 695.59875pt x 418.56375pt>
+] [4]
+<./Pictures/dataset.jpg, id=253, 695.59875pt x 418.56375pt>
 File: ./Pictures/dataset.jpg Graphic file (type jpg)
 
 <use ./Pictures/dataset.jpg>
@@ -1064,7 +1064,7 @@ File: c19rm.fd 2007/05/06 v0.8a ctex font definition file
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.54> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 84.
 
-[4 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/dataset.jpg>] [5]
+[5 <F:/文档/Phd/2017/phd_paper/Proposal/Pictures/dataset.jpg>] [6]
 Overfull \hbox (12.9474pt too wide) in paragraph at lines 142--147
 \C19/zhfs/bx/n/12.05/64 \OT1/ptm/m/n/12.05 (Representation)|\C19/zhfs/m/n/12.0
 5/26 �| \C19/zhfs/m/n/12.05/56 � \C19/zhfs/m/n/12.05/61 � \C19/zhfs/bx/n/12.05/
@@ -1077,28 +1077,28 @@ zhfs/bx/n/12.05/41 � \C19/zhfs/m/n/12.05/48 a\OT1/ptm/m/n/12.05 (Classification
 /Identification)\C19/zhfs/m/n/12.05/58 �
  []
 
-<./Pictures/idnet.png, id=285, 605.26125pt x 296.60812pt>
+<./Pictures/idnet.png, id=289, 605.26125pt x 296.60812pt>
 File: ./Pictures/idnet.png Graphic file (type png)
 
 <use ./Pictures/idnet.png>
 Package pdftex.def Info: ./Pictures/idnet.png used on input line 156.
 (pdftex.def)             Requested size: 388.37646pt x 190.32639pt.
 
-<./Pictures/attri+id.jpg, id=289, 761.09344pt x 277.78781pt>
+<./Pictures/attri+id.jpg, id=293, 761.09344pt x 277.78781pt>
 File: ./Pictures/attri+id.jpg Graphic file (type jpg)
 
 <use ./Pictures/attri+id.jpg>
 Package pdftex.def Info: ./Pictures/attri+id.jpg used on input line 168.
 (pdftex.def)             Requested size: 388.37646pt x 141.75467pt.
- [6 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/idnet.png>] <./Pictures/siames
-e.png, id=311, 1204.5pt x 496.85625pt>
+ [7 <F:/文档/Phd/2017/phd_paper/Proposal/Pictures/idnet.png>] <./Pictures/sia
+mese.png, id=315, 1204.5pt x 496.85625pt>
 File: ./Pictures/siamese.png Graphic file (type png)
 
 <use ./Pictures/siamese.png>
 Package pdftex.def Info: ./Pictures/siamese.png used on input line 200.
 (pdftex.def)             Requested size: 388.37646pt x 160.20268pt.
- [7 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/attri+id.jpg>] <./Pictures/tri
-plet.png, id=329, 537.00626pt x 211.79124pt>
+ [8 <F:/文档/Phd/2017/phd_paper/Proposal/Pictures/attri+id.jpg>] <./Pictures/
+triplet.png, id=333, 537.00626pt x 211.79124pt>
 File: ./Pictures/triplet.png Graphic file (type png)
 
 <use ./Pictures/triplet.png>
@@ -1106,30 +1106,31 @@ Package pdftex.def Info: ./Pictures/triplet.png used on input line 220.
 (pdftex.def)             Requested size: 298.75394pt x 117.82668pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 221.
- [8 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/siamese.png (PNG copy)> <F:/do
-c/phd/2017/phd_paper/Proposal/Pictures/triplet.png (PNG copy)>] <./Pictures/qua
-druplet.png, id=347, 919.435pt x 461.725pt>
+ [9 <F:/文档/Phd/2017/phd_paper/Proposal/Pictures/siamese.png (PNG copy)> <F:
+/文档/Phd/2017/phd_paper/Proposal/Pictures/triplet.png (PNG copy)>] <./Pictur
+es/quadruplet.png, id=351, 919.435pt x 461.725pt>
 File: ./Pictures/quadruplet.png Graphic file (type png)
 
 <use ./Pictures/quadruplet.png>
 Package pdftex.def Info: ./Pictures/quadruplet.png used on input line 248.
 (pdftex.def)             Requested size: 388.37646pt x 195.03635pt.
- [9 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/quadruplet.png (PNG copy)>]
-<./Pictures/local1.png, id=361, 886.31125pt x 269.005pt>
+ [10 <F:/文档/Phd/2017/phd_paper/Proposal/Pictures/quadruplet.png (PNG copy)>
+]
+<./Pictures/local1.png, id=366, 886.31125pt x 269.005pt>
 File: ./Pictures/local1.png Graphic file (type png)
 
 <use ./Pictures/local1.png>
 Package pdftex.def Info: ./Pictures/local1.png used on input line 287.
 (pdftex.def)             Requested size: 418.25368pt x 126.94545pt.
 
-<./Pictures/pose.png, id=364, 455.7025pt x 247.92625pt>
+<./Pictures/pose.png, id=369, 455.7025pt x 247.92625pt>
 File: ./Pictures/pose.png Graphic file (type png)
 
 <use ./Pictures/pose.png>
 Package pdftex.def Info: ./Pictures/pose.png used on input line 302.
 (pdftex.def)             Requested size: 298.75394pt x 162.54231pt.
- [10 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/local1.png (PNG copy)>] <./Pi
-ctures/spindle.png, id=380, 1413.28pt x 493.845pt>
+ [11 <F:/文档/Phd/2017/phd_paper/Proposal/Pictures/local1.png (PNG copy)>] <.
+/Pictures/spindle.png, id=384, 1413.28pt x 493.845pt>
 File: ./Pictures/spindle.png Graphic file (type png)
 
 <use ./Pictures/spindle.png>
@@ -1140,59 +1141,60 @@ Overfull \hbox (5.50024pt too wide) in paragraph at lines 319--320
  [][] 
  []
 
-<./Pictures/glad.png, id=382, 1122.1925pt x 765.86125pt>
+<./Pictures/glad.png, id=386, 1122.1925pt x 765.86125pt>
 File: ./Pictures/glad.png Graphic file (type png)
 
 <use ./Pictures/glad.png>
 Package pdftex.def Info: ./Pictures/glad.png used on input line 331.
 (pdftex.def)             Requested size: 388.37646pt x 265.05212pt.
- [11 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/pose.png (PNG copy)>] [12 <F:
-/doc/phd/2017/phd_paper/Proposal/Pictures/spindle.png (PNG copy)> <F:/doc/phd/2
-017/phd_paper/Proposal/Pictures/glad.png (PNG copy)>]
-<./Pictures/video_reid.png, id=401, 799.98875pt x 489.83pt>
+ [12 <F:/文档/Phd/2017/phd_paper/Proposal/Pictures/pose.png (PNG copy)>] [13 
+<F:/文档/Phd/2017/phd_paper/Proposal/Pictures/spindle.png (PNG copy)> <F:/文
+档/Phd/2017/phd_paper/Proposal/Pictures/glad.png (PNG copy)>] <./Pictures/vide
+o_reid.png, id=405, 799.98875pt x 489.83pt>
 File: ./Pictures/video_reid.png Graphic file (type png)
 
 <use ./Pictures/video_reid.png>
 Package pdftex.def Info: ./Pictures/video_reid.png used on input line 350.
 (pdftex.def)             Requested size: 298.75394pt x 182.92342pt.
 
-<./Pictures/video_flow.png, id=404, 1067.99pt x 794.97pt>
+<./Pictures/video_flow.png, id=408, 1067.99pt x 794.97pt>
 File: ./Pictures/video_flow.png Graphic file (type png)
 
 <use ./Pictures/video_flow.png>
 Package pdftex.def Info: ./Pictures/video_flow.png used on input line 367.
 (pdftex.def)             Requested size: 358.50836pt x 266.85336pt.
- [13 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/video_reid.png (PNG copy)>]
-<./Pictures/AMOC.png, id=415, 1018.80624pt x 578.16pt>
+ [14 <F:/文档/Phd/2017/phd_paper/Proposal/Pictures/video_reid.png (PNG copy)>
+]
+<./Pictures/AMOC.png, id=419, 1018.80624pt x 578.16pt>
 File: ./Pictures/AMOC.png Graphic file (type png)
 
 <use ./Pictures/AMOC.png>
 Package pdftex.def Info: ./Pictures/AMOC.png used on input line 383.
 (pdftex.def)             Requested size: 358.50836pt x 203.45296pt.
- [14 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/video_flow.png (PNG copy)> <F
-:/doc/phd/2017/phd_paper/Proposal/Pictures/AMOC.png (PNG copy)>] [15] [16
+ [15 <F:/文档/Phd/2017/phd_paper/Proposal/Pictures/video_flow.png (PNG copy)>
+ <F:/文档/Phd/2017/phd_paper/Proposal/Pictures/AMOC.png (PNG copy)>] [16] [17
 
-]) [17]
-(F:\doc\phd\2017\phd_paper\Proposal\Chapters\chap3.tex
+]) [18]
+(F:\文档\Phd\2017\phd_paper\Proposal\Chapters\chap3.tex
 3\ignorespaces 
-) [18
+) [19
 
 
 
-] (F:\doc\phd\2017\phd_paper\Proposal\Chapters\chap4.tex
+] (F:\文档\Phd\2017\phd_paper\Proposal\Chapters\chap4.tex
 4\ignorespaces 
-[19
+[20
 
 
 
-] <./Pictures/exloss1.png, id=466, 436.63126pt x 319.1925pt>
+] <./Pictures/exloss1.png, id=470, 436.63126pt x 319.1925pt>
 File: ./Pictures/exloss1.png Graphic file (type png)
 
 <use ./Pictures/exloss1.png>
 Package pdftex.def Info: ./Pictures/exloss1.png used on input line 54.
 (pdftex.def)             Requested size: 189.00026pt x 138.16574pt.
 
-<./Pictures/exloss2.png, id=467, 444.66125pt x 316.18124pt>
+<./Pictures/exloss2.png, id=471, 444.66125pt x 316.18124pt>
 File: ./Pictures/exloss2.png Graphic file (type png)
 
 <use ./Pictures/exloss2.png>
@@ -1200,68 +1202,68 @@ Package pdftex.def Info: ./Pictures/exloss2.png used on input line 57.
 (pdftex.def)             Requested size: 189.00026pt x 134.3873pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.03> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 82.
- [20 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/exloss1.png (PNG copy)> <F:/d
-oc/phd/2017/phd_paper/Proposal/Pictures/exloss2.png (PNG copy)>] <./Pictures/Tr
-ihard.png, id=487, 779.91376pt x 777.90625pt>
+ [21 <F:/文档/Phd/2017/phd_paper/Proposal/Pictures/exloss1.png (PNG copy)> <F
+:/文档/Phd/2017/phd_paper/Proposal/Pictures/exloss2.png (PNG copy)>]
+<./Pictures/Trihard.png, id=491, 779.91376pt x 777.90625pt>
 File: ./Pictures/Trihard.png Graphic file (type png)
 
 <use ./Pictures/Trihard.png>
 Package pdftex.def Info: ./Pictures/Trihard.png used on input line 125.
 (pdftex.def)             Requested size: 189.00026pt x 188.50552pt.
 
-<./Pictures/MSML.png, id=488, 784.9325pt x 783.92876pt>
+<./Pictures/MSML.png, id=492, 784.9325pt x 783.92876pt>
 File: ./Pictures/MSML.png Graphic file (type png)
 
 <use ./Pictures/MSML.png>
 Package pdftex.def Info: ./Pictures/MSML.png used on input line 128.
 (pdftex.def)             Requested size: 189.00026pt x 188.75679pt.
- [21] [22 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/Trihard.png (PNG copy)> 
-<F:/doc/phd/2017/phd_paper/Proposal/Pictures/MSML.png (PNG copy)>] <./Pictures/
-sp.png, id=508, 712.6625pt x 318.18875pt>
+ [22] [23 <F:/文档/Phd/2017/phd_paper/Proposal/Pictures/Trihard.png (PNG copy
+)> <F:/文档/Phd/2017/phd_paper/Proposal/Pictures/MSML.png (PNG copy)>] <./Pic
+tures/sp.png, id=512, 712.6625pt x 318.18875pt>
 File: ./Pictures/sp.png Graphic file (type png)
 
 <use ./Pictures/sp.png>
 Package pdftex.def Info: ./Pictures/sp.png used on input line 177.
 (pdftex.def)             Requested size: 418.25368pt x 186.73927pt.
- [23]
-<./Pictures/AAM.png, id=522, 1258.7025pt x 371.3875pt>
+ [24]
+<./Pictures/AAM.png, id=526, 1258.7025pt x 371.3875pt>
 File: ./Pictures/AAM.png Graphic file (type png)
 
 <use ./Pictures/AAM.png>
 Package pdftex.def Info: ./Pictures/AAM.png used on input line 215.
 (pdftex.def)             Requested size: 448.1309pt x 132.22032pt.
- [24 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/sp.png (PNG copy)>]
+ [25 <F:/文档/Phd/2017/phd_paper/Proposal/Pictures/sp.png (PNG copy)>]
 Overfull \hbox (4.3351pt too wide) in paragraph at lines 228--240
  [][] 
  []
 
-[25 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/AAM.png (PNG copy)>]
-<./Pictures/DML.png, id=541, 985.6825pt x 295.1025pt>
+[26 <F:/文档/Phd/2017/phd_paper/Proposal/Pictures/AAM.png (PNG copy)>]
+<./Pictures/DML.png, id=545, 985.6825pt x 295.1025pt>
 File: ./Pictures/DML.png Graphic file (type png)
  <use ./Pictures/DML.png>
 Package pdftex.def Info: ./Pictures/DML.png used on input line 263.
 (pdftex.def)             Requested size: 388.37646pt x 116.27826pt.
 
-[26 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/DML.png (PNG copy)>]
-<./Pictures/mutual.png, id=554, 1009.7725pt x 476.78125pt>
+[27 <F:/文档/Phd/2017/phd_paper/Proposal/Pictures/DML.png (PNG copy)>]
+<./Pictures/mutual.png, id=558, 1009.7725pt x 476.78125pt>
 File: ./Pictures/mutual.png Graphic file (type png)
 
 <use ./Pictures/mutual.png>
 Package pdftex.def Info: ./Pictures/mutual.png used on input line 315.
 (pdftex.def)             Requested size: 388.37646pt x 183.37582pt.
- [27 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/mutual.png (PNG copy)>]
+ [28 <F:/文档/Phd/2017/phd_paper/Proposal/Pictures/mutual.png (PNG copy)>]
 Overfull \hbox (2.24034pt too wide) in paragraph at lines 331--359
  [][] 
  []
 
-<./Pictures/hp.png, id=568, 1472.50125pt x 421.575pt>
+<./Pictures/hp.png, id=573, 1472.50125pt x 421.575pt>
 File: ./Pictures/hp.png Graphic file (type png)
  <use ./Pictures/hp.png>
 Package pdftex.def Info: ./Pictures/hp.png used on input line 374.
 (pdftex.def)             Requested size: 448.1309pt x 128.30035pt.
 
-[28] [29 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/hp.png (PNG copy)>]
-[30]
+[29] [30 <F:/文档/Phd/2017/phd_paper/Proposal/Pictures/hp.png (PNG copy)>]
+[31]
 Overfull \hbox (21.61292pt too wide) in paragraph at lines 524--528
 []\C19/zhfs/bx/n/12.05/63 3\OT1/ptm/m/n/12.05 Market1501\C19/zhfs/bx/n/12.05/55
  � \C19/zhfs/bx/n/12.05/46 � \C19/zhfs/bx/n/12.05/45 8 \C19/zhfs/bx/n/12.05/54 
@@ -1290,10 +1292,10 @@ x/n/12.05/40 �|\C19/zhfs/m/n/12.05/25 !| \OT1/ptm/m/n/12.05 98.4$\OT1/cmr/m/n/1
 2.05 %$\C19/zhfs/bx/n/12.05/40 \OT1/ptm/m/n/12.05 rank-
  []
 
-[31
+[32
 
 
-]) [32] (F:\doc\phd\2017\phd_paper\Proposal\Proposal.bbl [33
+]) [33] (F:\文档\Phd\2017\phd_paper\Proposal\Proposal.bbl [34
 
 
 
@@ -1309,72 +1311,72 @@ Underfull \hbox (badness 7704) in paragraph at lines 164--168
 push video-based per-son re-
  []
 
-[34]
+[35]
 Underfull \hbox (badness 2181) in paragraph at lines 262--267
 []\OT1/ptm/m/n/10.54 Li Zhang, Tao X-i-ang, Shao-gang Gong.  Learn-ing a dis-cr
 im-i-na-tive nul-l s-pace for per-son re-
  []
 
-[35]) [36]
+[36]) [37]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
- (F:\doc\phd\2017\phd_paper\Proposal\Proposal.aux
-(F:\doc\phd\2017\phd_paper\Proposal\Chapters\abstractC.aux)
-(F:\doc\phd\2017\phd_paper\Proposal\Chapters\chap1.aux)
-(F:\doc\phd\2017\phd_paper\Proposal\Chapters\chap2.aux)
-(F:\doc\phd\2017\phd_paper\Proposal\Chapters\chap3.aux)
-(F:\doc\phd\2017\phd_paper\Proposal\Chapters\chap4.aux))
+ (F:\文档\Phd\2017\phd_paper\Proposal\Proposal.aux
+(F:\文档\Phd\2017\phd_paper\Proposal\Chapters\abstractC.aux)
+(F:\文档\Phd\2017\phd_paper\Proposal\Chapters\chap1.aux)
+(F:\文档\Phd\2017\phd_paper\Proposal\Chapters\chap2.aux)
+(F:\文档\Phd\2017\phd_paper\Proposal\Chapters\chap3.aux)
+(F:\文档\Phd\2017\phd_paper\Proposal\Chapters\chap4.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `Proposal.out' has not changed.
-(rerunfilecheck)             Checksum: 3CCF470B9446BBAE6C6AFDBA539DF082;1673.
+(rerunfilecheck)             Checksum: C57830FED09A3563D466EDD3ED60F8B4;1677.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18652 strings out of 495354
- 299496 string characters out of 3183859
- 377468 words of memory out of 3000000
- 21098 multiletter control sequences out of 15000+200000
- 113114 words of font info for 339 fonts, out of 3000000 for 9000
+ 18685 strings out of 495354
+ 300320 string characters out of 3183858
+ 377469 words of memory out of 3000000
+ 21130 multiletter control sequences out of 15000+200000
+ 113412 words of font info for 340 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 43i,14n,47p,923b,1277s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/Windows/Fonts/simhei.ttf>
-<C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/sim
-hei.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/F
-onts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/W
-indows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.t
-tf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts
-/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windo
-ws/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><
-C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simh
-ei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fo
-nts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Wi
-ndows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.tt
-c><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/
-simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Win
-dows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.
-ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fon
-ts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Win
-dows/Fonts/simhei.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simsun.tt
-c><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/s
-imfang.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simfang.ttf><C:/Windo
-ws/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simfang.ttf>
-<C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/si
-msun.ttc><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Window
-s/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf
-><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/
-simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Win
-dows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.
-ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fon
-ts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/
-Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.
-ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts
-/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windo
-ws/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><
-C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><D:/CTEX/MiKTeX/fonts/
+ 43i,14n,47p,926b,1277s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/WINDOWS/Fonts/simhei.ttf>
+<C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/sim
+hei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/F
+onts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/W
+INDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.t
+tf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts
+/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDO
+WS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><
+C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simh
+ei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fo
+nts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WI
+NDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.tt
+c><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/
+simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WIN
+DOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.
+ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fon
+ts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WIN
+DOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simsun.tt
+c><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/s
+imfang.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDO
+WS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simfang.ttf>
+<C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/si
+msun.ttc><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOW
+S/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf
+><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/
+simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WIN
+DOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.
+ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fon
+ts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/
+WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.
+ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts
+/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDO
+WS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><
+C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><D:/CTEX/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmex10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmmi12.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/CTE
 X/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/CTEX/MiKTeX/fonts/type1/p
@@ -1387,9 +1389,9 @@ CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/CTEX/MiKTeX/fonts/type
 mti12.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/CT
 EX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/time
 s/utmr8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Proposal.pdf (39 pages, 5452490 bytes).
+Output written on Proposal.pdf (40 pages, 5466835 bytes).
 PDF statistics:
- 1049 PDF objects out of 1200 (max. 8388607)
- 198 named destinations out of 1000 (max. 500000)
+ 1054 PDF objects out of 1200 (max. 8388607)
+ 199 named destinations out of 1000 (max. 500000)
  321 words of extra memory for PDF output out of 10000 (max. 10000000)
 

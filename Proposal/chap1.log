@@ -1,25 +1,25 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2015.12.20)  19 SEP 2017 16:29
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.21)  22 OCT 2017 21:15
 entering extended mode
-**F:/鏂囨。/Phd/2017/phd_paper/Report1/report1/Chapters/chap1.tex
-(F:/鏂囨。/Phd/2017/phd_paper/Report1/report1/Chapters/chap1.tex
+**F:/鏂囨。/Phd/2017/phd_paper/Proposal/Chapters/chap1.tex
+(F:/鏂囨。/Phd/2017/phd_paper/Proposal/Chapters/chap1.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 ! Undefined control sequence.
 l.1 \chapter
-            {卷积神经网络的发展}
+            {研究意义与研究背景}
 ? 
 ! Emergency stop.
 l.1 \chapter
-            {卷积神经网络的发展}
+            {研究意义与研究背景}
 End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 7 strings out of 495355
- 239 string characters out of 3183881
+ 7 strings out of 495354
+ 218 string characters out of 3183858
  44842 words of memory out of 3000000
  3276 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 5i,0n,1p,95b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
-No pages of output.
+ 5i,0n,1p,88b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
