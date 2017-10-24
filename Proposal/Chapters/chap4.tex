@@ -39,7 +39,7 @@ TriHard损失是在一个batch里面计算三元组损失。
 \begin{equation}\label{TriHard}
   L_{msml} = (\max_{a,p} d_{a,p}-\min_{m,n} d_{m,n}+\alpha)_+
 \end{equation}
-其中$a,p,m,n$均是batch中的图片，$a,p$是batch中最不像的正样本对，$m,n$是batch中最像的负样本对，$a,m$皆可以是正样本对也可以是负样本对。
+其中$a,p,m,n$均是batch中的图片，$a,p$是batch中最不像的正样本对，$m,n$是batch 中最像的负样本对，$a,m$皆可以是正样本对也可以是负样本对。
 概括而言TriHard损失是针对batch中的每一张图片都挑选了一个三元组，而MSML损失只挑选出最难的一个正样本对和最难的一个负样本对计算损失。
 所以MSML是比TriHard更难的一种难样本采样，此外$\max_{a,p} d_{a,p}$可以看作是正样本对距离的上界，$\min_{m,n} d_{m,n}$可以看作是负样本对的下界。
 MSML是为了把正负样本对的边界给推开，因此命名为边界样本挖掘损失。
@@ -67,7 +67,7 @@ Resnet50-X是指用Xception单元\cite{chollet2016xception}替代了Resnet50中所有的$3 \
 实验结果如表\ref{Table_MSML}所示，我们结合了度量学习损失和分类损失。
 Cls代表分类损失，Tri代表三元组损失，Quad代表四元组损失，TriHard代表TriHard损失。
 黑色粗体标注了最好结果，可以看出绝大多数的黑色粗体都出现在MSML的实验中。
-当然从实验结果也可以看出，不同的度量学习方法可能适用于不同的数据集，例如三元组损失在CUHK-SYSU上表现很好。
+当然从实验结果也可以看出，不同的度量学习方法可能适用于不同的数据集，例如三元组损失在CUHK-SYSU 上表现很好。
 具体实验结果可在表中查阅。
 \begin{table*}[tb]\footnotesize
   \centering
@@ -183,15 +183,15 @@ min(S_{i-1,j},S_{i,j-1})+d_{i,j} & i \ne 1, j \ne 1
 在本论文中我们采用残差网络(Resnet)\cite{he2016deep}作为基础模型(Base model)，所以最后的feature map的尺寸为$7 \times 7$，因此图片被分割成了7部分。
 图片中的数字表示区域ID，右边的黑色箭头是最后求解出来的最短路径。
 首先，我们连接$f_1$和$g_1$，因为它们是路径的开端。
-之后我们比较$d_{1,2}$和$d_{2,1}$发现$d_{2,1}>d_{1,2}$，所以我们认为图片A的第1区域和图片B的第2区域更加相似。
+之后我们比较$d_{1,2}$和$d_{2,1}$发现$d_{2,1}>d_{1,2}$，所以我们认为图片A的第1区域和图片B的第2 区域更加相似。
 所以我们连接图片A的第1区域和图片B的第2区域，在右边的图片反映为从$(1,1)$走到$(1,2)$。
-之后我们比较$d_{2,2}$和$d_{1,3}$，因为$d_{2,2}>d_{1,3}$，所以连接图片A的第1区域和图片B的第3区域，在右边的图片反映为从$(1,2)$走到$(1,3)$。
+之后我们比较$d_{2,2}$和$d_{1,3}$，因为$d_{2,2}>d_{1,3}$，所以连接图片A的第1 区域和图片B的第3区域，在右边的图片反映为从$(1,2)$走到$(1,3)$。
 按照这种规律寻找下去，最终的最短路径如图\ref{sp}右半所示。
 
-我们的SP距离可以应用于各种度量学习损失，在本论文中我们使用前文介绍的TriHard损失\cite{hermans2017defense}。
+我们的SP距离可以应用于各种度量学习损失，在本论文中我们使用前文介绍的TriHard 损失\cite{hermans2017defense}。
 对于每一个训练batch包含$N = P \times K$张图片，即$P$个ID的行人，每个行人随机挑选$K$ 张不同的图片。
 给定$I_1$和$I_2$两张图片，我们定义$S_{local}(I_1,I_2)$为它们的SP距离，定义$D_{global}(I_1,I_2)$为它们的全局L2距离。
-如图\ref{AAM}，我们结合了L2 TriHard损失和SP TriHard损失，最终损失函数$L_t$为：
+如图\ref{AAM}，我们结合了L2 TriHard损失和SP TriHard损失，最终损失函数$L_t$ 为：
 \begin{equation}\label{trplosshard}
 \begin{aligned}
 L_{t} = \frac{1}{N}\sum_{a \in batch}  \Bigg[ \Big (  S_{local}(a,p) - S_{local}&(a,n)+ \alpha \Big)_{+} + \Big ( D_{global}(a,p) -D_{global}(a,n)+ \beta \Big)_{+} \Bigg]\\
@@ -316,7 +316,7 @@ $L_{t}$、基于分类的互学习KL损失和本文提出的基于度量学习的互学习损失$L_{M_2}$。
   \caption{基于度量学习的互学习方法结构示意图}\label{mutual}
 \end{figure}
 
-在本论文中，我们使用Market1501、MARS、CUHK-SYSU和CUHK03公开数据集进行了实验，实验采取Resnet50和Resnet50-X作为互学习的两个网络。
+在本论文中，我们使用Market1501、MARS、CUHK-SYSU和CUHK03公开数据集进行了实验，实验采取Resnet50 和Resnet50-X作为互学习的两个网络。
 为了证明有效性，我们使用L2距离和SP距离分别进行了对比实验，最终实验结果如表\ref{Table:mutual}所示。
 其中字符"/"代表没有使用互学习，分别单独训练的基准实验。
 KL为论文\cite{zhang2017deep}提出的基于分类损失的互学习方法，而ours是指本文提出的互学习方法。
@@ -528,7 +528,7 @@ RK表示我们用论文\cite{zhong2017re}提出的重排序(Re-ranking)来代替L2距离检索图片。
 
 在CUHK03数据集上，目前现有最好的方法取得了89.7$\%$的rank-1准确度、98.4$\%$的rank-5准确度和99.2$\%$rank-10准确度，而我们的单模型取得91.7$\%$的rank-1准确度、98.7$\%$的rank-5准确度和99.4$\%$ 的rank-10准确度，超过了现有的方法。
 经过RK之后，rank-1涨到了96.1$\%$。
-通过集成互学习的两个模型，我们取得了92.5$\%$的rank-1准确度、99.5$\%$的rank-5准确度和99.6$\%$rank-10准确度，通过RK这个结果提升到97.0$\%$的rank-1准确度、99.6$\%$的rank-5准确度和99.7$\%$rank-10准确度。
+通过集成互学习的两个模型，我们取得了92.5$\%$的rank-1准确度、99.5$\%$的rank-5 准确度和99.6$\%$rank-10准确度，通过RK这个结果提升到97.0$\%$的rank-1准确度、99.6$\%$的rank-5准确度和99.7$\%$rank-10准确度。
 由于CUHK03的gallery集比较小，所以人类准确度也比较高，达到了95.7$\%$rank-1 准确度，远远超越了现在所有的方法和我们的模型。
 但是通过RK进行重排序之后，我们的单模型最终依然超越了人类的准确度。
 
@@ -550,19 +550,22 @@ RK表示我们用论文\cite{zhong2017re}提出的重排序(Re-ranking)来代替L2距离检索图片。
 \section{成果作品}
 
 本文作者已经撰写学术论文三篇和发明专利两篇。
-其中学术论文有一篇一作期刊论文已经录用，一篇一作论文在投计算机视觉顶会CVPR2018，一篇二作论文arxiv已经挂出待投。
+其中学术论文有一篇一作期刊论文已经录用，一篇共同一作论文在投计算机视觉顶会CVPR2018，一篇二作论文arxiv已经挂出待投。
 发明专利其中一篇处于审核状态，一篇处于编修状态。
 
 \begin{enumerate}[(1)]
 \item H Luo, Z Luo, C Xu, W Jiang, et al. Optical plasma boundary reconstruction based on least square for EAST Tokamak[J]. Frontiers of Information Technology \& Electronic Engineering, In Press.
 
-\item H Luo, X Fan, C Zhang, et al. AAM: A Deep Learning Method for Person Re-Identification Outperforming Human Performance. Contribute to CVPR, 2018.
-
+\item H Luo\footnotemark[1], X Zhang\footnotemark[1], X Fan, W Jiang, C Zhang, et al. AlignedReID: Surpassing Human-Level Performance in Person Re-Identification. Contribute to CVPR, 2018.
+\footnotetext[1]{Equation contribution}
 \item Q. Xiao, H. Luo, and C. Zhang. Margin Sample Mining Loss: A Deep Learning Based Method for Person Re-identification. \emph{arXiv preprint arXiv:1710.00478}, 2017.
 
 \item 罗浩, 张弛. 一种联合五元组和分类损失的行人重识别方法。
 
 \item 罗浩, 张弛. 一种基于边界样本挖掘的行人重识别方法。
 \end{enumerate}
+
+%\renewcommand{\thefootnote}{\fnsymybol{footnote}}
+
 
 \section{研究计划}

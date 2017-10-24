@@ -199,6 +199,17 @@ Ergys Ristani, Francesco Solera, Roger Zou, Rita Cucchiara, Carlo Tomasi.
   tracking[J].
 \newblock 2016:17--35.
 
+\bibitem{Milan2016MOT16}
+Anton Milan, Laura Lealtaixe, Ian Reid, Stefan Roth, Konrad Schindler.
+\newblock Mot16: A benchmark for multi-object tracking[J].
+\newblock 2016.
+
+\bibitem{Patino2016PETS}
+Luis Patino, Tom Cane, Alain Vallee, James Ferryman.
+\newblock Pets 2016: Dataset and challenge[C]//Computer Vision and Pattern
+  Recognition Workshops.
+\newblock 2016:1240--1247.
+
 \bibitem{Keni2008Evaluating}
 B.~Keni, S.~Rainer.
 \newblock Evaluating multiple object tracking performance: the clear mot
@@ -211,6 +222,19 @@ Anton Milan, Konrad Schindler, Stefan Roth.
 \newblock Challenges of ground truth evaluation of multi-target
   tracking[C]//Computer Vision and Pattern Recognition Workshops.
 \newblock 2013:735--742.
+
+\bibitem{Beyer2017Towards}
+Lucas Beyer, Stefan Breuers, Vitaly Kurin, Bastian Leibe, Lucas Beyer, Stefan
+  Breuers, Vitaly Kurin, Bastian Leibe.
+\newblock Towards a principled integration of multi-camera re-identification
+  and tracking through optimal bayes filters[C]//IEEE Conference on Computer
+  Vision and Pattern Recognition Workshops.
+\newblock 2017:1444--1453.
+
+\bibitem{Leal2016Learning}
+Laura Leal-Taix¨¦, Cristian Canton-Ferrer, Konrad Schindler.
+\newblock Learning by tracking: Siamese cnn for robust target association[J].
+\newblock 2016:418--425.
 
 \bibitem{he2016deep}
 Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.

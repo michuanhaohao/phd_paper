@@ -14,16 +14,23 @@
 \contentsline {subsection}{\numberline {2.1.6}基于视频序列的方法}{14}{subsection.2.1.6}
 \contentsline {section}{\numberline {2.2}跨摄像头多目标跟踪}{16}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}相关数据集}{16}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}准确度评估准则}{17}{subsection.2.2.2}
-\contentsline {chapter}{\numberline {3\ignorespaces \hspace {0.3em}}研究内容与技术路线}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}研究内容}{19}{section.3.1}
-\contentsline {chapter}{\numberline {4\ignorespaces \hspace {0.3em}}现有成果与研究计划}{21}{chapter.4}
-\contentsline {section}{\numberline {4.1}现有成果}{21}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}边界样本挖掘损失}{21}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}最短路径距离}{24}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}基于度量学习的互学习方法}{27}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}行人重识别的人类准确度评估}{30}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}与现有方法结果对比}{31}{subsection.4.1.5}
-\contentsline {section}{\numberline {4.2}成果作品}{34}{section.4.2}
-\contentsline {section}{\numberline {4.3}研究计划}{34}{section.4.3}
-\contentsline {chapter}{参考文献}{35}{chapter*.30}
+\contentsline {subsection}{\numberline {2.2.2}准确度评估准则}{19}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}表观模型}{21}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}基于相关滤波的多目标跟踪}{22}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}基于代价函数的多目标跟踪}{23}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}跨摄像头匹配}{23}{subsection.2.2.6}
+\contentsline {chapter}{\numberline {3\ignorespaces \hspace {0.3em}}研究内容与技术路线}{24}{chapter.3}
+\contentsline {section}{\numberline {3.1}研究内容}{24}{section.3.1}
+\contentsline {section}{\numberline {3.2}技术路线}{25}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}基于深度学习的行人重识别技术}{25}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}基于行人重识别特征的跨摄像头多目标跟踪技术}{26}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {4\ignorespaces \hspace {0.3em}}现有成果与研究计划}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}现有成果}{27}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}边界样本挖掘损失}{27}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}最短路径距离}{30}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}基于度量学习的互学习方法}{33}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}行人重识别的人类准确度评估}{36}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}与现有方法结果对比}{37}{subsection.4.1.5}
+\contentsline {section}{\numberline {4.2}成果作品}{40}{section.4.2}
+\contentsline {section}{\numberline {4.3}研究计划}{40}{section.4.3}
+\contentsline {chapter}{参考文献}{41}{chapter*.36}
