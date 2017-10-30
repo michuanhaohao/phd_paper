@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.3)  24 OCT 2017 22:18
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.3)  26 OCT 2017 13:51
 entering extended mode
 **F:/doc/phd/2017/phd_paper/Proposal/Proposal.tex
 (F:/doc/phd/2017/phd_paper/Proposal/Proposal.tex
@@ -1000,6 +1000,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 12.05pt
 (hyperref)                replaced by space on input line 1.
 
+Package CJKpunct Info: punctuation spaces for family 'zhfs' do not exist. Use f
+amily 'def' instead. on input line 2.
 LaTeX Font Info:    Try loading font information for C19+zhhei on input line 4.
 
 (D:\CTEX\MiKTeX\tex\latex\zhmetrics\c19zhhei.fd
@@ -1007,8 +1009,6 @@ File: c19zhhei.fd 2009/09/23 4.8.2
 )
 Package CJKpunct Info: punctuation spaces for family 'zhhei' do not exist. Use 
 family 'def' instead. on input line 4.
-Package CJKpunct Info: punctuation spaces for family 'zhfs' do not exist. Use f
-amily 'def' instead. on input line 4.
 ) [1
 
 
@@ -1115,21 +1115,21 @@ File: ./Pictures/quadruplet.png Graphic file (type png)
 Package pdftex.def Info: ./Pictures/quadruplet.png used on input line 248.
 (pdftex.def)             Requested size: 388.37646pt x 195.03635pt.
  [10 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/quadruplet.png (PNG copy)>]
-<./Pictures/local1.png, id=410, 886.31125pt x 269.005pt>
+<./Pictures/local1.png, id=412, 886.31125pt x 269.005pt>
 File: ./Pictures/local1.png Graphic file (type png)
 
 <use ./Pictures/local1.png>
 Package pdftex.def Info: ./Pictures/local1.png used on input line 287.
 (pdftex.def)             Requested size: 418.25368pt x 126.94545pt.
 
-<./Pictures/pose.png, id=413, 455.7025pt x 247.92625pt>
+<./Pictures/pose.png, id=417, 455.7025pt x 247.92625pt>
 File: ./Pictures/pose.png Graphic file (type png)
 
 <use ./Pictures/pose.png>
 Package pdftex.def Info: ./Pictures/pose.png used on input line 302.
 (pdftex.def)             Requested size: 298.75394pt x 162.54231pt.
  [11 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/local1.png (PNG copy)>] <./Pi
-ctures/spindle.png, id=428, 1413.28pt x 493.845pt>
+ctures/spindle.png, id=434, 1413.28pt x 493.845pt>
 File: ./Pictures/spindle.png Graphic file (type png)
 
 <use ./Pictures/spindle.png>
@@ -1140,7 +1140,7 @@ Overfull \hbox (5.50024pt too wide) in paragraph at lines 319--320
  [][] 
  []
 
-<./Pictures/glad.png, id=430, 1122.1925pt x 765.86125pt>
+<./Pictures/glad.png, id=438, 1122.1925pt x 765.86125pt>
 File: ./Pictures/glad.png Graphic file (type png)
 
 <use ./Pictures/glad.png>
@@ -1149,35 +1149,35 @@ Package pdftex.def Info: ./Pictures/glad.png used on input line 331.
  [12 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/pose.png (PNG copy)>] [13 <F:
 /doc/phd/2017/phd_paper/Proposal/Pictures/spindle.png (PNG copy)> <F:/doc/phd/2
 017/phd_paper/Proposal/Pictures/glad.png (PNG copy)>]
-<./Pictures/video_reid.png, id=449, 799.98875pt x 489.83pt>
+<./Pictures/video_reid.png, id=459, 799.98875pt x 489.83pt>
 File: ./Pictures/video_reid.png Graphic file (type png)
 
 <use ./Pictures/video_reid.png>
 Package pdftex.def Info: ./Pictures/video_reid.png used on input line 350.
 (pdftex.def)             Requested size: 298.75394pt x 182.92342pt.
 
-<./Pictures/video_flow.png, id=452, 1067.99pt x 794.97pt>
+<./Pictures/video_flow.png, id=462, 1067.99pt x 794.97pt>
 File: ./Pictures/video_flow.png Graphic file (type png)
 
 <use ./Pictures/video_flow.png>
 Package pdftex.def Info: ./Pictures/video_flow.png used on input line 367.
 (pdftex.def)             Requested size: 358.50836pt x 266.85336pt.
  [14 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/video_reid.png (PNG copy)>]
-<./Pictures/AMOC.png, id=463, 1018.80624pt x 578.16pt>
+<./Pictures/AMOC.png, id=475, 1018.80624pt x 578.16pt>
 File: ./Pictures/AMOC.png Graphic file (type png)
 
 <use ./Pictures/AMOC.png>
 Package pdftex.def Info: ./Pictures/AMOC.png used on input line 383.
 (pdftex.def)             Requested size: 358.50836pt x 203.45296pt.
 
-<./Pictures/dukemtmc.jpg, id=466, 2830.575pt x 771.48225pt>
+<./Pictures/dukemtmc.jpg, id=480, 2830.575pt x 771.48225pt>
 File: ./Pictures/dukemtmc.jpg Graphic file (type jpg)
 
 <use ./Pictures/dukemtmc.jpg>
 Package pdftex.def Info: ./Pictures/dukemtmc.jpg used on input line 408.
 (pdftex.def)             Requested size: 418.25368pt x 113.98688pt.
 
-<./Pictures/dukemtmc1.png, id=467, 774.895pt x 435.6275pt>
+<./Pictures/dukemtmc1.png, id=483, 774.895pt x 435.6275pt>
 File: ./Pictures/dukemtmc1.png Graphic file (type png)
 
 <use ./Pictures/dukemtmc1.png>
@@ -1187,21 +1187,21 @@ Package pdftex.def Info: ./Pictures/dukemtmc1.png used on input line 414.
 :/doc/phd/2017/phd_paper/Proposal/Pictures/AMOC.png (PNG copy)>] [16 <F:/doc/ph
 d/2017/phd_paper/Proposal/Pictures/dukemtmc.jpg> <F:/doc/phd/2017/phd_paper/Pro
 posal/Pictures/dukemtmc1.png (PNG copy)>]
-<./Pictures/MOT16_attri.png, id=485, 1109.14375pt x 479.7925pt>
+<./Pictures/MOT16_attri.png, id=503, 1109.14375pt x 479.7925pt>
 File: ./Pictures/MOT16_attri.png Graphic file (type png)
 
 <use ./Pictures/MOT16_attri.png>
 Package pdftex.def Info: ./Pictures/MOT16_attri.png used on input line 432.
 (pdftex.def)             Requested size: 448.1309pt x 193.85365pt.
 
-<./Pictures/MOT16.png, id=487, 1198.4775pt x 244.915pt>
+<./Pictures/MOT16.png, id=507, 1198.4775pt x 244.915pt>
 File: ./Pictures/MOT16.png Graphic file (type png)
 
 <use ./Pictures/MOT16.png>
 Package pdftex.def Info: ./Pictures/MOT16.png used on input line 443.
 (pdftex.def)             Requested size: 418.25368pt x 85.47113pt.
  [17 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/MOT16_attri.png (PNG copy)>]
-<./Pictures/PETS.png, id=499, 1165.35374pt x 298.11375pt>
+<./Pictures/PETS.png, id=519, 1165.35374pt x 298.11375pt>
 File: ./Pictures/PETS.png Graphic file (type png)
 
 <use ./Pictures/PETS.png>
@@ -1211,7 +1211,7 @@ Package pdftex.def Info: ./Pictures/PETS.png used on input line 457.
 /phd/2017/phd_paper/Proposal/Pictures/PETS.png (PNG copy)>] [19
 
 ] [20]
-<./Pictures/siamese_mtt.png, id=535, 561.09625pt x 553.06625pt>
+<./Pictures/siamese_mtt.png, id=557, 561.09625pt x 553.06625pt>
 File: ./Pictures/siamese_mtt.png Graphic file (type png)
 
 <use ./Pictures/siamese_mtt.png>
@@ -1219,38 +1219,60 @@ Package pdftex.def Info: ./Pictures/siamese_mtt.png used on input line 558.
 (pdftex.def)             Requested size: 328.63115pt x 323.92642pt.
  [21] [22 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/siamese_mtt.png (PNG cop
 y)>]
-<./Pictures/bayes.png, id=556, 964.60374pt x 669.50125pt>
+<./Pictures/bayes.png, id=577, 964.60374pt x 669.50125pt>
 File: ./Pictures/bayes.png Graphic file (type png)
 
 <use ./Pictures/bayes.png>
-Package pdftex.def Info: ./Pictures/bayes.png used on input line 591.
+Package pdftex.def Info: ./Pictures/bayes.png used on input line 583.
 (pdftex.def)             Requested size: 478.00812pt x 331.7668pt.
 
-Overfull \hbox (5.50024pt too wide) in paragraph at lines 591--592
+Overfull \hbox (5.50024pt too wide) in paragraph at lines 583--584
  [][] 
  []
 
-) [23 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/bayes.png (PNG copy)>]
-(F:\doc\phd\2017\phd_paper\Proposal\Chapters\chap3.tex
+[23 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/bayes.png (PNG copy)>]
+<./Pictures/DNF.png, id=594, 716.6775pt x 353.32pt>
+File: ./Pictures/DNF.png Graphic file (type png)
+ <use ./Pictures/DNF.png>
+Package pdftex.def Info: ./Pictures/DNF.png used on input line 620.
+(pdftex.def)             Requested size: 448.1309pt x 220.93228pt.
+
+[24 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/DNF.png (PNG copy)>] [25]
+<./Pictures/across.png, id=622, 597.23125pt x 456.70625pt>
+File: ./Pictures/across.png Graphic file (type png)
+
+<use ./Pictures/across.png>
+Package pdftex.def Info: ./Pictures/across.png used on input line 678.
+(pdftex.def)             Requested size: 358.50836pt x 274.15826pt.
+
+<./Pictures/algorithm.png, id=626, 600.2425pt x 385.44pt>
+File: ./Pictures/algorithm.png Graphic file (type png)
+
+<use ./Pictures/algorithm.png>
+Package pdftex.def Info: ./Pictures/algorithm.png used on input line 691.
+(pdftex.def)             Requested size: 328.63115pt x 211.034pt.
+) [26 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/across.png (PNG copy)>] [27 
+<F:/doc/phd/2017/phd_paper/Proposal/Pictures/algorithm.png (PNG copy)>] (F:\doc
+\phd\2017\phd_paper\Proposal\Chapters\chap3.tex
 3\ignorespaces 
-[24
+[28
 
 
 
-] [25]) [26] (F:\doc\phd\2017\phd_paper\Proposal\Chapters\chap4.tex
+] [29]) [30] (F:\doc\phd\2017\phd_paper\Proposal\Chapters\chap4.tex
 4\ignorespaces 
-[27
+[31
 
 
 
-] <./Pictures/exloss1.png, id=600, 436.63126pt x 319.1925pt>
+] <./Pictures/exloss1.png, id=673, 436.63126pt x 319.1925pt>
 File: ./Pictures/exloss1.png Graphic file (type png)
 
 <use ./Pictures/exloss1.png>
 Package pdftex.def Info: ./Pictures/exloss1.png used on input line 54.
 (pdftex.def)             Requested size: 189.00026pt x 138.16574pt.
 
-<./Pictures/exloss2.png, id=601, 444.66125pt x 316.18124pt>
+<./Pictures/exloss2.png, id=674, 444.66125pt x 316.18124pt>
 File: ./Pictures/exloss2.png Graphic file (type png)
 
 <use ./Pictures/exloss2.png>
@@ -1258,68 +1280,72 @@ Package pdftex.def Info: ./Pictures/exloss2.png used on input line 57.
 (pdftex.def)             Requested size: 189.00026pt x 134.3873pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.03> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 82.
- [28 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/exloss1.png (PNG copy)> <F:/d
+ [32 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/exloss1.png (PNG copy)> <F:/d
 oc/phd/2017/phd_paper/Proposal/Pictures/exloss2.png (PNG copy)>] <./Pictures/Tr
-ihard.png, id=621, 779.91376pt x 777.90625pt>
+ihard.png, id=694, 779.91376pt x 777.90625pt>
 File: ./Pictures/Trihard.png Graphic file (type png)
 
 <use ./Pictures/Trihard.png>
 Package pdftex.def Info: ./Pictures/Trihard.png used on input line 125.
 (pdftex.def)             Requested size: 189.00026pt x 188.50552pt.
 
-<./Pictures/MSML.png, id=622, 784.9325pt x 783.92876pt>
+<./Pictures/MSML.png, id=695, 784.9325pt x 783.92876pt>
 File: ./Pictures/MSML.png Graphic file (type png)
 
 <use ./Pictures/MSML.png>
 Package pdftex.def Info: ./Pictures/MSML.png used on input line 128.
 (pdftex.def)             Requested size: 189.00026pt x 188.75679pt.
- [29] [30 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/Trihard.png (PNG copy)> 
+ [33] [34 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/Trihard.png (PNG copy)> 
 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/MSML.png (PNG copy)>] <./Pictures/
-sp.png, id=639, 712.6625pt x 318.18875pt>
+sp.png, id=713, 712.6625pt x 318.18875pt>
 File: ./Pictures/sp.png Graphic file (type png)
 
 <use ./Pictures/sp.png>
 Package pdftex.def Info: ./Pictures/sp.png used on input line 177.
 (pdftex.def)             Requested size: 418.25368pt x 186.73927pt.
- [31]
-<./Pictures/AAM.png, id=653, 1258.7025pt x 371.3875pt>
+ [35]
+<./Pictures/AAM.png, id=727, 1258.7025pt x 371.3875pt>
 File: ./Pictures/AAM.png Graphic file (type png)
 
 <use ./Pictures/AAM.png>
 Package pdftex.def Info: ./Pictures/AAM.png used on input line 215.
 (pdftex.def)             Requested size: 448.1309pt x 132.22032pt.
- [32 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/sp.png (PNG copy)>]
+ [36 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/sp.png (PNG copy)>]
 Overfull \hbox (4.3351pt too wide) in paragraph at lines 228--240
  [][] 
  []
 
-[33 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/AAM.png (PNG copy)>]
-<./Pictures/DML.png, id=672, 985.6825pt x 295.1025pt>
+[37 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/AAM.png (PNG copy)>]
+<./Pictures/DML.png, id=745, 985.6825pt x 295.1025pt>
 File: ./Pictures/DML.png Graphic file (type png)
  <use ./Pictures/DML.png>
 Package pdftex.def Info: ./Pictures/DML.png used on input line 263.
 (pdftex.def)             Requested size: 388.37646pt x 116.27826pt.
 
-[34 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/DML.png (PNG copy)>]
-<./Pictures/mutual.png, id=685, 1009.7725pt x 476.78125pt>
+[38 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/DML.png (PNG copy)>]
+<./Pictures/mutual.png, id=758, 1009.7725pt x 476.78125pt>
 File: ./Pictures/mutual.png Graphic file (type png)
 
 <use ./Pictures/mutual.png>
 Package pdftex.def Info: ./Pictures/mutual.png used on input line 315.
 (pdftex.def)             Requested size: 388.37646pt x 183.37582pt.
- [35 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/mutual.png (PNG copy)>]
+ [39 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/mutual.png (PNG copy)>]
 Overfull \hbox (2.24034pt too wide) in paragraph at lines 331--359
  [][] 
  []
 
-<./Pictures/hp.png, id=699, 1472.50125pt x 421.575pt>
+<./Pictures/hp.png, id=773, 1472.50125pt x 421.575pt>
 File: ./Pictures/hp.png Graphic file (type png)
  <use ./Pictures/hp.png>
 Package pdftex.def Info: ./Pictures/hp.png used on input line 374.
 (pdftex.def)             Requested size: 448.1309pt x 128.30035pt.
 
-[36] [37 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/hp.png (PNG copy)>]
-[38]
+[40] [41 <F:/doc/phd/2017/phd_paper/Proposal/Pictures/hp.png (PNG copy)>]
+
+Package natbib Warning: Citation `tesfaye2017multi' on page 42 undefined on inp
+ut line 486.
+
+[42]
 Overfull \hbox (21.61292pt too wide) in paragraph at lines 524--528
 []\C19/zhfs/bx/n/12.05/63 3\OT1/ptm/m/n/12.05 Market1501\C19/zhfs/bx/n/12.05/55
  ê \C19/zhfs/bx/n/12.05/46 â \C19/zhfs/bx/n/12.05/45 8 \C19/zhfs/bx/n/12.05/54 
@@ -1348,10 +1374,22 @@ x/n/12.05/40 Ý|\C19/zhfs/m/n/12.05/25 !| \OT1/ptm/m/n/12.05 98.4$\OT1/cmr/m/n/1
 2.05 %$\C19/zhfs/bx/n/12.05/40 \OT1/ptm/m/n/12.05 rank-
  []
 
-[39
+[43
 
 
-]) [40] (F:\doc\phd\2017\phd_paper\Proposal\Proposal.bbl [41
+]
+Overfull \hbox (2.70293pt too wide) in paragraph at lines 586--587
+\C19/zhfs/bx/n/12.05/63 3\OT1/ptm/m/n/12.05 DukeMTMC\C19/zhfs/bx/n/12.05/55 ê \
+C19/zhfs/bx/n/12.05/46 â \C19/zhfs/bx/n/12.05/45 8 \C19/zhfs/bx/n/12.05/54 þ \C
+19/zhfs/bx/n/12.05/39 ˆ \C19/zhfs/bx/n/12.05/40 \OT1/ptm/m/n/12.05 State-of-th
+e-arts\C19/zhfs/bx/n/12.05/40  \C19/zhfs/bx/n/12.05/65 O \C19/zhfs/bx/n/12.05/
+54 ( \C19/zhfs/bx/n/12.05/40 Ý|\C19/zhfs/m/n/12.05/26 §| \C19/zhfs/bx/n/12.05/4
+2 T ó \C19/zhfs/bx/n/12.05/65 Š \C19/zhfs/bx/n/12.05/45 O \C19/zhfs/bx/n/12.05/
+44 y \C19/zhfs/bx/n/12.05/57 Ý \C19/zhfs/bx/n/12.05/42 v \C19/zhfs/bx/n/12.05/6
+2 u\OT1/ptm/m/n/12.05 ICCV2019\C19/zhfs/bx/n/12.05/44 ¬
+ []
+
+[44]) [45] (F:\doc\phd\2017\phd_paper\Proposal\Proposal.bbl [46
 
 
 
@@ -1367,16 +1405,19 @@ Underfull \hbox (badness 7704) in paragraph at lines 164--168
 push video-based per-son re-
  []
 
-[42] [43]
-Underfull \hbox (badness 2181) in paragraph at lines 286--291
+[47] [48]
+Underfull \hbox (badness 2181) in paragraph at lines 325--330
 []\OT1/ptm/m/n/10.54 Li Zhang, Tao X-i-ang, Shao-gang Gong.  Learn-ing a dis-cr
 im-i-na-tive nul-l s-pace for per-son re-
  []
 
-[44]) [45]
+[49]) [50]
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
- (F:\doc\phd\2017\phd_paper\Proposal\Proposal.aux
+(F:\doc\phd\2017\phd_paper\Proposal\Proposal.aux
 (F:\doc\phd\2017\phd_paper\Proposal\Chapters\abstractC.aux)
 (F:\doc\phd\2017\phd_paper\Proposal\Chapters\chap1.aux)
 (F:\doc\phd\2017\phd_paper\Proposal\Chapters\chap2.aux)
@@ -1385,20 +1426,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `Proposal.out' has not changed.
-(rerunfilecheck)             Checksum: 00E0F467678B0BCE5B13191D35ECA0EB;2301.
+(rerunfilecheck)             Checksum: C89ED4298C67FAE989AFC8437ADC8AD5;2301.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18922 strings out of 495354
- 304684 string characters out of 3183859
- 377232 words of memory out of 3000000
- 21316 multiletter control sequences out of 15000+200000
- 115377 words of font info for 344 fonts, out of 3000000 for 9000
+ 19021 strings out of 495354
+ 306586 string characters out of 3183859
+ 377938 words of memory out of 3000000
+ 21393 multiletter control sequences out of 15000+200000
+ 115675 words of font info for 345 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 43i,14n,50p,923b,1333s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,14n,50p,923b,1331s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Windows/Fonts/simfang.ttf>{D:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc
 }<C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/si
 msun.ttc><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/
@@ -1412,11 +1453,11 @@ hei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/F
 onts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/W
 indows/Fonts/simhei.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.t
 tc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts
-/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Wi
-ndows/Fonts/simfang.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simfang.
-ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fon
-ts/simfang.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Wi
-ndows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simfang.t
+/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simsun.ttc><C:/Win
+dows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf
+><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/s
+imfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Wind
+ows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.t
 tf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/
 simsun.ttc><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windo
 ws/Fonts/simfang.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc>
@@ -1446,9 +1487,9 @@ nts/type1/public/amsfonts/cm/cmti12.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsf
 onts/symbols/msbm10.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/CT
 EX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on Proposal.pdf (49 pages, 10665010 bytes).
+Output written on Proposal.pdf (54 pages, 11118399 bytes).
 PDF statistics:
- 1198 PDF objects out of 1200 (max. 8388607)
- 241 named destinations out of 1000 (max. 500000)
- 420 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1277 PDF objects out of 1440 (max. 8388607)
+ 260 named destinations out of 1000 (max. 500000)
+ 435 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -67,7 +67,7 @@ Resnet50-X是指用Xception单元\cite{chollet2016xception}替代了Resnet50中所有的$3 \
 实验结果如表\ref{Table_MSML}所示，我们结合了度量学习损失和分类损失。
 Cls代表分类损失，Tri代表三元组损失，Quad代表四元组损失，TriHard代表TriHard损失。
 黑色粗体标注了最好结果，可以看出绝大多数的黑色粗体都出现在MSML的实验中。
-当然从实验结果也可以看出，不同的度量学习方法可能适用于不同的数据集，例如三元组损失在CUHK-SYSU上表现很好。
+当然从实验结果也可以看出，不同的度量学习方法可能适用于不同的数据集，例如三元组损失在CUHK-SYSU 上表现很好。
 具体实验结果可在表中查阅。
 \begin{table*}[tb]\footnotesize
   \centering
@@ -183,7 +183,7 @@ min(S_{i-1,j},S_{i,j-1})+d_{i,j} & i \ne 1, j \ne 1
 在本论文中我们采用残差网络(Resnet)\cite{he2016deep}作为基础模型(Base model)，所以最后的feature map的尺寸为$7 \times 7$，因此图片被分割成了7部分。
 图片中的数字表示区域ID，右边的黑色箭头是最后求解出来的最短路径。
 首先，我们连接$f_1$和$g_1$，因为它们是路径的开端。
-之后我们比较$d_{1,2}$和$d_{2,1}$发现$d_{2,1}>d_{1,2}$，所以我们认为图片A的第1区域和图片B的第2区域更加相似。
+之后我们比较$d_{1,2}$和$d_{2,1}$发现$d_{2,1}>d_{1,2}$，所以我们认为图片A的第1区域和图片B的第2 区域更加相似。
 所以我们连接图片A的第1区域和图片B的第2区域，在右边的图片反映为从$(1,1)$走到$(1,2)$。
 之后我们比较$d_{2,2}$和$d_{1,3}$，因为$d_{2,2}>d_{1,3}$，所以连接图片A的第1 区域和图片B的第3区域，在右边的图片反映为从$(1,2)$走到$(1,3)$。
 按照这种规律寻找下去，最终的最短路径如图\ref{sp}右半所示。
@@ -316,7 +316,7 @@ $L_{t}$、基于分类的互学习KL损失和本文提出的基于度量学习的互学习损失$L_{M_2}$。
   \caption{基于度量学习的互学习方法结构示意图}\label{mutual}
 \end{figure}
 
-在本论文中，我们使用Market1501、MARS、CUHK-SYSU和CUHK03公开数据集进行了实验，实验采取Resnet50和Resnet50-X作为互学习的两个网络。
+在本论文中，我们使用Market1501、MARS、CUHK-SYSU和CUHK03公开数据集进行了实验，实验采取Resnet50 和Resnet50-X作为互学习的两个网络。
 为了证明有效性，我们使用L2距离和SP距离分别进行了对比实验，最终实验结果如表\ref{Table:mutual}所示。
 其中字符"/"代表没有使用互学习，分别单独训练的基准实验。
 KL为论文\cite{zhang2017deep}提出的基于分类损失的互学习方法，而ours是指本文提出的互学习方法。
@@ -550,14 +550,14 @@ RK表示我们用论文\cite{zhong2017re}提出的重排序(Re-ranking)来代替L2距离检索图片。
 \section{成果作品}
 
 本文作者已经撰写学术论文三篇和发明专利两篇。
-其中学术论文有一篇一作期刊论文已经录用，一篇一作论文在投计算机视觉顶会CVPR2018，一篇二作论文arxiv已经挂出待投。
+其中学术论文有一篇一作期刊论文已经录用，一篇共同一作论文在投计算机视觉顶会CVPR2018，一篇二作论文arxiv已经挂出待投。
 发明专利其中一篇处于审核状态，一篇处于编修状态。
 
 \begin{enumerate}[(1)]
 \item H Luo, Z Luo, C Xu, W Jiang, et al. Optical plasma boundary reconstruction based on least square for EAST Tokamak[J]. Frontiers of Information Technology \& Electronic Engineering, In Press.
 
-\item H Luo, X Zhang, X Fan, C Zhang, et al. AAM: A Deep Learning Method for Person Re-Identification Outperforming Human Performance. Contribute to CVPR, 2018.
-
+\item H Luo\footnotemark[1], X Zhang\footnotemark[1], X Fan, W Jiang, C Zhang, et al. AlignedReID: Surpassing Human-Level Performance in Person Re-Identification. Contribute to CVPR, 2018.
+\footnotetext[1]{Equation contribution}
 \item Q. Xiao, H. Luo, and C. Zhang. Margin Sample Mining Loss: A Deep Learning Based Method for Person Re-identification. \emph{arXiv preprint arXiv:1710.00478}, 2017.
 
 \item 罗浩, 张弛. 一种联合五元组和分类损失的行人重识别方法。
@@ -565,4 +565,26 @@ RK表示我们用论文\cite{zhong2017re}提出的重排序(Re-ranking)来代替L2距离检索图片。
 \item 罗浩, 张弛. 一种基于边界样本挖掘的行人重识别方法。
 \end{enumerate}
 
+
+
 \section{研究计划}
+
+根据前文叙述的研究内容，本课题的研究计划预计安排如下：
+
+\begin{itemize}
+  \item 2017.4 $\sim$ 2017.10
+
+  完成基于单帧图像的行人重识别算法，在公开数据集上达到State-of-the-arts的准确度，该工作已经投稿于CVPR2018会议。
+  \item 2017.10 $\sim$ 2018.2
+
+  收集并标注一个室内行人重识别数据集，并且完成一种半身与全身图匹配的行人重识别方法，该工作计划投稿于ECCV2018会议。
+  \item 2018.2 $\sim$ 2018.10
+
+  复现几种经典的多目标跟踪算法，并提出一种改进算法，在DukeMTMC 数据集上达到State-of-the-arts的准确度，该工作计划投稿于CVPR2019会议。
+  \item 2018.10 $\sim$ 2019.6
+
+  研究跨摄像头间的数据关联，将多目标跟踪算法扩展到跨摄像头多目标跟踪，在DukeMTMC数据集上达到State-of-the-arts的准确度，该工作计划投稿于ICCV2019会议。
+  \item 2019.6 $\sim$ 2019.12
+
+  整理研究成果，撰写博士研究大论文，希望能够完成一篇PAMI期刊论文。
+\end{itemize}

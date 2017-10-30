@@ -31,7 +31,7 @@
 \titletl{多目标跟踪方法研究}
 
 %英文题目
-\Etitle{The survey of multi-target multi-camera tracking }
+\Etitle{Study on multi-target multi-camera tracking }
 
 \Etitletl{based on person re-identification}
 % 作者
@@ -56,7 +56,7 @@
 % 所属学院
 \institute {控制学院}
 
-\submitdate{2017年11月}
+\submitdate{2017年10月}
 
 % 生成封面
 \makeCoverPage

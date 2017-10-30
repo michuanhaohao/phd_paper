@@ -4,11 +4,20 @@ A level-1 auxiliary file: ./Chapters/chap1.aux
 A level-1 auxiliary file: ./Chapters/chap2.aux
 A level-1 auxiliary file: ./Chapters/chap3.aux
 A level-1 auxiliary file: ./Chapters/chap4.aux
+Case mismatch error between cite keys tesfaye2017multi and Tesfaye2017Multi
+---line 101 of file ./Chapters/chap4.aux
+ : \citation{tesfaye2017multi
+ :                           }
+I'm skipping whatever remains of this command
 The style file: ZJUthesis.bst
 Database file #1: thesisbib.bib
 Repeated entry---line 564 of file thesisbib.bib
  : @inproceedings{Beyer2017Towards
  :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 578 of file thesisbib.bib
+ : @article{Tesfaye2017Multi
+ :                          ,
 I'm skipping whatever remains of this entry
 Warning--empty pages in zheng2015scalable
 Warning--empty journal in Li2014DeepReID
@@ -18,7 +27,9 @@ Warning--empty pages in zhao2017spindle
 Warning--empty journal in Ristani2016Performance
 Warning--empty journal in Milan2016MOT16
 Warning--empty journal in Leal2016Learning
+Warning--missing address in Zamir2012GMCP
+Warning--empty journal in Schulter2017Deep
 Warning--empty pages in xiao2017joint
 Warning--empty journal in zhousee
 Warning--empty year in zhousee
-(There was 1 error message)
+(There were 3 error messages)

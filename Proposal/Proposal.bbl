@@ -236,6 +236,45 @@ Laura Leal-Taix¨¦, Cristian Canton-Ferrer, Konrad Schindler.
 \newblock Learning by tracking: Siamese cnn for robust target association[J].
 \newblock 2016:418--425.
 
+\bibitem{Leal2012Everybody}
+Laura Leal-Taix¨¦, Gerard Pons-Moll, Bodo Rosenhahn.
+\newblock Everybody needs somebody: Modeling social and grouping behavior on a
+  linear programming multiple people tracker[C]//IEEE International Conference
+  on Computer Vision Workshops.
+\newblock 2012:120--127.
+
+\bibitem{Milan2013Continuous}
+A~Milan, S~Roth, K~Schindler.
+\newblock Continuous energy minimization for multitarget tracking.[J].
+\newblock IEEE Transactions on Pattern Analysis $\&$ Machine Intelligence,
+  2013.
+\newblock 36(1):58--72.
+
+\bibitem{Zamir2012GMCP}
+Amir~Roshan Zamir, Afshin Dehghan, Mubarak Shah.
+\newblock GMCP-Tracker: Global Multi-object Tracking Using Generalized Minimum
+  Clique Graphs[M].
+\newblock Springer Berlin Heidelberg, 2012.
+
+\bibitem{Li2009Learning}
+Yuan Li, Chang Huang, R.~Nevatia.
+\newblock Learning to associate: Hybridboosted multi-target tracker for crowded
+  scene[C]//Computer Vision and Pattern Recognition, 2009. CVPR 2009. IEEE
+  Conference on.
+\newblock 2009:2953--2960.
+
+\bibitem{Schulter2017Deep}
+Samuel Schulter, Paul Vernaza, Wongun Choi, Manmohan Chandraker.
+\newblock Deep network flow for multi-object tracking[J].
+\newblock 2017.
+
+\bibitem{Tesfaye2017Multi}
+Yonatan~Tariku Tesfaye, Eyasu Zemene, Andrea Prati, Marcello Pelillo, Mubarak
+  Shah.
+\newblock Multi-target tracking in multiple non-overlapping cameras using
+  constrained dominant sets[J].
+\newblock arXiv preprint arXiv:1706.06196, 2017.
+
 \bibitem{he2016deep}
 Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.
 \newblock Deep residual learning for image recognition[C]//Proceedings of the
@@ -337,13 +376,6 @@ Zhedong Zheng, Liang Zheng, Yi~Yang.
 \newblock A discriminatively learned cnn embedding for person
   re-identification[J].
 \newblock arXiv preprint arXiv:1611.05666, 2016.
-
-\bibitem{tesfaye2017multi}
-Yonatan~Tariku Tesfaye, Eyasu Zemene, Andrea Prati, Marcello Pelillo, Mubarak
-  Shah.
-\newblock Multi-target tracking in multiple non-overlapping cameras using
-  constrained dominant sets[J].
-\newblock arXiv preprint arXiv:1706.06196, 2017.
 
 \bibitem{liu2017quality}
 Yu~Liu, Junjie Yan, Wanli Ouyang.
